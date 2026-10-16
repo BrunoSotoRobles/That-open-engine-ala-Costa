@@ -30,43 +30,47 @@ export function Sidebar() {
           aria-label="Costa Laskenta logo"
         />
       </Router.Link>
-      <ul id="nav-buttons">
-        <Router.Link to="/viewer">
-          <li>
-            <span className="material-icons-round nav-item-icon">apartment</span>
-            <span className="nav-item-label">{getAppNavLabel("costaBim", language)}</span>
-          </li>
-        </Router.Link>
-        {!COSTA_FIREBASE_OFF_V1 && (
-          <Router.Link to="/projects">
+
+      <nav className="sidebar-nav" aria-label="Main">
+        <ul id="nav-buttons">
+          <Router.Link to="/viewer">
             <li>
               <span className="material-icons-round nav-item-icon">apartment</span>
-              <span className="nav-item-label">{getAppNavLabel("projects", language)}</span>
+              <span className="nav-item-label">{getAppNavLabel("costaBim", language)}</span>
             </li>
           </Router.Link>
-        )}
-        <Router.Link to="/costs">
-          <li className="nav-item-multiline">
-            <span className="material-icons-round nav-item-icon">euro</span>
-            <span className="nav-item-label nav-item-label--two-line">
-              <span>{costsLine1}</span>
-              <span>{costsLine2}</span>
-            </span>
-          </li>
-        </Router.Link>
-        <Router.Link to="/about">
-          <li>
-            <span className="material-icons-round nav-item-icon">info</span>
-            <span className="nav-item-label">{getAppNavLabel("about", language)}</span>
-          </li>
-        </Router.Link>
-        <li className="nav-sign-out">
-          <button type="button" onClick={onTeamSignOut}>
-            <span className="material-icons-round nav-item-icon">logout</span>
-            <span className="nav-item-label">{getAppNavLabel("teamSignOut", language)}</span>
-          </button>
-        </li>
-      </ul>
+          {!COSTA_FIREBASE_OFF_V1 && (
+            <Router.Link to="/projects">
+              <li>
+                <span className="material-icons-round nav-item-icon">apartment</span>
+                <span className="nav-item-label">{getAppNavLabel("projects", language)}</span>
+              </li>
+            </Router.Link>
+          )}
+          <Router.Link to="/costs">
+            <li className="nav-item-multiline">
+              <span className="material-icons-round nav-item-icon">euro</span>
+              <span className="nav-item-label nav-item-label--two-line">
+                <span>{costsLine1}</span>
+                <span>{costsLine2}</span>
+              </span>
+            </li>
+          </Router.Link>
+          <Router.Link to="/about">
+            <li>
+              <span className="material-icons-round nav-item-icon">info</span>
+              <span className="nav-item-label">{getAppNavLabel("about", language)}</span>
+            </li>
+          </Router.Link>
+        </ul>
+      </nav>
+
+      <div className="sidebar-signout">
+        <button type="button" className="sidebar-nav-item-btn" onClick={onTeamSignOut}>
+          <span className="material-icons-round nav-item-icon">logout</span>
+          <span className="nav-item-label">{getAppNavLabel("teamSignOut", language)}</span>
+        </button>
+      </div>
     </aside>
   );
 }

@@ -155,6 +155,7 @@
   grid-template-columns: 200px 1fr;
   grid-template-areas: 'sidebar content';
   flex: 1;
+  width: 100%;
   min-height: 0; /* Allow content to determine height */
 }
 
@@ -322,9 +323,45 @@ button:hover {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
-  height: 100vh;
+  row-gap: 24px;
+  height: calc(100vh - 30px); /* fixed app footer */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sidebar-nav {
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
+}
+
+.sidebar-signout {
+  flex-shrink: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.sidebar-nav-item-btn {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 0;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar-nav-item-btn:hover {
+  background-color: var(--primary);
 }
 
 #company-logo {
@@ -360,46 +397,17 @@ button:hover {
 }
 
 #nav-buttons {
-  flex: 1;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  min-height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #nav-buttons a {
   display: block;
   color: inherit;
   text-decoration: none;
-}
-
-#nav-buttons li.nav-sign-out {
-  margin-top: auto;
-  padding: 0;
-  list-style: none;
-}
-
-#nav-buttons li.nav-sign-out button {
-  width: 100%;
-  box-sizing: border-box;
-  height: auto;
-  min-height: 0;
-  padding: 15px;
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-  cursor: pointer;
-  text-align: left;
-}
-
-#nav-buttons li.nav-sign-out button:hover {
-  background-color: var(--primary);
 }
 
 #nav-buttons li {
@@ -460,7 +468,7 @@ button:hover {
     column-gap: 8px;
   }
 
-  #nav-buttons li.nav-sign-out button {
+  .sidebar-nav-item-btn {
     padding: 12px;
     font-size: 13px;
     column-gap: 8px;
@@ -474,7 +482,7 @@ button:hover {
     column-gap: 6px;
   }
 
-  #nav-buttons li.nav-sign-out button {
+  .sidebar-nav-item-btn {
     padding: 10px 8px;
     font-size: 12px;
     column-gap: 6px;
