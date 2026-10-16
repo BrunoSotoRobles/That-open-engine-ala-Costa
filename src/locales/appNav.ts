@@ -1,6 +1,12 @@
 import type { Language } from "../stores/CostStore";
 
-export type AppNavKey = "costaBim" | "projects" | "costs" | "about" | "home";
+export type AppNavKey =
+  | "costaBim"
+  | "projects"
+  | "costs"
+  | "about"
+  | "home"
+  | "teamSignOut";
 
 const LABELS: Record<Language, Record<AppNavKey, string>> = {
   en: {
@@ -9,6 +15,7 @@ const LABELS: Record<Language, Record<AppNavKey, string>> = {
     projects: "Projects",
     costs: "Quantities & Cost",
     about: "About",
+    teamSignOut: "Sign out",
   },
   fi: {
     home: "Tervetuloa",
@@ -16,6 +23,7 @@ const LABELS: Record<Language, Record<AppNavKey, string>> = {
     projects: "Projektit",
     costs: "Määrät ja kustannus",
     about: "Tietoa",
+    teamSignOut: "Kirjaudu ulos",
   },
 };
 

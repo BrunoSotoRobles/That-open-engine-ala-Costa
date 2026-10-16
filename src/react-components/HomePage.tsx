@@ -56,7 +56,7 @@ export function HomePage() {
   const gateMisconfigured = isTeamGateEnabled() && !isTeamPasswordConfigured();
 
   return (
-    <div className="page">
+    <div className="page page--landing">
       <header
         style={{
           padding: "1rem 2rem",

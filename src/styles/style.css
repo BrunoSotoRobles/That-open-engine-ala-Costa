@@ -158,6 +158,29 @@
   min-height: 0; /* Allow content to determine height */
 }
 
+.app-layout--landing {
+  grid-template-columns: 1fr;
+  grid-template-areas: 'content';
+  width: 100%;
+}
+
+.app-layout__content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+}
+
+.page--landing {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page--landing .main-page-content {
+  min-height: calc(100vh - 73px);
+}
+
 /* Responsive sidebar - más espacio para contenido en pantallas pequeñas */
 @media (min-width: 1920px) {
   .app-layout {
@@ -300,6 +323,30 @@ button:hover {
   row-gap: 40px;
   height: 100vh;
   overflow-y: auto;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.sidebar-logout-btn {
+  width: 100%;
+  height: auto;
+  min-height: 44px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: var(--primary);
 }
 
 #company-logo {

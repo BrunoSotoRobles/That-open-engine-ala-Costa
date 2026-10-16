@@ -10,16 +10,16 @@ export function AppChrome({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <div className="app-layout">
+      <div
+        className={
+          showNav ? "app-layout" : "app-layout app-layout--landing"
+        }
+      >
         {showNav && <Sidebar />}
         <div
+          className="app-layout__content"
           style={{
-            gridArea: "content",
-            display: "flex",
-            flexDirection: "column",
-            minHeight: "100vh",
-            minWidth: 0,
-            paddingBottom: "30px",
+            paddingBottom: showNav ? "30px" : 0,
           }}
         >
           {children}
