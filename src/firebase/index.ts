@@ -1,16 +1,8 @@
 // Firebase: gated by COSTA_FIREBASE_OFF_V1 (pilot). Flip flag false to restore init.
 import * as Firestore from "firebase/firestore";
 import { initializeApp, type FirebaseApp } from "firebase/app";
+import { firebaseConfig, isFirebaseConfigComplete } from "../config/firebaseConfig";
 import { COSTA_FIREBASE_OFF_V1 } from "../utils/costaFirebaseFlags";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBzfdQ2BycVvR_ea6c_1k0p_JwdsYheLiE",
-  authDomain: "bim-dev-app.firebaseapp.com",
-  projectId: "bim-dev-app",
-  storageBucket: "bim-dev-app.firebasestorage.app",
-  messagingSenderId: "989909983763",
-  appId: "1:989909983763:web:0f4963dca3daa9927bd5e6",
-};
 
 export const isFirebaseDisconnected = COSTA_FIREBASE_OFF_V1;
 
@@ -18,8 +10,14 @@ let app: FirebaseApp | null = null;
 let firestoreDB: Firestore.Firestore | null = null;
 
 if (!COSTA_FIREBASE_OFF_V1) {
-  app = initializeApp(firebaseConfig);
-  firestoreDB = Firestore.getFirestore(app);
+  if (!isFirebaseConfigComplete()) {
+    console.warn(
+      "[Costa] Firebase enabled but VITE_FIREBASE_* env vars are missing. Skipping init."
+    );
+  } else {
+    app = initializeApp(firebaseConfig);
+    firestoreDB = Firestore.getFirestore(app);
+  }
 } else if (typeof window !== "undefined") {
   console.info(
     "[Costa] Firebase disconnected (COSTA_FIREBASE_OFF_V1=true). Project catalog offline; CostaBIM viewer unaffected."

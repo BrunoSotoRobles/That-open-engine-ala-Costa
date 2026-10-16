@@ -1,37 +1,44 @@
-const { initializeApp } = require('firebase/app');
-const { getFirestore, doc, updateDoc } = require('firebase/firestore');
+const { initializeApp } = require("firebase/app");
+const { getFirestore, doc, updateDoc } = require("firebase/firestore");
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBzfdQ2BycVvR_ea6c_1k0p_JwdsYheLiE",
-  authDomain: "bim-dev-app.firebaseapp.com",
-  projectId: "bim-dev-app",
-  storageBucket: "bim-dev-app.firebasestorage.app",
-  messagingSenderId: "989909983763",
-  appId: "1:989909983763:web:0f4963dca3daa9927bd5e6"
-};
+function firebaseConfigFromEnv() {
+  return {
+    apiKey: process.env.VITE_FIREBASE_API_KEY || process.env.FIREBASE_API_KEY || "",
+    authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || "",
+    projectId: process.env.VITE_FIREBASE_PROJECT_ID || "",
+    storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || "",
+    messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "",
+    appId: process.env.VITE_FIREBASE_APP_ID || "",
+  };
+}
+
+const firebaseConfig = firebaseConfigFromEnv();
+if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
+  console.error(
+    "Missing Firebase env vars. Copy .env.example → .env.local and set VITE_FIREBASE_* (see Firebase console)."
+  );
+  process.exit(1);
+}
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 async function updateProjects() {
   try {
-    // Actualizar el proyecto de oficina
-    const officeDocRef = doc(db, 'projects', 'H3gu8a8WGRck1BZ0PiLp');
+    const officeDocRef = doc(db, "projects", "H3gu8a8WGRck1BZ0PiLp");
     await updateDoc(officeDocRef, {
-      ifcFilePath: '/assets/IFC example/ARK_NordicLCA_Office_Concrete_IFC4RAVA.ifc'
+      ifcFilePath: "/assets/IFC example/ARK_NordicLCA_Office_Concrete_IFC4RAVA.ifc",
     });
-    console.log('Office project updated successfully');
+    console.log("Office project updated successfully");
 
-    // Actualizar el proyecto de vivienda
-    const housingDocRef = doc(db, 'projects', 'NP2MddybUjl0ldV7R4nx');
+    const housingDocRef = doc(db, "projects", "NP2MddybUjl0ldV7R4nx");
     await updateDoc(housingDocRef, {
-      ifcFilePath: '/assets/IFC example/ARK_NordicLCA_Housing_Timber_IFC4RAVA.ifc'
+      ifcFilePath: "/assets/IFC example/ARK_NordicLCA_Housing_Timber_IFC4RAVA.ifc",
     });
-    console.log('Housing project updated successfully');
-
+    console.log("Housing project updated successfully");
   } catch (error) {
-    console.error('Error updating projects:', error);
+    console.error("Error updating projects:", error);
   }
 }
 
-updateProjects(); 
+updateProjects();
