@@ -1,0 +1,182 @@
+/* ===== ESTADOS VACÍOS Y COMPONENTES REUTILIZABLES ===== */
+
+/* Estado Vacío Base */
+.empty-state {
+  background-color: var(--background-100);
+  border: 1px solid var(--background-200);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-state-icon {
+  font-size: 64px;
+  color: var(--primary);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.empty-state-title {
+  color: var(--primary);
+  margin-bottom: 16px;
+  font-size: var(--font-2xl);
+  font-weight: 600;
+}
+
+.empty-state-description {
+  margin-bottom: 16px;
+  font-size: var(--font-lg);
+  color: #fff;
+  max-width: 500px;
+  margin: 0 auto 16px auto;
+  line-height: 1.5;
+}
+
+.empty-state-instructions {
+  background-color: var(--background-200);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  border: 1px solid var(--background-200);
+}
+
+.empty-state-list {
+  text-align: left;
+  color: #fff;
+  line-height: 1.8;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.empty-state-tip {
+  font-size: var(--font-sm);
+  margin-top: 24px;
+  color: var(--primary-200);
+  font-style: italic;
+}
+
+/* Estado Vacío Costos */
+.empty-state-cost {
+  background-color: var(--background-100);
+  border: 1px solid var(--background-200);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 40px;
+  text-align: center;
+}
+
+.empty-state-cost-icon {
+  font-size: 48px;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.empty-state-cost-title {
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.empty-state-cost-description {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: var(--text-secondary);
+}
+
+/* Grid de Instrucciones */
+.instructions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.instruction-card {
+  padding: 20px;
+  background-color: var(--surface-2);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.instruction-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.instruction-icon {
+  color: var(--primary);
+}
+
+.instruction-title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.instruction-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Información Adicional */
+.info-box {
+  padding: 16px;
+  background-color: var(--surface-2);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.info-title {
+  color: var(--warning);
+  margin-bottom: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Botón de Acción */
+.action-button {
+  margin-top: 16px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-base);
+  transition: background-color 0.2s;
+}
+
+.action-button:hover {
+  background-color: var(--primary-400);
+}
+
+/* ===== FIN ESTADOS VACÍOS ===== */

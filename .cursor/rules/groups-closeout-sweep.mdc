@@ -1,0 +1,49 @@
+---
+description: Al cerrar Groups / Model-Selection, barrer deuda de la maqueta (no acumular).
+alwaysApply: true
+---
+
+# Groups / Model-Selection — barrido al cerrar
+
+**Acuerdo de producto:** seguir iterando comportamiento ahora; **al declarar Groups 100% / cerrar la maqueta Model-Selection, barrer la deuda** antes de commit (salvo que el usuario diga lo contrario).
+
+## Model Tree ↔ Element Search (contrato)
+
+| Pestaña | Rol |
+|---------|-----|
+| **Model Tree** | Solo **visualizar** un trozo (Hider isolate). No escribe live selection. Define `mwVisualScopeIds` para Search. |
+| **Element Search** | **Filtrar** sobre: Tree visible, y/o selección click/lazo; si ambos → intersección. Preview fila → `search-preview`. |
+
+Pie grouping/cesta: después (también alimentado por click/lazo).
+
+Auditoría: `window.costaSelectionAudit()`
+
+## Canales Highlighter (contrato)
+
+| Estilo | Color | Uso |
+|--------|-------|-----|
+| `select` | lima `#BCF124` | Selección **manual** (clic 3D, lazo) |
+| `search-preview` | naranja `#FF9800` | **Preview** fila Element Search |
+| `cost-select` | azul `#2196F3` | Selección **automatizada** (Groups, MCP, cesta→live) |
+
+**Importante:** `highlighter.selection.select` es la **bolsa live de IDs** (Property/Edit), no el canal de pintura.
+
+**Lazo = mismo cierre visual que lote Shift:** `applyManualSelectVisual` con Highlighter **enabled**, luego ghost.
+
+## Qué barrer (checklist)
+
+1. **Código muerto** en `IFCViewer.tsx`: p.ej. `refreshMwStoreysList` (IDs `mw-tree-storeys-*` que ya no existen en el HTML). Buscar handlers/`getElementById` huérfanos del prefijo `mw-`.
+2. **Duplicación de paneles:** toolbar ya no expone Search/Groups sueltos (van en Model / Selection). Layouts `search`/`groups` pueden quedar en código hasta barrido final.
+3. **CSS parche:** quitar `!important` del tree (`.mw-relations-tree-host …`) si se puede fijar tipografía en `.costa-panel-*` / dejar de pelear con `* { font-size: 14px }`.
+4. **Nombres fantasma:** layout/`id` `classifications*`, `mw-relations-tree-host`, `groups-classifications-host` → renombrar a model-tree / model-workspace si ya no hay classificationTree.
+5. **No meter en el commit de paneles:** scripts sueltos (`generate_plan_ville_docx.py`, littera bridge) ni Fases 3–4 (Volume/Materials/Cost / Property table) aplazadas.
+
+## Qué conservar
+
+- Árbol IFC propio (`ifcModelTree.ts`) + filas `.costa-panel-row` / `renderPanelRow` (misma tipografía que Levels/Storeys).
+- Pie común grouping / saved selection + Costa named groups.
+- No fusionar Littera en este panel.
+
+## Commit
+
+No commit hasta que el usuario lo pida; el barrido va **en el mismo cierre** o justo antes del commit de Groups.

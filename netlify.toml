@@ -1,0 +1,24 @@
+[build]
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[context.production]
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "dist"
+
+[context.production.environment]
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[context.fragments-v3-dev]
+  command = "npm install --legacy-peer-deps && npm run build"
+
+[context.fragments-v3-dev.environment]
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

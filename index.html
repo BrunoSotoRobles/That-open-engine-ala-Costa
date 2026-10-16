@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSTA BIM</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <!-- Mapbox GL JS -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <!-- OpenLayers for Paikkatietoikkuna -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
+  <style>
+    #loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .loading-text {
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+  <!-- Cargar la API de Google -->
+  <script async defer src="https://apis.google.com/js/api.js"></script>
+  <script>
+    // Evitar errores de CORS con Google API
+    window.googleApiLoaded = new Promise((resolve) => {
+      window.handleGoogleApiLoaded = () => {
+        resolve(true);
+      };
+    });
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div id="loading">
+      <div class="loading-text">Loading application...</div>
+    </div>
+  </div>
+  <script type="module" src="src/index.tsx"></script>
+</body>
+</html>

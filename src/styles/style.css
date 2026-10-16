@@ -1,0 +1,2461 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('./empty-states.css');
+@import url('./data-cards.css');
+
+:root {
+  --primary: #029AE0;
+  --primary-100: #073044;
+  --primary-200: #415A66;
+  --primary-300: #017CB3;
+  --primary-400: #50B6E6;
+  --background: #202124;
+  --background-100: #26282b;
+  --background-200: #3b3c3f;
+  --font-xs: 10px;
+  --font-sm: 12px;
+  --font-base: 14px;
+  --font-lg: 16px;
+  --font-xl: 18px;
+  --font-2xl: 20px;
+  --font-3xl: 22px;
+  --bim-ui_main-base: var(--primary);
+  --bim-ui_gray-0: var(--background);
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --surface-2: #2d2f31;
+  --border: #404040;
+  --warning: #ff9800;
+  --success: #4caf50;
+  --error: #f44336;
+
+  /* Viewer panel chrome — inherit That Open tokens (same as bim-panel / bim-table) */
+  --costa-viewer-font: "Inter", system-ui, sans-serif;
+  --costa-panel-surface: var(--bim-ui_bg-contrast-10, rgba(0, 0, 0, 0.06));
+  --costa-panel-surface-hover: var(--bim-ui_bg-contrast-20, rgba(0, 0, 0, 0.1));
+  --costa-panel-text: var(--bim-ui_main-contrast-100, #212121);
+  --costa-panel-text-muted: var(--bim-ui_main-contrast-60, #757575);
+  --costa-panel-accent: var(--bim-ui_accent, #42a5f5);
+  --costa-panel-danger: var(--bim-ui_color-danger, #e57373);
+  --costa-panel-border: var(--bim-ui_bg-contrast-40, rgba(0, 0, 0, 0.12));
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-base);
+}
+
+/* Tabla gemelo: sobrescribir font-size y fuente (el * y los input globales aplican 14px) */
+.cost-table-excel-style,
+.cost-table-excel-style table,
+.cost-table-excel-style th,
+.cost-table-excel-style td {
+  font-size: 10px !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
+.cost-table-excel-style input,
+.cost-table-excel-style button {
+  font-size: 10px !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
+
+/* Tabla gemelo: aprovechar espacio y aspecto compacto */
+.cost-table-excel-style {
+  max-width: 100%;
+}
+.cost-table-excel-style table {
+  table-layout: fixed;
+}
+.cost-table-excel-style th,
+.cost-table-excel-style td {
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cost-table-excel-style td[style*="wordBreak"] {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+/* Contenedor de la tabla: arriba-izquierda del contenido, como Excel */
+.cost-table-excel-wrapper {
+  width: 100%;
+  max-width: 100%;
+  height: 45vh;
+  max-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-self: stretch;
+  margin-top: 0;
+}
+.cost-table-excel-wrapper > .cost-table-excel-style {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+/* Misma dirección (rtl) en header y body para que scrollLeft coincida al sincronizar */
+.cost-table-excel-header {
+  direction: rtl;
+  /* Ocultar barra del encabezado: solo la del body se ve y se usa; la del header se sincroniza por código */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* Evitar que el trackpad/ratón desplacen el encabezado; solo se mueve al sincronizar desde el body */
+  pointer-events: none;
+}
+.cost-table-excel-header table {
+  direction: ltr;
+  /* Sin pointer-events: auto: todo el encabezado ignora trackpad/ratón, solo se desplaza al sincronizar desde el body */
+}
+.cost-table-excel-header::-webkit-scrollbar {
+  display: none;
+}
+.cost-table-excel-body {
+  overflow: auto !important;
+  min-height: 0;
+  direction: rtl; /* barra de scroll vertical a la izquierda */
+}
+.cost-table-excel-body table {
+  direction: ltr; /* contenido de la tabla sin invertir */
+  margin-top: 0;
+}
+/* Unión limpia entre encabezado fijo y body */
+.cost-table-excel-header th {
+  border-bottom-width: 0;
+}
+
+/* Content-area (Cost/Materials): permite que el contenido no empuje el ancho */
+.content-area {
+  flex: 1;
+  min-width: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: #fff;
+  background-image:
+    radial-gradient(circle at top right, rgba(2, 154, 224, 0.08), transparent 45%),
+    radial-gradient(circle at 30% 20%, rgba(5, 115, 210, 0.05), transparent 40%),
+    url('/images/background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Layout wrapper for sidebar and content */
+.app-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: 'sidebar content';
+  flex: 1;
+  min-height: 0; /* Allow content to determine height */
+}
+
+/* Responsive sidebar - más espacio para contenido en pantallas pequeñas */
+@media (min-width: 1920px) {
+  .app-layout {
+    grid-template-columns: 220px 1fr; /* Sidebar más ancho en pantallas grandes */
+  }
+}
+
+@media (max-width: 1680px) {
+  .app-layout {
+    grid-template-columns: 190px 1fr; /* Sidebar ajustado */
+  }
+}
+
+@media (max-width: 1440px) {
+  .app-layout {
+    grid-template-columns: 180px 1fr; /* Sidebar más angosto */
+  }
+}
+
+@media (max-width: 1366px) {
+  .app-layout {
+    grid-template-columns: 160px 1fr; /* Sidebar aún más angosto */
+  }
+}
+
+/* General Styles */
+
+.main-page-content {
+  flex: 1;
+  min-width: 0;
+  padding-bottom: 10px; /* Extra space to prevent overlap */
+}
+
+h2 {
+  font-size: var(--font-3xl)
+}
+
+h3 {
+  font-size: var(--font-2xl)
+}
+
+h4 {
+  font-size: var(--font-xl)
+}
+
+h5 {
+  font-size: var(--font-lg)
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 14px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+button:hover {
+  background-color: var(--primary-400);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 30px); /* Account for fixed footer (30px) */
+  min-width: 0;
+}
+
+/* Optimizar altura en project details para maximizar visor */
+#project-details {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 30px);
+}
+
+#project-details > header {
+  flex-shrink: 0; /* Header no se comprime */
+}
+
+#project-details > .main-page-content {
+  flex: 1;
+  min-height: 0; /* Importante para que flex funcione correctamente */
+  display: grid;
+}
+
+/*
+ * LAYOUT LOCK (Project Details) — reversible: delete from here to END LAYOUT LOCK
+ * Ancla la página al viewport para que Quantities / Send / Exit fullscreen
+ * no puedan alargar la fila del grid (sidebar + visor + bim-panel).
+ * Solo afecta #project-details; resto de rutas sin cambio.
+ */
+#project-details {
+  height: calc(100vh - 30px);
+  max-height: calc(100vh - 30px);
+  overflow: hidden;
+}
+
+#project-details > .main-page-content {
+  overflow: hidden;
+  align-content: stretch;
+}
+
+#project-details .project-details-sidebar {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+#project-details .ifc-viewer-container {
+  min-height: 0; /* anula min-height:500px del visor en esta página */
+  max-height: 100%;
+  overflow: hidden;
+}
+
+#project-details #viewer-container {
+  min-height: 0;
+  max-height: 100%;
+  overflow: hidden;
+}
+/* END LAYOUT LOCK */
+
+/* Sidebar styles */
+
+#sidebar {
+  grid-area: sidebar;
+  background-color: var(--background-100);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+#company-logo {
+    height: 150px;
+    width: 100%;
+    background-image: url('/Costa_logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* Logo más compacto en pantallas pequeñas */
+@media (max-width: 1440px) {
+  #sidebar {
+    padding: 20px 15px;
+    row-gap: 30px;
+  }
+  
+  #company-logo {
+    height: 120px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #sidebar {
+    padding: 15px 10px;
+    row-gap: 25px;
+  }
+  
+  #company-logo {
+    height: 100px;
+  }
+}
+
+#nav-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+#nav-buttons li {
+  list-style-type: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: #fff;
+}
+
+#nav-buttons li:hover {
+  background-color: var(--primary);
+}
+
+#nav-buttons .nav-item-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+#nav-buttons .nav-item-label {
+  line-height: 1.25;
+  min-width: 0;
+}
+
+/* Quantities & Cost / Määrät ja kustannus: alto de 2 líneas, sin desbordar el ancho del sidebar */
+#nav-buttons li.nav-item-multiline {
+  align-items: flex-start;
+  min-height: 3.2em;
+}
+
+#nav-buttons .nav-item-label--two-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+  gap: 0;
+  line-height: 1.2;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+#nav-buttons .nav-item-label--two-line > span {
+  display: block;
+  max-width: 100%;
+}
+
+/* Botones de navegación más compactos */
+@media (max-width: 1440px) {
+  #nav-buttons li {
+    padding: 12px;
+    font-size: 13px;
+    column-gap: 8px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #nav-buttons li {
+    padding: 10px 8px;
+    font-size: 12px;
+    column-gap: 6px;
+  }
+}
+
+/* Content styles */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--background-100);
+  border-bottom: 1px solid var(--background-200);
+  min-height: 80px;
+  flex-shrink: 0;
+}
+
+header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--text);
+}
+
+/* Header más compacto en pantallas pequeñas */
+@media (max-width: 1440px) {
+  header {
+    padding: 0.875rem 1.5rem;
+    min-height: 72px;
+  }
+  
+  header h2 {
+    font-size: var(--font-2xl);
+  }
+}
+
+@media (max-width: 1366px) {
+  header {
+    padding: 0.75rem 1.25rem;
+    min-height: 68px;
+  }
+  
+  header h2 {
+    font-size: var(--font-xl);
+  }
+}
+
+.project-card {
+  background-color: var(--background-100);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  outline: 2px solid var(--primary);
+}
+
+.card-header {
+  display: flex;
+  column-gap: 20px;
+  padding: 15px 20px;
+  align-items: center; 
+  justify-content: start;
+  border-bottom: 2px solid #3b3c3f;
+}
+
+.card-content {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.card-property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#projects-list {
+  display: grid;
+  padding: 20px 40px;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+/* Ajustar grid de proyectos para evitar overflow en pantallas pequeñas */
+@media (max-width: 1680px) {
+  #projects-list {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 1440px) {
+  #projects-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #projects-list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 16px 20px;
+  }
+}
+
+.action-icon {
+  color: darkgray;
+  border-radius: 100%;
+  padding: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.action-icon:hover {
+  color: white;
+  background-color: var(--primary);
+}
+
+/* Form Styles */
+
+dialog {
+  background-color: transparent; 
+  border: none;
+  margin: auto;
+  max-width: 95vw; /* No salirse de la pantalla */
+  max-height: 90vh;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+form {
+  width: 450px;
+  max-width: 90vw; /* Responsive para pantallas pequeñas */
+  border-radius: 10px; 
+  background-color: var(--background-100);
+  color: white;
+}
+
+/* Forms más compactos en pantallas pequeñas */
+@media (max-width: 1440px) {
+  form {
+    width: 420px;
+  }
+}
+
+@media (max-width: 1366px) {
+  form {
+    width: 400px;
+  }
+}
+
+form h2 {
+  padding: 20px; 
+  border-bottom: 2px solid var(--background-200);
+}
+
+form .input-list {
+  display: flex; 
+  flex-direction: column; 
+  padding: 20px; 
+  row-gap: 25px;
+}
+
+form .form-field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: var(--font-base);
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: rgba(150,150,150,1);
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+input, textarea, select {
+  color: white; 
+    background-color: var(--background-200);
+  padding: 15px; 
+  border-radius: 8px; 
+  border: none;
+  font-size: var(--font-base);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--primary);
+}
+
+/* Project details page */
+
+.dashboard-card {
+  background-color: var(--background-100);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+#project-details > .main-page-content {
+  padding: 20px 40px;
+  gap: 30px;
+  grid-template-columns: 400px 1fr; /* Sidebar info + Visor IFC */
+  align-items: stretch; /* Asegurar que ambas columnas tengan la misma altura */
+}
+
+/* Maximizar espacio para visor IFC en todas las resoluciones */
+@media (min-width: 2560px) {
+  #project-details > .main-page-content {
+    grid-template-columns: 480px 1fr; /* Más espacio en pantallas 4K */
+    gap: 40px;
+    padding: 30px 50px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  #project-details > .main-page-content {
+    grid-template-columns: 420px 1fr; /* Pantallas Full HD grandes */
+    gap: 32px;
+    padding: 24px 40px;
+  }
+}
+
+@media (max-width: 1680px) {
+  #project-details > .main-page-content {
+    grid-template-columns: 350px 1fr; /* Más espacio para visor */
+    gap: 20px;
+    padding: 20px 30px;
+  }
+  
+  .ifc-viewer-container {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 1440px) {
+  #project-details > .main-page-content {
+    grid-template-columns: 320px 1fr; /* Aún más espacio para visor */
+    gap: 16px;
+    padding: 16px 24px;
+  }
+  
+  .ifc-viewer-container {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #project-details > .main-page-content {
+    grid-template-columns: 280px 1fr; /* Máxima prioridad al visor */
+    gap: 12px;
+    padding: 12px 20px;
+  }
+  
+  .ifc-viewer-container {
+    min-height: 420px;
+  }
+}
+
+/* Ajuste del sidebar de detalles del proyecto */
+.project-details-sidebar {
+  min-width: 280px;
+  height: 100%;
+  min-height: 0; /* permite que el panel hijo con flex:1 encoja/crezca en la columna */
+  overflow: hidden; /* el scroll interno lo hace IFC Measurement Excel */
+}
+
+/* Contenedor del visor IFC */
+.ifc-viewer-container {
+  min-height: 500px; /* Altura mínima para asegurar visibilidad */
+  height: 100%;
+  position: relative; /* Necesario para posicionamiento absoluto de la toolbar */
+}
+
+/* Modo Fullscreen del visor IFC - se expande horizontalmente dentro del grid */
+#project-details:has(.fullscreen-mode) .main-page-content {
+  grid-template-columns: 1fr !important; /* Una sola columna - visor ocupa todo */
+  padding: 0 !important; /* Sin padding para máximo espacio */
+  gap: 0 !important;
+}
+
+.ifc-viewer-container.fullscreen-mode {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Estilos para centrar la toolbar del IFCViewer en la parte inferior */
+/* La toolbar está directamente en viewer-container, posicionada relativa a él */
+#viewer-container > bim-toolbar,
+.ifc-viewer-container > bim-toolbar {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 1000 !important;
+  background: rgba(42, 42, 42, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  pointer-events: auto !important;
+}
+
+/* Ajustar altura de los paneles para que no se oculten detrás de la toolbar */
+/* La toolbar está fuera del grid, así que los paneles pueden usar más espacio */
+#viewer-container bim-panel,
+.ifc-viewer-container bim-panel {
+  max-height: calc(100% - 100px) !important; /* Dejar espacio para la toolbar (80px) + margen (20px) */
+  overflow-y: auto !important;
+}
+
+@media (min-width: 2560px) {
+  .project-details-sidebar {
+    max-width: 480px !important;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .project-details-sidebar {
+    max-width: 420px !important;
+  }
+}
+
+@media (max-width: 1680px) {
+  .project-details-sidebar {
+    max-width: 350px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .project-details-sidebar {
+    max-width: 320px !important;
+  }
+}
+
+@media (max-width: 1366px) {
+  .project-details-sidebar {
+    max-width: 280px !important;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent; 
+  outline: 2px solid #969696; 
+  width: 100px; 
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary); 
+  outline: none;
+}
+
+.todo-item {
+  padding: 20px;
+  outline: 2px solid var(--background-200);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todo-item:hover {
+  background-color: #26282b;
+  outline: 2px solid var(--primary);
+}
+
+bim-option {
+  padding: 4px;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 4px;
+  background: var(--background-200);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-bar-progress {
+  width: 30%;
+  height: 100%;
+  background: var(--primary);
+  position: absolute;
+  animation: loading 1.5s infinite ease-in-out;
+  border-radius: 2px;
+}
+
+@keyframes loading {
+  0% {
+    left: -30%;
+    width: 30%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    width: 30%;
+  }
+}
+
+/* Estilos para la tabla LCA */
+.lca-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.lca-table thead .main-header th {
+  background-color: white;
+  color: var(--background);
+  padding: 10px;
+  font-weight: 600;
+  text-align: left;
+  border-right: 1px solid var(--background-200);
+}
+
+.lca-table th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 2px solid var(--background-200);
+  color: #fff;
+}
+
+.lca-table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--background-200);
+}
+
+.lca-table input,
+.lca-table select {
+  background: var(--background-200);
+  border: 1px solid var(--background-300);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.lca-table input {
+  width: 100px;
+}
+
+.lca-table select {
+  width: 120px;
+}
+
+.lca-table tr.header-row {
+  background: var(--background-200);
+  color: white;
+  font-weight: bold;
+}
+
+.lca-table tr.element-row {
+  background: var(--background-100);
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.lca-table tr.element-row:hover {
+  background-color: rgba(38, 40, 43, 0.25);
+}
+
+.lca-table tr:not(.header-row):not(.element-row):hover {
+  background-color: rgba(38, 40, 43, 0.25);
+}
+
+/* Charts and Visualizations */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.chart-wrapper {
+  background: var(--background-100);
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 400px;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Charts responsivos para mejor aprovechamiento */
+@media (min-width: 1920px) {
+  .charts-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas grandes */
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .chart-wrapper {
+    min-height: 350px;
+    padding: 12px;
+  }
+  
+  .charts-grid {
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .chart-wrapper {
+    min-height: 320px;
+    padding: 10px;
+  }
+  
+  .charts-grid {
+    gap: 12px;
+    padding: 12px;
+  }
+}
+
+/* Impact Analysis */
+.impact-analysis-section {
+  background-color: var(--background);
+  padding: 20px 0;
+  width: 100%;
+}
+
+.impact-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.impact-value-item {
+  background: var(--background-100);
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.impact-value-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Progress Overlay */
+.progress-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.progress-container {
+  background-color: var(--background-100);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: var(--background-200);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+/* SCORS Rating */
+.scors-rating {
+  padding: 30px;
+}
+
+.rating-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rating-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 35px;
+  position: relative;
+}
+
+.rating-bar {
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+}
+
+/* Mantener las media queries al final */
+@media (max-width: 768px) {
+  .chart-wrapper {
+    min-height: 350px;
+  }
+  
+  .scors-label {
+    flex-direction: column;
+  }
+  
+  .current-rating {
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para tooltips */
+[data-has-tooltip] {
+  position: relative;
+}
+
+[data-has-tooltip]::after {
+  content: '•';
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary);
+  font-size: 12px;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-has-tooltip]::before {
+  content: attr(title);
+  visibility: hidden;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background: var(--background-100);
+  color: white;
+  font-size: var(--font-sm);
+  border-radius: 4px;
+  white-space: pre;
+  width: max-content;
+  max-width: 200px;
+  text-align: left;
+  line-height: 1.4;
+  z-index: 1000;
+  border: 1px solid var(--background-200);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+[data-has-tooltip]:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Loading Container */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--primary-100);
+    border-top: 4px solid var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Container */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-icon {
+    font-size: 48px;
+    color: var(--error);
+    margin-bottom: 20px;
+}
+
+.error-container p {
+    color: var(--text);
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.error-container button {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.error-container button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Material Database Status */
+.database-status {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 20px;
+    background-color: var(--background-light);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.database-status .status-icon {
+    margin-right: 12px;
+    font-size: 24px;
+    margin-top: 2px;
+}
+
+.database-status.success {
+    background-color: var(--success-light);
+    border-color: var(--success);
+}
+
+.database-status.warning {
+    background-color: var(--warning-light);
+    border-color: var(--warning);
+}
+
+.database-status.error {
+    background-color: var(--error-light);
+    border-color: var(--error);
+}
+
+.database-status .status-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.database-status .status-main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.database-status .status-main strong {
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.database-status .status-message {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.database-status .status-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.database-status .status-stats {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+
+.database-status .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.database-status .stat-separator {
+    color: var(--text-tertiary);
+    font-weight: bold;
+}
+
+.database-status .status-timestamp {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    font-style: italic;
+}
+
+.database-status .status-action {
+    margin-left: 16px;
+    flex-shrink: 0;
+}
+
+.database-status .status-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.database-status .status-button:hover:not(:disabled) {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.database-status .status-button:disabled {
+    background-color: var(--text-tertiary);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.database-status .status-button .material-icons {
+    font-size: 18px;
+}
+
+/* Material Card Improvements */
+.material-card {
+    position: relative;
+    padding: 16px;
+    background: var(--background-light);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.material-card.unmatched {
+    border: 1px dashed var(--warning);
+}
+
+.material-card .material-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.material-card .material-name {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.material-card .material-badge {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.material-card .material-badge.verified {
+    background-color: var(--success-light);
+    color: var(--success);
+}
+
+.material-card .material-badge.unverified {
+    background-color: var(--warning-light);
+    color: var(--warning);
+}
+
+.material-card .material-source {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.material-card .material-properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.material-card .property-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.material-card .property-label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.material-card .property-value {
+    font-weight: 500;
+}
+
+/* Tooltip Improvements */
+[data-has-tooltip] {
+    position: relative;
+}
+
+[data-has-tooltip]:hover::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    background-color: var(--background-dark);
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+[data-has-tooltip]:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--background-dark);
+    z-index: 1000;
+}
+
+/* Enhanced Tooltip Styles with 50% opacity background */
+.tooltip-enhanced {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip-enhanced::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    width: max-content;
+    max-width: 300px;
+    text-align: center;
+    line-height: 1.4;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.tooltip-enhanced::after {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.tooltip-enhanced:hover::before,
+.tooltip-enhanced:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Google Auth Button Styles */
+.google-auth-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.google-auth-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(66, 133, 244, 0.4);
+}
+
+.google-auth-button:active {
+    transform: translateY(0);
+}
+
+.google-auth-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.google-auth-button .material-icons-round {
+    font-size: 20px;
+}
+
+/* Auth Status Indicators */
+.auth-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.auth-status.authenticated {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.auth-status.demo {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #FFC107;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.auth-status.unauthenticated {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #F44336;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+/* Auth Benefits List */
+.auth-benefits {
+    background-color: rgba(38, 38, 38, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-benefits h4 {
+    color: var(--primary);
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.auth-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.auth-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    color: var(--text-2);
+    font-size: 14px;
+}
+
+.auth-benefits li::before {
+    content: '✓';
+    color: var(--success);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* IFCViewer: Property panel — View / Edit tabs */
+.property-panel-dual {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.property-panel-tab-bar {
+    display: flex;
+    gap: 4px;
+    padding: 8px 8px 0;
+    flex-shrink: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.property-panel-tab {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 11px;
+    font-family: inherit;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    background: transparent;
+    color: var(--bim-ui_main-contrast-80, #9e9e9e);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.property-panel-tab[data-active] {
+    background: rgba(66, 165, 245, 0.14);
+    color: var(--bim-ui_accent, #42a5f5);
+    font-weight: 600;
+}
+
+#property-view-section,
+#property-edit-section {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+}
+
+.property-multi-header {
+    margin: 0 0 10px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--costa-panel-border, rgba(255, 255, 255, 0.12));
+    background: rgba(66, 165, 245, 0.08);
+    font-family: var(--costa-viewer-font, inherit);
+}
+
+.property-multi-summary {
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--costa-panel-text, #e0e0e0);
+}
+
+.property-edit-status {
+    margin: 8px 0 12px;
+    padding: 8px 10px;
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--bim-ui_main-contrast-70, #b0b0b0);
+    background: #2a2a2a;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.property-edit-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.property-edit-empty {
+    padding: 12px;
+    font-size: 10px;
+    color: #888;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.property-edit-bulk {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    background: #252525;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.property-edit-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.property-edit-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.property-edit-dirty-badge {
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: rgba(33, 150, 243, 0.25);
+    color: #90caf9;
+    font-family: Arial, sans-serif;
+}
+
+.property-edit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.property-edit-card {
+    padding: 10px;
+    background: #2a2a2a;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.property-edit-card--dirty {
+    border-color: rgba(33, 150, 243, 0.45);
+    box-shadow: inset 0 0 0 1px rgba(33, 150, 243, 0.15);
+}
+
+.property-edit-card--loading {
+    opacity: 0.7;
+}
+
+.property-edit-card-title {
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.property-edit-card-meta {
+    display: block;
+    font-weight: 400;
+    color: #888;
+    margin-top: 2px;
+}
+
+.property-edit-card-guid {
+    font-size: 9px;
+    color: #666;
+    margin-bottom: 8px;
+    word-break: break-all;
+    font-family: monospace;
+}
+
+.property-edit-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.property-edit-field-label {
+    font-size: 9px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: Arial, sans-serif;
+}
+
+.property-edit-field bim-text-input {
+    font-size: 10px;
+}
+
+.property-edit-tree {
+    flex: 1;
+    min-height: 200px;
+    max-height: 55vh;
+    overflow: auto;
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+.property-edit-tree bim-table-cell {
+    font-size: 11px;
+    line-height: 1.35;
+    min-width: 0;
+    color: #424242;
+}
+
+.property-edit-tree bim-table-cell[column="Value"] {
+    min-width: 0;
+}
+
+.property-edit-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.property-edit-toolbar-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.property-edit-toolbar-row bim-text-input {
+    flex: 1;
+    min-width: 72px;
+    font-size: 11px;
+}
+
+#property-edit-section bim-text-input {
+    font-size: 11px;
+    min-width: 0;
+}
+
+.property-edit-tree-section {
+    font-weight: 600;
+    color: #1565c0;
+    font-size: 11px;
+    line-height: 1.35;
+    font-family: inherit;
+}
+
+.property-edit-tree-hint {
+    color: #757575;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.35;
+    font-family: inherit;
+}
+
+.property-edit-tree-element {
+    font-weight: 600;
+    color: #212121;
+    font-size: 11px;
+    line-height: 1.35;
+    font-family: inherit;
+}
+
+.property-edit-tree-element-meta {
+    font-weight: 400;
+    color: #616161;
+    font-size: 10px;
+}
+
+.property-edit-tree-input {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+.property-edit-ifc-hint {
+    margin: 0 0 12px;
+    font-size: 11px;
+    line-height: 1.45;
+    color: var(--bim-ui_main-contrast-70, #b0b0b0);
+    font-family: inherit;
+}
+
+.property-edit-ifc-hint code {
+    font-size: 10px;
+    color: var(--bim-ui_accent, #64b5f6);
+}
+
+.property-edit-section {
+    margin-bottom: 16px;
+    padding: 10px;
+    background: #252525;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.property-edit-section-title {
+    margin: 0 0 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.property-edit-section-desc {
+    margin: 0 0 10px;
+    font-size: 10px;
+    color: var(--bim-ui_main-contrast-70, #b0b0b0);
+    line-height: 1.4;
+    font-family: inherit;
+}
+
+.property-edit-section-desc code {
+    color: #90caf9;
+    font-size: 9px;
+}
+
+.property-edit-prefix-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.property-edit-prefix-fixed {
+    flex-shrink: 0;
+    padding: 6px 8px;
+    font-size: 10px;
+    font-family: monospace;
+    color: #90caf9;
+    background: #1e1e1e;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.property-edit-prefix-row bim-text-input {
+    flex: 1;
+    min-width: 0;
+}
+
+.property-edit-empty--inline {
+    padding: 8px 0;
+    text-align: left;
+}
+
+.property-edit-costa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.property-edit-costa-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 4px 6px;
+    padding: 8px;
+    background: #2a2a2a;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.property-edit-costa-row--dirty {
+    border-color: rgba(33, 150, 243, 0.4);
+}
+
+.property-edit-costa-row-meta {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+}
+
+.property-edit-costa-pset {
+    color: #90caf9;
+    font-family: monospace;
+}
+
+.property-edit-costa-prop-name {
+    color: #ddd;
+    font-weight: 600;
+}
+
+.property-edit-costa-tag {
+    font-size: 8px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    background: rgba(76, 175, 80, 0.2);
+    color: #a5d6a7;
+    text-transform: uppercase;
+}
+
+.property-edit-costa-value-input {
+    grid-column: 1;
+}
+
+.property-edit-costa-remove {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(211, 47, 47, 0.25);
+    color: #ffcdd2;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.property-edit-costa-remove:hover {
+    background: rgba(211, 47, 47, 0.45);
+}
+
+.property-edit-list details.property-edit-card {
+    padding: 8px 10px;
+}
+
+.property-edit-list details.property-edit-card summary {
+    cursor: pointer;
+    font-size: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    list-style: none;
+}
+
+.property-edit-list details.property-edit-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.property-edit-list details.property-edit-card[open] summary {
+    margin-bottom: 8px;
+}
+
+/* IFCViewer — Element Search panel (filters shell; results use .costa-panel-*) */
+.search-panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+    font-size: 11px;
+    font-family: var(--costa-viewer-font);
+}
+
+.search-filter-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.search-filter-label {
+    font-size: 10px;
+    color: var(--costa-panel-text-muted);
+    font-family: var(--costa-viewer-font);
+}
+
+.search-ifc-type-select {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 11px;
+    border-radius: 4px;
+    border: 1px solid var(--costa-panel-border);
+    background: var(--costa-panel-surface);
+    color: var(--costa-panel-text);
+    font-family: var(--costa-viewer-font);
+}
+
+.search-pset-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
+    color: var(--costa-panel-text-muted);
+    cursor: pointer;
+    font-family: var(--costa-viewer-font);
+}
+
+.search-actions-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.search-results-host {
+    margin-top: 4px;
+}
+
+/* Area / box selection rectangle (drag overlay only) */
+.box-select-rect {
+    position: absolute;
+    pointer-events: none;
+    z-index: 40;
+    border: 1px solid #42a5f5;
+    background: rgba(66, 165, 245, 0.18);
+    box-sizing: border-box;
+}
+
+/* Shared Costa panel list (Groups, Search, …) — single chrome, migrate tools here */
+#viewer-container,
+.ifc-viewer-container {
+  font-family: var(--costa-viewer-font);
+}
+
+#viewer-container bim-toolbar,
+#viewer-container bim-panel,
+#viewer-container bim-button,
+.ifc-viewer-container bim-toolbar,
+.ifc-viewer-container bim-panel,
+.ifc-viewer-container bim-button {
+  font-family: var(--costa-viewer-font);
+}
+
+.costa-panel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 40vh;
+  overflow: auto;
+  font-family: var(--costa-viewer-font);
+}
+
+/* Model tree branches: never nest scroll (parent bim-panel scrolls) */
+.mw-ifc-tree-children {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 0.85rem;
+  flex-shrink: 0;
+  max-height: none;
+  overflow: visible;
+}
+
+.costa-panel-empty {
+  font-size: 11px;
+  color: var(--costa-panel-text-muted);
+  padding: 6px 0;
+  line-height: 1.35;
+  font-family: var(--costa-viewer-font);
+}
+
+.costa-panel-empty--error {
+  color: var(--costa-panel-danger);
+}
+
+.costa-panel-summary {
+  font-size: 11px;
+  color: var(--costa-panel-text-muted);
+  line-height: 1.35;
+  margin-bottom: 4px;
+  font-family: var(--costa-viewer-font);
+}
+
+.costa-panel-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 6px;
+  min-height: 28px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: transparent;
+  border: 1px solid transparent;
+  font-family: var(--costa-viewer-font);
+  color: var(--costa-panel-text);
+}
+
+.costa-panel-row:hover {
+  background: var(--costa-panel-surface-hover);
+}
+
+.costa-panel-row--interactive {
+  cursor: pointer;
+}
+
+.costa-panel-row--active {
+  border-color: var(--costa-panel-accent);
+  background: var(--costa-panel-surface);
+}
+
+.costa-panel-row-body {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.costa-panel-row-title {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--costa-panel-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  max-width: 45%;
+}
+
+.costa-panel-row-sep {
+  font-size: 11px;
+  color: var(--costa-panel-text-muted);
+  flex-shrink: 0;
+}
+
+.costa-panel-row-meta {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--costa-panel-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1;
+}
+
+.costa-panel-row-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+/* Match 3D toolbar: compact icon bim-buttons */
+.costa-panel-row-actions bim-button.costa-panel-row-action {
+  font-family: var(--costa-viewer-font);
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.costa-panel-row-action--danger {
+  --bim-ui_bg-contrast-20: rgba(229, 115, 115, 0.2);
+}
+
+/* Groups panel shell (layout only; rows use .costa-panel-*) */
+.groups-panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+    font-family: var(--costa-viewer-font);
+}
+
+.groups-panel-toolbar,
+.groups-save-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.groups-status {
+    font-size: 12px;
+    color: var(--costa-panel-text-muted);
+    line-height: 1.35;
+    font-family: var(--costa-viewer-font);
+}
+
+.groups-classifications-host {
+    min-height: 0;
+}
+
+.mw-relations-tree-host {
+    min-height: 0;
+}
+
+/* Model tree: twisty + selection bold only (rows = .costa-panel-row) */
+.mw-ifc-tree-twisty {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--costa-panel-text-muted);
+    font-family: var(--costa-viewer-font);
+    font-size: 11px;
+    font-weight: 400;
+    width: 1rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.mw-ifc-tree-twisty:disabled {
+    cursor: default;
+    opacity: 0.35;
+}
+
+/* Beat global `* { font-size: 14px }` — same 11px as Levels/Storeys */
+.mw-relations-tree-host .costa-panel-row-title,
+.mw-relations-tree-host .costa-panel-row-meta,
+.mw-relations-tree-host .costa-panel-row-sep {
+    font-size: 11px !important;
+    font-family: var(--costa-viewer-font) !important;
+    line-height: 1.25 !important;
+}
+
+.mw-relations-tree-host .costa-panel-row-title {
+    max-width: none;
+    flex: 0 1 auto;
+    font-weight: 500 !important;
+    color: var(--costa-panel-text) !important;
+}
+
+.mw-relations-tree-host .costa-panel-row-meta {
+    font-weight: 400 !important;
+    color: var(--costa-panel-text-muted) !important;
+}
+
+.mw-ifc-tree-row--visible .costa-panel-row-title,
+.mw-ifc-tree-row--visible .costa-panel-row-meta {
+    font-weight: 700 !important;
+}
+
+/* Model / Selection workspace — Cost-like: one thin scroll on bim-panel, no nested bars */
+.mw-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--costa-viewer-font);
+    color: var(--costa-panel-text);
+    overflow: visible;
+}
+
+.mw-panel .costa-panel-list,
+.mw-panel .mw-relations-tree-host,
+.mw-panel .mw-relations-tree-host.costa-panel-list,
+.mw-panel .groups-classifications-host,
+.mw-panel .search-results-host,
+.mw-panel .mw-tab-panel {
+    max-height: none !important;
+    overflow: visible !important;
+    min-height: 0;
+}
+
+.mw-grouping-footer .costa-panel-list {
+    max-height: none;
+    overflow: visible;
+}
+
+/* Thin scrollbar (same idea as Cost Analysis readability) */
+bim-panel:has(.mw-panel) {
+    scrollbar-width: thin;
+}
+
+bim-panel:has(.mw-panel)::-webkit-scrollbar {
+    width: 8px;
+}
+
+bim-panel:has(.mw-panel)::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 4px;
+}
+
+bim-panel:has(.mw-panel)::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.mw-tab-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--costa-panel-border);
+}
+
+.mw-tab {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--costa-panel-text-muted);
+    font-family: var(--costa-viewer-font);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 8px 6px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.mw-tab[data-active] {
+    color: var(--costa-panel-text);
+    background: var(--costa-panel-surface-hover);
+    box-shadow: inset 0 -2px 0 var(--costa-panel-accent);
+}
+
+.mw-tab-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    color: var(--costa-panel-text);
+}
+
+.mw-search-scope-hint {
+    font-size: 11px;
+    line-height: 1.35;
+    color: var(--costa-panel-text-muted);
+    font-family: var(--costa-viewer-font);
+    margin: 0 0 6px;
+}
+
+.mw-search-hits-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mw-search-select-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--costa-viewer-font);
+    color: var(--costa-panel-text, #e0e0e0);
+    cursor: pointer;
+    user-select: none;
+}
+
+.mw-search-selected-section {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--costa-panel-border, rgba(255, 255, 255, 0.12));
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mw-search-selected-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.mw-search-selected-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--costa-panel-text-muted);
+    font-family: var(--costa-viewer-font);
+}
+
+.mw-search-selected-clear {
+    font-size: 11px;
+    font-family: var(--costa-viewer-font);
+    color: var(--costa-panel-accent, #bcf124);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.costa-panel-row-check {
+    flex: 0 0 auto;
+    margin: 0 6px 0 0;
+    cursor: pointer;
+    accent-color: #bcf124;
+}
+
+.costa-panel-row--preview {
+    border-color: #ff9800;
+    background: rgba(255, 152, 0, 0.06);
+}
+
+.costa-panel-row--checked .costa-panel-row-title {
+    font-weight: 600;
+}
+
+.mw-live-selection-hint {
+    font-size: 11px;
+    line-height: 1.35;
+    font-family: var(--costa-viewer-font);
+    margin: 0 0 8px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(188, 241, 36, 0.35);
+    background: rgba(188, 241, 36, 0.08);
+    color: var(--costa-panel-text);
+}
+
+/* Named groups under footer: grow with panel scroll (no second bar) */
+.mw-grouping-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px solid var(--costa-panel-border);
+    font-family: var(--costa-viewer-font);
+    flex: 0 0 auto;
+}
+
+.mw-grouping-footer .groups-status,
+.mw-grouping-footer .costa-panel-empty {
+    font-size: 11px;
+}
+
+/* Tree rows must not flex-shrink between siblings (was clipping IFC* groups) */
+.mw-relations-tree-host > .costa-panel-row,
+.mw-ifc-tree-children > .costa-panel-row {
+    flex-shrink: 0;
+}
+
+/* Hollow-core slab panel (Property Information) */
+.ontelo-panel .ontelo-actions-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}

@@ -1,0 +1,115 @@
+/* Cuadro Project Information: estilos aislados (CSS Module) para armonizar con tabla Excel (10px, compacto). */
+
+.card {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  background-color: var(--background-100);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-1);
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: inherit;
+}
+
+.form {
+  padding: 6px 8px;
+  display: grid;
+  gap: 4px;
+  background-color: var(--surface-1);
+  min-width: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 103px auto;
+  align-items: center;
+  gap: 6px;
+  min-height: 22px;
+  min-width: 0;
+  justify-items: start;
+}
+
+.label {
+  font-size: 10px;
+  font-family: inherit;
+  color: var(--text-2);
+}
+
+.value {
+  font-size: 10px;
+  font-family: inherit;
+  color: var(--text-1);
+  min-width: 0;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.input,
+.select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  background-color: #2A2A2A;
+  border: 1px solid #404040;
+  border-radius: 2px;
+  color: var(--text-1);
+  font-size: 10px;
+  font-family: inherit;
+  outline: none;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Sin flechas de subir/bajar en input number (solo edición por teclado) */
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  background-size: 12px;
+  padding-right: 20px;
+}
+
+.unit {
+  font-size: 10px;
+  font-family: inherit;
+  color: var(--text-2);
+  padding-left: 4px;
+}

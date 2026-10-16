@@ -1,0 +1,21 @@
+---
+description: Never disclose Cursor AI usage in git, GitHub, docs, or commits
+alwaysApply: true
+---
+
+# No revelar Cursor AI al equipo / GitHub
+
+El repositorio es compartido. **Nadie del equipo debe poder inferir que se usa Cursor AI.**
+
+## Obligatorio
+
+- **Nunca** incluir en commits, PR, docs o código: `Cursor`, `Cursor AI`, `cursoragent`, `Made-with: Cursor`, `Co-authored-by: Cursor`, rutas `.cursor/`, ni reglas `.mdc` del agente.
+- **Nunca** `git add` de `.cursor/` (ni sugerir meterlo en el `.gitignore` del repo compartido — usa excludesfile local).
+- Mensajes de commit neutros de producto (feat/fix/docs); sin mencionar AI, agente, Auto, Composer.
+- Antes de commit/push: escanear staged diff y mensaje por `Cursor|cursoragent|Made-with|\.cursor/`.
+- Si el entorno inyecta `Co-authored-by: Cursor`, **no pushear** hasta reescribir el mensaje sin ese trailer (p. ej. `commit-tree` / binario git real). No force-push a `main`/`master` salvo petición explícita del usuario.
+- En docs del repo, checklist de deuda u otros textos: sin referencias a `.cursor/rules`.
+
+## No confundir
+
+- CSS `cursor: pointer` y APIs de ratón **sí** están permitidos (no son Cursor AI).

@@ -1,0 +1,339 @@
+.pdf-mode .carbon-recommendations {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.pdf-mode .carbon-recommendations .card-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+.pdf-mode .carbon-recommendations h3,
+.pdf-mode .carbon-recommendations h4,
+.pdf-mode .carbon-recommendations h5,
+.pdf-mode .carbon-recommendations h6 {
+    color: #000000 !important;
+}
+
+.pdf-mode .carbon-recommendations p {
+    color: rgba(0,0,0,0.7) !important;
+}
+
+.pdf-mode .carbon-recommendations .info-footer {
+    background-color: rgba(0,0,0,0.02) !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    color: rgba(0,0,0,0.7) !important;
+}
+
+.pdf-mode .carbon-recommendations .material-icons {
+    color: #2196F3 !important;
+}
+
+.pdf-mode .carbon-recommendations .recommendation-card {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+.pdf-mode .carbon-recommendations .technical-details {
+    background-color: rgba(0,0,0,0.02) !important;
+}
+
+.pdf-mode .carbon-recommendations .reduction-potential {
+    background-color: rgba(76,175,80,0.1) !important;
+    border: 1px solid rgba(76,175,80,0.2) !important;
+}
+
+.pdf-mode .carbon-recommendations .context-info {
+    background-color: rgba(0,0,0,0.02) !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+/* Additional styles for better PDF rendering of AI recommendations */
+.pdf-mode .carbon-recommendations {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+    margin: 0 !important;
+    padding: 20px !important;
+}
+
+.pdf-mode .carbon-recommendations .dashboard-card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+    margin-bottom: 20px !important;
+}
+
+.pdf-mode .carbon-recommendations .card-header {
+    background-color: #f0f0f0 !important;
+    border-bottom: 2px solid #000000 !important;
+    color: #000000 !important;
+    padding: 15px 20px !important;
+}
+
+.pdf-mode .carbon-recommendations .card-header h3,
+.pdf-mode .carbon-recommendations .card-header h4,
+.pdf-mode .carbon-recommendations .card-header h5,
+.pdf-mode .carbon-recommendations .card-header h6 {
+    color: #000000 !important;
+    margin: 0 !important;
+}
+
+.pdf-mode .carbon-recommendations .card-header p {
+    color: #000000 !important;
+    margin: 5px 0 0 0 !important;
+}
+
+.pdf-mode .carbon-recommendations .material-icons {
+    color: #2196F3 !important;
+}
+
+.pdf-mode .carbon-recommendations .recommendation-item {
+    background-color: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    border-radius: 8px !important;
+    margin-bottom: 20px !important;
+    padding: 20px !important;
+}
+
+.pdf-mode .carbon-recommendations .impact-reduction-summary {
+    background-color: #e8f5e8 !important;
+    border: 2px solid #4CAF50 !important;
+    border-radius: 12px !important;
+    color: #000000 !important;
+    padding: 20px !important;
+    margin-bottom: 24px !important;
+}
+
+.pdf-mode .carbon-recommendations .impact-reduction-summary h4 {
+    color: #4CAF50 !important;
+}
+
+.pdf-mode .carbon-recommendations .impact-reduction-summary p {
+    color: #000000 !important;
+}
+
+.pdf-mode .carbon-recommendations .impact-reduction-summary strong {
+    color: #4CAF50 !important;
+}
+
+.pdf-mode .carbon-recommendations .technical-details {
+    background-color: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    margin: 12px 0 !important;
+}
+
+.pdf-mode .carbon-recommendations .technical-details h6 {
+    color: #000000 !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.pdf-mode .carbon-recommendations .technical-details ul {
+    margin: 0 !important;
+    padding-left: 20px !important;
+    color: #000000 !important;
+}
+
+.pdf-mode .carbon-recommendations .technical-details li {
+    color: #000000 !important;
+    margin-bottom: 4px !important;
+}
+
+.pdf-mode .carbon-recommendations .reduction-potential {
+    background-color: #e8f5e8 !important;
+    border: 1px solid #4CAF50 !important;
+    border-radius: 4px !important;
+    padding: 12px !important;
+    margin-top: 12px !important;
+}
+
+.pdf-mode .carbon-recommendations .reduction-potential strong {
+    color: #4CAF50 !important;
+}
+
+.pdf-mode .carbon-recommendations .reduction-potential ul {
+    margin: 8px 0 0 0 !important;
+    padding-left: 20px !important;
+    color: #000000 !important;
+}
+
+.pdf-mode .carbon-recommendations .reduction-potential li {
+    color: #000000 !important;
+    margin-bottom: 4px !important;
+}
+
+.pdf-mode .carbon-recommendations .contextual-factors {
+    background-color: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    margin-top: 16px !important;
+    font-size: 14px !important;
+}
+
+.pdf-mode .carbon-recommendations .contextual-factors h6 {
+    color: #2196F3 !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.pdf-mode .carbon-recommendations .contextual-factors ul {
+    margin: 0 !important;
+    padding-left: 20px !important;
+    color: #000000 !important;
+}
+
+.pdf-mode .carbon-recommendations .contextual-factors li {
+    color: #000000 !important;
+    margin-bottom: 4px !important;
+} 
+
+/* Estilos para métricas en modo PDF */
+.pdf-mode .metric-item {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.pdf-mode .metric-label {
+    color: #000000 !important;
+}
+
+.pdf-mode .metric-value {
+    color: #000000 !important;
+}
+
+.pdf-mode .metric-unit {
+    color: #000000 !important;
+}
+
+/* Estilos para contenedores de gráficos en modo PDF */
+.pdf-mode .chart-wrapper {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+    padding: 20px !important;
+}
+
+.pdf-mode .chart-wrapper canvas {
+    background-color: #ffffff !important;
+}
+
+/* Estilos para elementos de gráficos en modo PDF */
+.pdf-mode .charts-grid {
+    background-color: #ffffff !important;
+}
+
+.pdf-mode .charts-section {
+    background-color: #ffffff !important;
+}
+
+/* Estilos para contenedores de datos en modo PDF */
+.pdf-mode .impact-summaries-grid {
+    background-color: #ffffff !important;
+}
+
+.pdf-mode .impact-analysis-section {
+    background-color: #ffffff !important;
+}
+
+/* Estilos para tarjetas de datos en modo PDF */
+.pdf-mode .data-card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+.pdf-mode .data-card-header {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.pdf-mode .data-card-content {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Estilos adicionales para gráficos y elementos de datos */
+.pdf-mode .impact-values-grid {
+    background-color: #ffffff !important;
+}
+
+.pdf-mode .impact-value-item {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+.pdf-mode .ifc-elements-card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+.pdf-mode .impact-summary-card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Estilos para elementos de comparación */
+.pdf-mode .comparisons-grid {
+    background-color: #ffffff !important;
+}
+
+.pdf-mode .comparison-item {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Estilos para elementos de calificación SCORS */
+.pdf-mode .scors-rating {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.pdf-mode .rating-bars {
+    background-color: #ffffff !important;
+}
+
+.pdf-mode .rating-bar {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Estilos para elementos de tabla */
+.pdf-mode .lca-table {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.pdf-mode .lca-table th {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+.pdf-mode .lca-table td {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Estilos para elementos de formulario en modo PDF */
+.pdf-mode .form-input,
+.pdf-mode .form-select {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Estilos para botones en modo PDF */
+.pdf-mode .export-button,
+.pdf-mode .action-button {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+} 

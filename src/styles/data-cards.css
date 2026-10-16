@@ -1,0 +1,480 @@
+/* ===== TARJETAS DE DATOS HOMOGÉNEAS ===== */
+
+/* Grid de Tarjetas de Datos */
+.data-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  max-width: 1400px; /* Más espacio en pantallas grandes */
+  margin: 0 auto;
+}
+
+/* Mejor aprovechamiento en pantallas grandes */
+@media (min-width: 1920px) {
+  .data-cards-grid {
+    max-width: 1600px;
+    gap: 20px;
+  }
+}
+
+/* Ajuste para pantallas medianas */
+@media (max-width: 1680px) {
+  .data-cards-grid {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .data-cards-grid {
+    max-width: 1100px;
+    gap: 14px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .data-cards-grid {
+    max-width: 1000px;
+    gap: 12px;
+    padding: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+/* Tarjeta de Datos Individual */
+.data-card {
+  background-color: var(--background-100);
+  border: 1px solid var(--background-200);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 240px;
+}
+
+.data-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Encabezado de la Tarjeta */
+.data-card-header {
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--background-200);
+}
+
+.data-card-title {
+  color: var(--primary);
+  font-size: var(--font-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Contenido de la Tarjeta */
+.data-card-content {
+  padding: 16px;
+  background-color: var(--background-100);
+}
+
+/* Contenedor de Métricas */
+.metrics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Item de Métrica Individual */
+.metric-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--background-200);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.metric-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Etiqueta de la Métrica */
+.metric-label {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+/* Valor de la Métrica */
+.metric-value {
+  color: #ffffff;
+  font-size: var(--font-base);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-left: 6px;
+}
+
+/* Unidad de la Métrica */
+.metric-unit {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+/* Separador de Métricas */
+.metric-separator {
+  height: 1px;
+  background-color: var(--background-200);
+  margin: 0;
+  border: none;
+}
+
+/* Variantes de Tarjetas */
+.data-card.lca-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.data-card.cost-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+/* Diferenciación entre secciones */
+.data-card.impact-summary-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #e8f5e8 100%);
+  border-left: 4px solid var(--success);
+}
+
+.data-card.ifc-elements-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #fff3e0 100%);
+  border-left: 4px solid var(--warning);
+}
+
+/* Diferenciación para secciones de COST */
+.data-card.cost-material-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%);
+  border-left: 4px solid #2196f3;
+}
+
+.data-card.cost-labor-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #e8f5e8 100%);
+  border-left: 4px solid #4caf50;
+}
+
+.data-card.cost-equipment-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #fff3e0 100%);
+  border-left: 4px solid #ff9800;
+}
+
+.data-card.cost-overhead-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #fce4ec 100%);
+  border-left: 4px solid #e91e63;
+}
+
+.data-card.cost-total-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f3e5f5 100%);
+  border-left: 4px solid #9c27b0;
+}
+
+/* Tarjetas de Métricas de Costos */
+.data-card.cost-metrics-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #e8f4fd 100%);
+  border-left: 4px solid #00bcd4;
+}
+
+/* Tarjetas de Costos por Elemento IFC */
+.data-card.ifc-cost-card .data-card-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f8e9 100%);
+  border-left: 4px solid #8bc34a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .data-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    padding: 14px;
+    max-width: 900px;
+  }
+  
+  .data-card {
+    max-width: none;
+  }
+  
+  .data-card-content {
+    padding: 14px;
+  }
+  
+  .metric-item {
+    padding: 10px 0;
+  }
+  
+  .metric-value {
+    font-size: var(--font-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .data-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    max-width: 500px;
+  }
+  
+  .data-card {
+    max-width: none;
+  }
+  
+  .data-card-header {
+    padding: 10px 14px;
+  }
+  
+  .data-card-content {
+    padding: 10px;
+  }
+  
+  .data-card-title {
+    font-size: var(--font-sm);
+  }
+}
+
+/* ===== FIN TARJETAS DE DATOS ===== */
+
+/* ===== FORMULARIOS Y CAMPOS DE ENTRADA ===== */
+
+/* Contenedor de Información del Proyecto */
+.project-info {
+  padding: 20px;
+}
+
+.project-info p {
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.project-info p:last-child {
+  margin-bottom: 0;
+}
+
+.project-info strong {
+  color: var(--text-primary);
+  font-weight: 600;
+  min-width: 80px;
+  font-size: var(--font-sm);
+}
+
+/* Campos de Entrada */
+.form-input {
+  background-color: var(--background-200);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  flex: 1;
+  max-width: 200px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(2, 154, 224, 0.2);
+}
+
+.form-input:hover {
+  border-color: var(--primary-200);
+}
+
+/* Dropdowns */
+.form-select {
+  background-color: var(--background-200);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  flex: 1;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(2, 154, 224, 0.2);
+}
+
+.form-select:hover {
+  border-color: var(--primary-200);
+}
+
+/* Opciones del Dropdown */
+.form-select option {
+  background-color: var(--background-200);
+  color: var(--text-primary);
+  padding: 8px;
+}
+
+/* Unidades de Medida */
+.form-unit {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+/* Layout Responsivo para Formularios */
+@media (max-width: 768px) {
+  .project-info p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .form-input,
+  .form-select {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .form-unit {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}
+
+/* ===== FIN FORMULARIOS ===== */
+
+/* ===== COMPARACIONES DE CARBONO ===== */
+
+/* Grid de Comparaciones - Solo para LCA */
+.dashboard-card .comparisons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de Comparación Individual - Solo para LCA */
+.dashboard-card .comparison-item {
+  background-color: var(--background-100);
+  border: 1px solid var(--background-200);
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 140px;
+}
+
+.dashboard-card .comparison-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Icono de Comparación - Solo para LCA */
+.dashboard-card .comparison-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+/* Valor de Comparación - Solo para LCA */
+.dashboard-card .comparison-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Etiqueta de Comparación - Solo para LCA */
+.dashboard-card .comparison-label {
+  font-size: var(--font-base);
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0;
+  text-align: center;
+  max-width: 180px;
+}
+
+/* Responsive Design para Comparaciones - Solo para LCA */
+@media (max-width: 768px) {
+  .dashboard-card .comparisons-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    padding: 14px;
+    max-width: 800px;
+  }
+  
+  .dashboard-card .comparison-item {
+    padding: 20px 16px;
+    gap: 10px;
+    min-height: 120px;
+  }
+  
+  .dashboard-card .comparison-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .dashboard-card .comparison-value {
+    font-size: 2rem;
+  }
+  
+  .dashboard-card .comparison-label {
+    font-size: var(--font-sm);
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-card .comparisons-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+    max-width: 400px;
+  }
+  
+  .dashboard-card .comparison-item {
+    padding: 16px;
+    gap: 8px;
+    min-height: 100px;
+  }
+  
+  .dashboard-card .comparison-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .dashboard-card .comparison-value {
+    font-size: 1.75rem;
+  }
+  
+  .dashboard-card .comparison-label {
+    font-size: var(--font-sm);
+    max-width: 200px;
+  }
+}
+
+/* ===== FIN COMPARACIONES DE CARBONO ===== */

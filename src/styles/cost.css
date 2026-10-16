@@ -1,0 +1,299 @@
+:root {
+  --primary-transparent: rgba(0, 149, 255, 0.1);
+}
+
+.impact-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Ajuste responsive para impact values */
+@media (max-width: 1440px) {
+  .impact-values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.875rem;
+    padding: 0.875rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .impact-values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+}
+
+.impact-value-item {
+  background: var(--surface-2);
+  padding: 1.25rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.impact-label {
+  font-size: var(--font-sm);
+  color: var(--text-2);
+  font-weight: 500;
+}
+
+.impact-number {
+  font-size: var(--font-lg);
+  color: var(--text-1);
+  font-weight: 600;
+}
+
+.impact-unit {
+  font-size: var(--font-sm);
+  color: var(--text-2);
+}
+
+.impact-benchmark {
+  font-size: var(--font-sm);
+  color: var(--primary);
+  margin-top: 0.25rem;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Charts responsivos en cost page */
+@media (max-width: 1680px) {
+  .charts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .charts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.25rem;
+    padding: 0.875rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .charts-grid {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+.chart-wrapper {
+  background: var(--surface-2);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.chart-wrapper h4 {
+  margin-bottom: 1rem;
+  color: var(--text-1);
+  font-weight: 500;
+}
+
+.benchmark-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benchmark-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benchmark-label {
+  width: 120px;
+  font-size: var(--font-sm);
+  color: var(--text-2);
+}
+
+.benchmark-bar {
+  height: 24px;
+  background: var(--primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0.5rem;
+  color: white;
+  font-size: var(--font-sm);
+  transition: width 0.3s ease;
+}
+
+.cost-factors-analysis {
+  background: var(--surface-2);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.cost-factors-analysis h4 {
+  margin-bottom: 1rem;
+  color: var(--text-1);
+  font-weight: 500;
+}
+
+.factors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.factor-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--surface-3);
+  border-radius: 4px;
+}
+
+.factor-name {
+  font-size: var(--font-sm);
+  color: var(--text-2);
+}
+
+.factor-value {
+  font-size: var(--font-sm);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Removing old unused styles */
+.cost-summary-grid,
+.cost-item,
+.cost-label,
+.cost-value {
+  /* These styles can be removed as they're no longer used */
+}
+
+/* Encabezados Cost Page: mismo tamaño (el más grande de la página) y peso; primera mayúscula, resto minúscula en JS */
+.cost-page .cost-page-main-header,
+.cost-page .card-header h3,
+.cost-page .data-card-header .data-card-title,
+.cost-page .chart-wrapper h4.cost-page-section-subtitle,
+.cost-page .empty-state-cost-title,
+.cost-page .info-title,
+.cost-page .cost-page-dialog-title {
+  font-size: 1.1rem !important;
+  font-weight: 600;
+  font-family: inherit;
+  margin: 0 0 1rem 0;
+}
+
+/* Contenedor fijo: Project Information (independiente de la tabla) */
+.cost-page-project-info-section {
+  width: 300px;
+  min-width: 0;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  padding-right: 1rem;
+  border-right: 1px solid var(--border);
+}
+
+/* Encabezado "Project information": tamaño destacado (1.5rem) */
+.cost-page-project-info-section h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  font-family: inherit !important;
+}
+
+.project-sidebar {
+  width: 300px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info p {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-info p:last-child {
+  margin-bottom: 0;
+}
+
+.project-info strong {
+  color: var(--text-2);
+  font-size: var(--font-sm);
+  font-weight: 500;
+}
+
+.lca-table-input {
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: var(--font-sm);
+  color: var(--text-1);
+  width: 100%;
+}
+
+.lca-table-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.lca-table-select {
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: var(--font-sm);
+  color: var(--text-1);
+  width: 100%;
+  cursor: pointer;
+}
+
+.lca-table-select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.main-page-content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.content-area {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* Removing old styles */
+.language-selector,
+.language-button {
+  /* These styles can be removed */
+}
+
+/* Header styles */
+.page header {
+  background-color: var(--surface-1);
+}
+
+.page header h2 {
+  color: var(--text-1);
+} 

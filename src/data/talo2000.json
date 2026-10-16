@@ -1,0 +1,1237 @@
+[
+  {
+    "code": "1",
+    "name": "RAKENNUSOSAT",
+    "parent": null
+  },
+  {
+    "code": "11",
+    "name": "ALUEOSAT",
+    "parent": "1"
+  },
+  {
+    "code": "111",
+    "name": "Maaosat",
+    "parent": "11"
+  },
+  {
+    "code": "1111",
+    "name": "Raivausosat",
+    "parent": "111"
+  },
+  {
+    "code": "1112",
+    "name": "Kaivannot",
+    "parent": "111"
+  },
+  {
+    "code": "1113",
+    "name": "Kanaalit",
+    "parent": "111"
+  },
+  {
+    "code": "1114",
+    "name": "Täyttöosat",
+    "parent": "111"
+  },
+  {
+    "code": "1115",
+    "name": "Penkereet",
+    "parent": "111"
+  },
+  {
+    "code": "1116",
+    "name": "Kuivatusosat",
+    "parent": "111"
+  },
+  {
+    "code": "1117",
+    "name": "Erityiset maaosat",
+    "parent": "111"
+  },
+  {
+    "code": "112",
+    "name": "Tuennat ja vahvistukset",
+    "parent": "11"
+  },
+  {
+    "code": "1121",
+    "name": "Paalut",
+    "parent": "112"
+  },
+  {
+    "code": "1122",
+    "name": "Tuennat",
+    "parent": "112"
+  },
+  {
+    "code": "1123",
+    "name": "Vahvistukset",
+    "parent": "112"
+  },
+  {
+    "code": "1124",
+    "name": "Erityiset tuennat ja vahvistukset",
+    "parent": "112"
+  },
+  {
+    "code": "113",
+    "name": "Päällysteet",
+    "parent": "11"
+  },
+  {
+    "code": "1131",
+    "name": "Liikennealueiden päällysteet",
+    "parent": "113"
+  },
+  {
+    "code": "1132",
+    "name": "Paikoitusalueiden päällysteet",
+    "parent": "113"
+  },
+  {
+    "code": "1133",
+    "name": "Oleskelu- ja leikkialueiden päällysteet",
+    "parent": "113"
+  },
+  {
+    "code": "1134",
+    "name": "Kasvillisuus",
+    "parent": "113"
+  },
+  {
+    "code": "1135",
+    "name": "Erityisalueiden päällysteet",
+    "parent": "113"
+  },
+  {
+    "code": "114",
+    "name": "Alueen varusteet",
+    "parent": "11"
+  },
+  {
+    "code": "1141",
+    "name": "Talovarusteet",
+    "parent": "114"
+  },
+  {
+    "code": "1142",
+    "name": "Oleskeluvarusteet",
+    "parent": "114"
+  },
+  {
+    "code": "1143",
+    "name": "Leikkivarusteet",
+    "parent": "114"
+  },
+  {
+    "code": "1144",
+    "name": "Alueopasteet",
+    "parent": "114"
+  },
+  {
+    "code": "1145",
+    "name": "Erityiset aluevarusteet",
+    "parent": "114"
+  },
+  {
+    "code": "115",
+    "name": "Alueen rakenteet",
+    "parent": "11"
+  },
+  {
+    "code": "1151",
+    "name": "Pihavarastot",
+    "parent": "115"
+  },
+  {
+    "code": "1152",
+    "name": "Pihakatokset",
+    "parent": "115"
+  },
+  {
+    "code": "1153",
+    "name": "Aidat ja tukimuurit",
+    "parent": "115"
+  },
+  {
+    "code": "1154",
+    "name": "Alueen portaat, luiskat ja terassit",
+    "parent": "115"
+  },
+  {
+    "code": "1155",
+    "name": "Alueen pysäköintirakenteet",
+    "parent": "115"
+  },
+  {
+    "code": "1156",
+    "name": "Erityiset alueen rakenteet",
+    "parent": "115"
+  },
+  {
+    "code": "12",
+    "name": "TALO-OSAT",
+    "parent": "1"
+  },
+  {
+    "code": "121",
+    "name": "Perustukset",
+    "parent": "12"
+  },
+  {
+    "code": "1211",
+    "name": "Anturat",
+    "parent": "121"
+  },
+  {
+    "code": "1212",
+    "name": "Perusmuurit, peruspilarit ja peruspalkit",
+    "parent": "121"
+  },
+  {
+    "code": "1213",
+    "name": "Erityiset perustukset",
+    "parent": "121"
+  },
+  {
+    "code": "122",
+    "name": "Alapohjat",
+    "parent": "12"
+  },
+  {
+    "code": "1221",
+    "name": "Alapohjalaatat",
+    "parent": "122"
+  },
+  {
+    "code": "1222",
+    "name": "Alapohjakanaalit",
+    "parent": "122"
+  },
+  {
+    "code": "1223",
+    "name": "Erityiset alapohjat",
+    "parent": "122"
+  },
+  {
+    "code": "123",
+    "name": "Runko",
+    "parent": "12"
+  },
+  {
+    "code": "1231",
+    "name": "Väestönsuojat",
+    "parent": "123"
+  },
+  {
+    "code": "1232",
+    "name": "Kantavat seinät",
+    "parent": "123"
+  },
+  {
+    "code": "1233",
+    "name": "Pilarit",
+    "parent": "123"
+  },
+  {
+    "code": "1234",
+    "name": "Palkit",
+    "parent": "123"
+  },
+  {
+    "code": "1235",
+    "name": "Välipohjat",
+    "parent": "123"
+  },
+  {
+    "code": "1236",
+    "name": "Yläpohjat",
+    "parent": "123"
+  },
+  {
+    "code": "1237",
+    "name": "Runkoportaat",
+    "parent": "123"
+  },
+  {
+    "code": "1239",
+    "name": "Erityiset runkorakenteet",
+    "parent": "123"
+  },
+  {
+    "code": "124",
+    "name": "Julkisivut",
+    "parent": "12"
+  },
+  {
+    "code": "1241",
+    "name": "Ulkoseinät",
+    "parent": "124"
+  },
+  {
+    "code": "1242",
+    "name": "Ikkunat",
+    "parent": "124"
+  },
+  {
+    "code": "1243",
+    "name": "Ulko-ovet",
+    "parent": "124"
+  },
+  {
+    "code": "1244",
+    "name": "Julkisivuvarusteet",
+    "parent": "124"
+  },
+  {
+    "code": "1245",
+    "name": "Erityiset julkisivurakenteet",
+    "parent": "124"
+  },
+  {
+    "code": "125",
+    "name": "Ulkotasot",
+    "parent": "12"
+  },
+  {
+    "code": "1251",
+    "name": "Parvekkeet",
+    "parent": "125"
+  },
+  {
+    "code": "1252",
+    "name": "Katokset",
+    "parent": "125"
+  },
+  {
+    "code": "1253",
+    "name": "Erityiset ulkotasot",
+    "parent": "125"
+  },
+  {
+    "code": "126",
+    "name": "Vesikatot",
+    "parent": "12"
+  },
+  {
+    "code": "1261",
+    "name": "Vesikattorakenteet",
+    "parent": "126"
+  },
+  {
+    "code": "1262",
+    "name": "Räystäsrakenteet",
+    "parent": "126"
+  },
+  {
+    "code": "1263",
+    "name": "Vesikatteet",
+    "parent": "126"
+  },
+  {
+    "code": "1264",
+    "name": "Vesikattovarusteet",
+    "parent": "126"
+  },
+  {
+    "code": "1265",
+    "name": "Lasikattorakenteet",
+    "parent": "126"
+  },
+  {
+    "code": "1266",
+    "name": "Kattoikkunat ja luukut",
+    "parent": "126"
+  },
+  {
+    "code": "1267",
+    "name": "Erityiset vesikattorakenteet",
+    "parent": "126"
+  },
+  {
+    "code": "13",
+    "name": "TILAOSAT",
+    "parent": "1"
+  },
+  {
+    "code": "131",
+    "name": "Tilan jako-osat",
+    "parent": "13"
+  },
+  {
+    "code": "1311",
+    "name": "Väliseinät",
+    "parent": "131"
+  },
+  {
+    "code": "1312",
+    "name": "Lasiväliseinät",
+    "parent": "131"
+  },
+  {
+    "code": "1313",
+    "name": "Erityisväliseinät",
+    "parent": "131"
+  },
+  {
+    "code": "1314",
+    "name": "Tilakaiteet",
+    "parent": "131"
+  },
+  {
+    "code": "1315",
+    "name": "Väliovet",
+    "parent": "131"
+  },
+  {
+    "code": "1316",
+    "name": "Erityisovet",
+    "parent": "131"
+  },
+  {
+    "code": "1317",
+    "name": "Tilaportaat",
+    "parent": "131"
+  },
+  {
+    "code": "1318",
+    "name": "Erityiset tilajako-osat",
+    "parent": "131"
+  },
+  {
+    "code": "132",
+    "name": "Tilapinnat",
+    "parent": "13"
+  },
+  {
+    "code": "1321",
+    "name": "Lattioiden pintarakenteet",
+    "parent": "132"
+  },
+  {
+    "code": "1322",
+    "name": "Lattiapinnat",
+    "parent": "132"
+  },
+  {
+    "code": "1323",
+    "name": "Sisäkattorakenteet",
+    "parent": "132"
+  },
+  {
+    "code": "1324",
+    "name": "Sisäkattopinnat",
+    "parent": "132"
+  },
+  {
+    "code": "1325",
+    "name": "Seinien pintarakenteet",
+    "parent": "132"
+  },
+  {
+    "code": "1326",
+    "name": "Seinäpinnat",
+    "parent": "132"
+  },
+  {
+    "code": "1327",
+    "name": "Erityiset tilapinnat",
+    "parent": "132"
+  },
+  {
+    "code": "133",
+    "name": "Tilavarusteet",
+    "parent": "13"
+  },
+  {
+    "code": "1331",
+    "name": "Vakiokiintokalusteet",
+    "parent": "133"
+  },
+  {
+    "code": "1332",
+    "name": "Erityiskiintokalusteet",
+    "parent": "133"
+  },
+  {
+    "code": "1333",
+    "name": "Varusteet",
+    "parent": "133"
+  },
+  {
+    "code": "1334",
+    "name": "Vakiolaitteet",
+    "parent": "133"
+  },
+  {
+    "code": "1335",
+    "name": "Tilaopasteet",
+    "parent": "133"
+  },
+  {
+    "code": "1336",
+    "name": "Erityiset tilavarusteet",
+    "parent": "133"
+  },
+  {
+    "code": "134",
+    "name": "Muut tilaosat",
+    "parent": "13"
+  },
+  {
+    "code": "1341",
+    "name": "Hoitotasot ja kulkurakenteet",
+    "parent": "134"
+  },
+  {
+    "code": "1342",
+    "name": "Tulisijat ja tulihormit",
+    "parent": "134"
+  },
+  {
+    "code": "1349",
+    "name": "Muut erityiset tilaosat",
+    "parent": "134"
+  },
+  {
+    "code": "135",
+    "name": "Tilaelementit",
+    "parent": "13"
+  },
+  {
+    "code": "1351",
+    "name": "Kylpyhuone-elementit",
+    "parent": "135"
+  },
+  {
+    "code": "1352",
+    "name": "Kylmähuone-elementit",
+    "parent": "135"
+  },
+  {
+    "code": "1353",
+    "name": "Saunaelementit",
+    "parent": "135"
+  },
+  {
+    "code": "1354",
+    "name": "Talotekniikan tilaelementit",
+    "parent": "135"
+  },
+  {
+    "code": "1355",
+    "name": "Hormielementit",
+    "parent": "135"
+  },
+  {
+    "code": "1356",
+    "name": "Erityiset tilaelementit",
+    "parent": "135"
+  },
+  {
+    "code": "2",
+    "name": "TEKNIIKKAOSAT",
+    "parent": null
+  },
+  {
+    "code": "21",
+    "name": "PUTKIOSAT",
+    "parent": "2"
+  },
+  {
+    "code": "22",
+    "name": "ILMANVAIHTO-OSAT",
+    "parent": "2"
+  },
+  {
+    "code": "23",
+    "name": "SÄHKÖOSAT",
+    "parent": "2"
+  },
+  {
+    "code": "24",
+    "name": "TIETO-OSAT",
+    "parent": "2"
+  },
+  {
+    "code": "25",
+    "name": "LAITEOSAT",
+    "parent": "2"
+  },
+  {
+    "code": "251",
+    "name": "Siirtolaitteet",
+    "parent": "25"
+  },
+  {
+    "code": "2511",
+    "name": "Hissit",
+    "parent": "251"
+  },
+  {
+    "code": "2512",
+    "name": "Kuljettimet",
+    "parent": "251"
+  },
+  {
+    "code": "2513",
+    "name": "Erityiset siirtolaitteet",
+    "parent": "251"
+  },
+  {
+    "code": "252",
+    "name": "Tilalaitteet",
+    "parent": "25"
+  },
+  {
+    "code": "2521",
+    "name": "Keittiölaitteet",
+    "parent": "252"
+  },
+  {
+    "code": "2522",
+    "name": "Pesulalaitteet",
+    "parent": "252"
+  },
+  {
+    "code": "2523",
+    "name": "Väestösuojalaitteet",
+    "parent": "252"
+  },
+  {
+    "code": "2524",
+    "name": "Allaslaitteet",
+    "parent": "252"
+  },
+  {
+    "code": "2525",
+    "name": "Erityiset tilalaitteet",
+    "parent": "252"
+  },
+  {
+    "code": "3",
+    "name": "HANKETEHTÄVÄT",
+    "parent": null
+  },
+  {
+    "code": "31",
+    "name": "HANKKEEN JOHTOTEHTÄVÄT",
+    "parent": "3"
+  },
+  {
+    "code": "311",
+    "name": "Rakennuttaminen",
+    "parent": "31"
+  },
+  {
+    "code": "3111",
+    "name": "Hankkeen valmistelu",
+    "parent": "311"
+  },
+  {
+    "code": "3112",
+    "name": "Suunnittelun valmistelu ja ohjaus",
+    "parent": "311"
+  },
+  {
+    "code": "3113",
+    "name": "Rakentamisen valmistelu",
+    "parent": "311"
+  },
+  {
+    "code": "3114",
+    "name": "Rakentamisen ohjaus",
+    "parent": "311"
+  },
+  {
+    "code": "3115",
+    "name": "Vastaan- ja käyttöönoton ohjaus",
+    "parent": "311"
+  },
+  {
+    "code": "3116",
+    "name": "Takuuajan rakennuttaminen",
+    "parent": "311"
+  },
+  {
+    "code": "3117",
+    "name": "Muu hankkeen rakennuttaminen",
+    "parent": "311"
+  },
+  {
+    "code": "312",
+    "name": "Paikallisvalvonta",
+    "parent": "31"
+  },
+  {
+    "code": "3121",
+    "name": "Rakentamisen työmaavalvonta",
+    "parent": "312"
+  },
+  {
+    "code": "3122",
+    "name": "Tekniikan työmaavalvonta",
+    "parent": "312"
+  },
+  {
+    "code": "3123",
+    "name": "Muu paikallisvalvonta",
+    "parent": "312"
+  },
+  {
+    "code": "313",
+    "name": "Hankkeen hallinto",
+    "parent": "31"
+  },
+  {
+    "code": "3131",
+    "name": "Hankkeen hallintotehtävät",
+    "parent": "313"
+  },
+  {
+    "code": "3132",
+    "name": "Lupatehtävät",
+    "parent": "313"
+  },
+  {
+    "code": "3133",
+    "name": "Rakentamisen vakuuttaminen",
+    "parent": "313"
+  },
+  {
+    "code": "3134",
+    "name": "Muu rakennuttamisen hallinto",
+    "parent": "313"
+  },
+  {
+    "code": "32",
+    "name": "SUUNNITTELUTEHTÄVÄT",
+    "parent": "3"
+  },
+  {
+    "code": "321",
+    "name": "Tilasuunnittelu",
+    "parent": "32"
+  },
+  {
+    "code": "3211",
+    "name": "Toiminnallinen tilasuunnittelu",
+    "parent": "321"
+  },
+  {
+    "code": "3212",
+    "name": "Tilayhteyssuunnittelu",
+    "parent": "321"
+  },
+  {
+    "code": "322",
+    "name": "Rakennussuunnittelu",
+    "parent": "32"
+  },
+  {
+    "code": "3221",
+    "name": "Pääsuunnittelu",
+    "parent": "322"
+  },
+  {
+    "code": "3222",
+    "name": "Arkkitehtisuunnittelu",
+    "parent": "322"
+  },
+  {
+    "code": "3223",
+    "name": "Rakennesuunnittelu",
+    "parent": "322"
+  },
+  {
+    "code": "3224",
+    "name": "LVI-suunnittelu",
+    "parent": "322"
+  },
+  {
+    "code": "3225",
+    "name": "Sähkösuunnittelu",
+    "parent": "322"
+  },
+  {
+    "code": "3226",
+    "name": "Sisustussuunnittelu",
+    "parent": "322"
+  },
+  {
+    "code": "323",
+    "name": "Suunnittelun asiantuntijatehtävät",
+    "parent": "32"
+  },
+  {
+    "code": "3231",
+    "name": "Geotekniset asiantuntijatehtävät",
+    "parent": "323"
+  },
+  {
+    "code": "3232",
+    "name": "Akustiset asiantuntijatehtävät",
+    "parent": "323"
+  },
+  {
+    "code": "3233",
+    "name": "Maisema-asiantuntijatehtävät",
+    "parent": "323"
+  },
+  {
+    "code": "3234",
+    "name": "Palo-asiantuntijatehtävät",
+    "parent": "323"
+  },
+  {
+    "code": "3235",
+    "name": "Talousasiantuntijatehtävät",
+    "parent": "323"
+  },
+  {
+    "code": "3236",
+    "name": "Muut suunnittelun asiantuntijatehtävät",
+    "parent": "323"
+  },
+  {
+    "code": "324",
+    "name": "Hanketietotehtävät",
+    "parent": "32"
+  },
+  {
+    "code": "3241",
+    "name": "Kopiointitehtävät",
+    "parent": "324"
+  },
+  {
+    "code": "3242",
+    "name": "Tietokantatehtävät",
+    "parent": "324"
+  },
+  {
+    "code": "3243",
+    "name": "Huoltokirjatehtävät",
+    "parent": "324"
+  },
+  {
+    "code": "3244",
+    "name": "Erityiset hanketietotehtävät",
+    "parent": "324"
+  },
+  {
+    "code": "33",
+    "name": "RAKENTAMISEN JOHTOTEHTÄVÄT",
+    "parent": "3"
+  },
+  {
+    "code": "331",
+    "name": "Rakentamisen yleisjohto ja hallinto",
+    "parent": "33"
+  },
+  {
+    "code": "3311",
+    "name": "Työmaan yleisjohto",
+    "parent": "331"
+  },
+  {
+    "code": "3312",
+    "name": "Laskentatehtävät",
+    "parent": "331"
+  },
+  {
+    "code": "3313",
+    "name": "Hankintatehtävät",
+    "parent": "331"
+  },
+  {
+    "code": "3314",
+    "name": "Yritystehtävät",
+    "parent": "331"
+  },
+  {
+    "code": "3315",
+    "name": "Muut rakentamisen yleisjohto- ja hallintotehtävät",
+    "parent": "331"
+  },
+  {
+    "code": "332",
+    "name": "Työmaan johtotehtävät",
+    "parent": "33"
+  },
+  {
+    "code": "3321",
+    "name": "Vastaava työnjohto",
+    "parent": "332"
+  },
+  {
+    "code": "3322",
+    "name": "Työnsuunnittelu ja ohjaus",
+    "parent": "332"
+  },
+  {
+    "code": "3323",
+    "name": "Työmaan työturvallisuus",
+    "parent": "332"
+  },
+  {
+    "code": "3324",
+    "name": "Rakennustyön työnjohto ja valvonta",
+    "parent": "332"
+  },
+  {
+    "code": "34",
+    "name": "TYÖMAATEHTÄVÄT",
+    "parent": "3"
+  },
+  {
+    "code": "341",
+    "name": "Työmaapalvelut",
+    "parent": "34"
+  },
+  {
+    "code": "3411",
+    "name": "Työmaarakennukset",
+    "parent": "341"
+  },
+  {
+    "code": "3412",
+    "name": "Työmaa-alue",
+    "parent": "341"
+  },
+  {
+    "code": "3413",
+    "name": "Avustavat rakennustyöt",
+    "parent": "341"
+  },
+  {
+    "code": "3414",
+    "name": "Käyttöaineet ja energia",
+    "parent": "341"
+  },
+  {
+    "code": "3415",
+    "name": "Työmaan lämmitys ja kuivaus",
+    "parent": "341"
+  },
+  {
+    "code": "3416",
+    "name": "Työmaan puhtaanapito ja suojaus",
+    "parent": "341"
+  },
+  {
+    "code": "3417",
+    "name": "Työmaan vartiointi",
+    "parent": "341"
+  },
+  {
+    "code": "3418",
+    "name": "Muut työmaan palvelut",
+    "parent": "341"
+  },
+  {
+    "code": "342",
+    "name": "Työmaakalusto",
+    "parent": "34"
+  },
+  {
+    "code": "3421",
+    "name": "Nostot ja siirrot",
+    "parent": "342"
+  },
+  {
+    "code": "3422",
+    "name": "Telineet",
+    "parent": "342"
+  },
+  {
+    "code": "3423",
+    "name": "Työmaakuljetukset",
+    "parent": "342"
+  },
+  {
+    "code": "3424",
+    "name": "Muu työmaan kalusto",
+    "parent": "342"
+  },
+  {
+    "code": "4",
+    "name": "KIINTEISTÖTEHTÄVÄT",
+    "parent": null
+  },
+  {
+    "code": "41",
+    "name": "MAA-ALUETEHTÄVÄT",
+    "parent": "4"
+  },
+  {
+    "code": "411",
+    "name": "Tonttitehtävät",
+    "parent": "41"
+  },
+  {
+    "code": "4111",
+    "name": "Tontin hankinta ja vuokraus",
+    "parent": "411"
+  },
+  {
+    "code": "4112",
+    "name": "Verot ja rasitteet",
+    "parent": "411"
+  },
+  {
+    "code": "4113",
+    "name": "Erityiset tonttitehtävät",
+    "parent": "411"
+  },
+  {
+    "code": "412",
+    "name": "Liittymät",
+    "parent": "41"
+  },
+  {
+    "code": "4121",
+    "name": "Liittyminen rakennuksiin",
+    "parent": "412"
+  },
+  {
+    "code": "4122",
+    "name": "Liittyminen verkostoihin",
+    "parent": "412"
+  },
+  {
+    "code": "4123",
+    "name": "Erityiset liittymät",
+    "parent": "412"
+  },
+  {
+    "code": "413",
+    "name": "Maa-alueen kehittäminen",
+    "parent": "41"
+  },
+  {
+    "code": "4131",
+    "name": "Kiinteistökehitys",
+    "parent": "413"
+  },
+  {
+    "code": "4132",
+    "name": "Kaavoitus",
+    "parent": "413"
+  },
+  {
+    "code": "42",
+    "name": "RAHOITUS JA MARKKINNOINTI",
+    "parent": "4"
+  },
+  {
+    "code": "421",
+    "name": "Rahoitustehtävät",
+    "parent": "42"
+  },
+  {
+    "code": "4211",
+    "name": "Lainoitustehtävät",
+    "parent": "421"
+  },
+  {
+    "code": "4212",
+    "name": "Yhtiötehtävät",
+    "parent": "421"
+  },
+  {
+    "code": "4213",
+    "name": "Erityiset rahoitustehtävät",
+    "parent": "421"
+  },
+  {
+    "code": "422",
+    "name": "Markkinointitehtävät",
+    "parent": "42"
+  },
+  {
+    "code": "4221",
+    "name": "Asuntomarkkinointi",
+    "parent": "422"
+  },
+  {
+    "code": "4222",
+    "name": "Toimitilamarkkinointi",
+    "parent": "422"
+  },
+  {
+    "code": "4223",
+    "name": "Muu markkinointi",
+    "parent": "422"
+  },
+  {
+    "code": "5",
+    "name": "KÄYTTÄJÄTEHTÄVÄT",
+    "parent": null
+  },
+  {
+    "code": "51",
+    "name": "TILAVARUSTUS",
+    "parent": "5"
+  },
+  {
+    "code": "511",
+    "name": "Irtaimisto",
+    "parent": "51"
+  },
+  {
+    "code": "5111",
+    "name": "Irtaimet kalusteet",
+    "parent": "511"
+  },
+  {
+    "code": "5112",
+    "name": "Irtaimet varusteet",
+    "parent": "511"
+  },
+  {
+    "code": "512",
+    "name": "Toiminnan kojeet ja laitteet",
+    "parent": "51"
+  },
+  {
+    "code": "5121",
+    "name": "Toiminnan kojeet",
+    "parent": "512"
+  },
+  {
+    "code": "5122",
+    "name": "Toiminnan laitteet",
+    "parent": "512"
+  },
+  {
+    "code": "52",
+    "name": "TOIMINNAN YLLÄPITO",
+    "parent": "5"
+  },
+  {
+    "code": "521",
+    "name": "Väliaikainen toiminta",
+    "parent": "52"
+  },
+  {
+    "code": "5211",
+    "name": "Väliaikaiset tilat",
+    "parent": "521"
+  },
+  {
+    "code": "5212",
+    "name": "Väliaikaiset rakenteet ja laitteet",
+    "parent": "521"
+  },
+  {
+    "code": "5213",
+    "name": "Muu väliaikainen toiminta",
+    "parent": "521"
+  },
+  {
+    "code": "522",
+    "name": "Käyttöönotto",
+    "parent": "52"
+  },
+  {
+    "code": "5221",
+    "name": "Muutto",
+    "parent": "522"
+  },
+  {
+    "code": "5222",
+    "name": "Käyttökoulutus",
+    "parent": "522"
+  },
+  {
+    "code": "5223",
+    "name": "Muu käyttöönotto",
+    "parent": "522"
+  },
+  {
+    "code": "6",
+    "name": "HANKEVARAUKSET",
+    "parent": null
+  },
+  {
+    "code": "61",
+    "name": "SUUNNITELMA- JA HINTAMUUTOKSET",
+    "parent": "6"
+  },
+  {
+    "code": "611",
+    "name": "Asiakirjamuutokset",
+    "parent": "61"
+  },
+  {
+    "code": "6111",
+    "name": "Suunnitelmamuutokset",
+    "parent": "611"
+  },
+  {
+    "code": "6112",
+    "name": "Rakentamismuutokset",
+    "parent": "611"
+  },
+  {
+    "code": "612",
+    "name": "Hintatasomuutokset",
+    "parent": "61"
+  },
+  {
+    "code": "6121",
+    "name": "Suunnitteluaikainen hintamuutos",
+    "parent": "612"
+  },
+  {
+    "code": "6122",
+    "name": "Rakennusaikainen hintamuutos",
+    "parent": "612"
+  },
+  {
+    "code": "6123",
+    "name": "Muu hintamuutos",
+    "parent": "612"
+  },
+  {
+    "code": "62",
+    "name": "MUUT VARAUKSET",
+    "parent": "6"
+  },
+  {
+    "code": "621",
+    "name": "Riskit",
+    "parent": "62"
+  },
+  {
+    "code": "6211",
+    "name": "Sijaintiriskit",
+    "parent": "621"
+  },
+  {
+    "code": "6212",
+    "name": "Olosuhderiskit",
+    "parent": "621"
+  },
+  {
+    "code": "6213",
+    "name": "Muut riskit",
+    "parent": "621"
+  },
+  {
+    "code": "622",
+    "name": "ERITYISET VARAUKSET",
+    "parent": "62"
+  },
+  {
+    "code": "6221",
+    "name": "Toteutusmuotovaraus",
+    "parent": "622"
+  },
+  {
+    "code": "6222",
+    "name": "Muu erityinen varaus",
+    "parent": "622"
+  }
+]

@@ -1,0 +1,1289 @@
+{
+  "metadata": {
+    "generated": "2025-12-16T10:38:38.410Z",
+    "description": "Templates for realistic Littera code filtering",
+    "source": "talo_littera_mapping.json"
+  },
+  "templates": [
+    {
+      "nimikkeistoCode": "1221",
+      "nimikkeistoName": "Alapohjalaatat",
+      "ifcType": "IfcSlab",
+      "totalCodes": 54,
+      "coreActivities": [
+        {
+          "activity": "formwork",
+          "priority": 1,
+          "codeRanges": [
+            "231"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "reinforcement",
+          "priority": 1,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "concreting",
+          "priority": 1,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 1
+        },
+        {
+          "activity": "finishing",
+          "priority": 2,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 1
+        }
+      ],
+      "optionalActivities": [
+        {
+          "activity": "insulation",
+          "priority": 2,
+          "codeRanges": [
+            "260",
+            "237"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "accessories",
+          "priority": 3,
+          "codeRanges": [
+            "233",
+            "260"
+          ],
+          "maxCodes": 3
+        }
+      ],
+      "contextualCodes": [
+        {
+          "context": "garage",
+          "codeRanges": [
+            "287"
+          ],
+          "keywords": [
+            "autohall",
+            "garage"
+          ]
+        },
+        {
+          "context": "ramps",
+          "codeRanges": [
+            "287"
+          ],
+          "keywords": [
+            "luiska",
+            "portai"
+          ]
+        },
+        {
+          "context": "precast",
+          "codeRanges": [
+            "315"
+          ],
+          "keywords": [
+            "elementti"
+          ]
+        }
+      ],
+      "excludePatterns": [
+        "Exclude garage codes (287xxx) unless element name contains \"autohall\" or \"garage\"",
+        "Exclude ramp codes (287xxx) unless element name contains \"luiska\" or \"ramp\"",
+        "Exclude precast codes (315xxx) unless element name contains \"elementti\" or \"precast\"",
+        "Select only ONE variant of concreting codes (not 6 duplicates)"
+      ],
+      "codeRanges": {
+        "231xxx": {
+          "count": 2,
+          "units": [
+            "JM",
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "231100",
+              "desc": "ap-laatan reunamuottityöt h=200mm + muottien purku",
+              "unit": "JM"
+            },
+            {
+              "code": "231110",
+              "desc": "ap-laatan alapinnan muottityö + muottien purku ja puhdistus",
+              "unit": "M2"
+            }
+          ]
+        },
+        "232xxx": {
+          "count": 4,
+          "units": [
+            "KG",
+            "M3",
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "232150",
+              "desc": "raudoitus B500A",
+              "unit": "KG"
+            },
+            {
+              "code": "232155",
+              "desc": "ed. työ- ja jatkosteräkset +20%",
+              "unit": "KG"
+            },
+            {
+              "code": "232250",
+              "desc": "betonointi C30/37, XC2",
+              "unit": "M3"
+            }
+          ]
+        },
+        "233xxx": {
+          "count": 1,
+          "units": [
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "233550",
+              "desc": "kantavan ap:n tuuletusputki",
+              "unit": "KPL"
+            }
+          ]
+        },
+        "237xxx": {
+          "count": 1,
+          "units": [
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "237450",
+              "desc": "eriste EPS100 d=100mm. mek.kiinnikkeet 4 kpl/m2",
+              "unit": "M2"
+            }
+          ]
+        },
+        "260xxx": {
+          "count": 20,
+          "units": [
+            "M2",
+            "KG",
+            "JM",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "260105",
+              "desc": "AP1 hl=80mm, betonointi, C30/37 XC1, xx m3",
+              "unit": "M2"
+            },
+            {
+              "code": "260110",
+              "desc": "APxx hl=xxmm, betonointi, C30/37 XC1, xx m3",
+              "unit": "M2"
+            },
+            {
+              "code": "260115",
+              "desc": "APxx hl=xxmm, betonointi, C30/37 XC1, xx m3",
+              "unit": "M2"
+            }
+          ]
+        },
+        "287xxx": {
+          "count": 25,
+          "units": [
+            "***",
+            "M2",
+            "KG",
+            "JM",
+            "M3",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "287140",
+              "desc": "AP8b, maanvarainen tb-laatta",
+              "unit": "***"
+            },
+            {
+              "code": "287145",
+              "desc": "teräsbetonilaatan betonointi hl=120mm , BY45, B-3-II, C30/37 XC3,4; XS1, XF2 #16 + Hierto",
+              "unit": "M2"
+            },
+            {
+              "code": "287150",
+              "desc": "valusuoja, suodatinkangas N2",
+              "unit": "M2"
+            }
+          ]
+        },
+        "315xxx": {
+          "count": 1,
+          "units": [
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "3155055",
+              "desc": "massiivilaattaelementti L,EL asennus",
+              "unit": "KPL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nimikkeistoCode": "1223",
+      "nimikkeistoName": "Erityiset alapohjat",
+      "ifcType": "IfcSlab",
+      "totalCodes": 38,
+      "coreActivities": [
+        {
+          "activity": "formwork",
+          "priority": 1,
+          "codeRanges": [
+            "231"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "reinforcement",
+          "priority": 1,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "concreting",
+          "priority": 1,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 1
+        },
+        {
+          "activity": "finishing",
+          "priority": 2,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 1
+        }
+      ],
+      "optionalActivities": [
+        {
+          "activity": "insulation",
+          "priority": 2,
+          "codeRanges": [
+            "260",
+            "237"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "accessories",
+          "priority": 3,
+          "codeRanges": [
+            "233",
+            "260"
+          ],
+          "maxCodes": 3
+        }
+      ],
+      "contextualCodes": [
+        {
+          "context": "garage",
+          "codeRanges": [
+            "287"
+          ],
+          "keywords": [
+            "autohall",
+            "garage"
+          ]
+        },
+        {
+          "context": "ramps",
+          "codeRanges": [
+            "287"
+          ],
+          "keywords": [
+            "luiska",
+            "portai"
+          ]
+        },
+        {
+          "context": "precast",
+          "codeRanges": [
+            "315"
+          ],
+          "keywords": [
+            "elementti"
+          ]
+        }
+      ],
+      "excludePatterns": [
+        "Exclude garage codes (287xxx) unless element name contains \"autohall\" or \"garage\"",
+        "Exclude ramp codes (287xxx) unless element name contains \"luiska\" or \"ramp\"",
+        "Exclude precast codes (315xxx) unless element name contains \"elementti\" or \"precast\"",
+        "Select only ONE variant of concreting codes (not 6 duplicates)"
+      ],
+      "codeRanges": {
+        "260xxx": {
+          "count": 1,
+          "units": [
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "260400",
+              "desc": "mattosyvennysten listat 20mm",
+              "unit": "JM"
+            }
+          ]
+        },
+        "271xxx": {
+          "count": 11,
+          "units": [
+            "M2",
+            "KG",
+            "M3",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "271200",
+              "desc": "hissimontun anturan / pohjalaatan muottityö + muottien purku ja puhd.",
+              "unit": "M2"
+            },
+            {
+              "code": "271205",
+              "desc": "hissimontun anturan / pohjalaatan raudoitus B500B",
+              "unit": "KG"
+            },
+            {
+              "code": "271210",
+              "desc": "ed. työ- ja jatkosteräkset +20%",
+              "unit": "KG"
+            }
+          ]
+        },
+        "287xxx": {
+          "count": 26,
+          "units": [
+            "***",
+            "M3",
+            "M2",
+            "KG",
+            "JM",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "287005",
+              "desc": "reunavahvistettu vesitiivis tb-laatta, d=300mm, 2252m2",
+              "unit": "***"
+            },
+            {
+              "code": "287010",
+              "desc": "tb laatan betonointi, vesitiivis C35/45,XC2,XS2, Xypex Admix C 1000-F",
+              "unit": "M3"
+            },
+            {
+              "code": "287015",
+              "desc": "tb-laatan hierto/linjarointi",
+              "unit": "M2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nimikkeistoCode": "1235",
+      "nimikkeistoName": "V�lipohjat",
+      "ifcType": "IfcSlab",
+      "totalCodes": 85,
+      "coreActivities": [
+        {
+          "activity": "formwork",
+          "priority": 1,
+          "codeRanges": [
+            "231"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "reinforcement",
+          "priority": 1,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "concreting",
+          "priority": 1,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 1
+        },
+        {
+          "activity": "finishing",
+          "priority": 2,
+          "codeRanges": [
+            "232",
+            "260"
+          ],
+          "maxCodes": 1
+        }
+      ],
+      "optionalActivities": [
+        {
+          "activity": "insulation",
+          "priority": 2,
+          "codeRanges": [
+            "260",
+            "237"
+          ],
+          "maxCodes": 2
+        },
+        {
+          "activity": "accessories",
+          "priority": 3,
+          "codeRanges": [
+            "233",
+            "260"
+          ],
+          "maxCodes": 3
+        }
+      ],
+      "contextualCodes": [
+        {
+          "context": "garage",
+          "codeRanges": [
+            "287"
+          ],
+          "keywords": [
+            "autohall",
+            "garage"
+          ]
+        },
+        {
+          "context": "ramps",
+          "codeRanges": [
+            "287"
+          ],
+          "keywords": [
+            "luiska",
+            "portai"
+          ]
+        },
+        {
+          "context": "precast",
+          "codeRanges": [
+            "315"
+          ],
+          "keywords": [
+            "elementti"
+          ]
+        }
+      ],
+      "excludePatterns": [
+        "Exclude garage codes (287xxx) unless element name contains \"autohall\" or \"garage\"",
+        "Exclude ramp codes (287xxx) unless element name contains \"luiska\" or \"ramp\"",
+        "Exclude precast codes (315xxx) unless element name contains \"elementti\" or \"precast\"",
+        "Select only ONE variant of concreting codes (not 6 duplicates)"
+      ],
+      "codeRanges": {
+        "287xxx": {
+          "count": 24,
+          "units": [
+            "***",
+            "M2",
+            "JM",
+            "KG",
+            "M3",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "287545",
+              "desc": "autohallin holvi, jännebetonilaatta",
+              "unit": "***"
+            },
+            {
+              "code": "287550",
+              "desc": "holvin muottityöt, tuentakorkeus n. 3,1m, hl=250…600mm, sis.purku ja puhdistus",
+              "unit": "M2"
+            },
+            {
+              "code": "287555",
+              "desc": "holvin reunamuotti h=450mm, sis. purku ja puhdistus,",
+              "unit": "JM"
+            }
+          ]
+        },
+        "315xxx": {
+          "count": 24,
+          "units": [
+            "M2",
+            "***",
+            "KPL",
+            "JM",
+            "ERÄ"
+          ],
+          "sampleCodes": [
+            {
+              "code": "3152440",
+              "desc": "laattaelementti (massiivilaatta) L, d=260mm, xx kpl, xx brm2",
+              "unit": "M2"
+            },
+            {
+              "code": "3152445",
+              "desc": "laattaelementti (massiivilaatta eristetty) EL, d=xxx mm, xx kpl, xx brm2",
+              "unit": "M2"
+            },
+            {
+              "code": "3152480",
+              "desc": "-eriste EPS 80 S d=100mm",
+              "unit": "***"
+            }
+          ]
+        },
+        "331xxx": {
+          "count": 25,
+          "units": [
+            "M2",
+            "JM",
+            "KG",
+            "M3",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "331205",
+              "desc": "laudoitus pv-holvit + laud. purku ja puhd.",
+              "unit": "M2"
+            },
+            {
+              "code": "331210",
+              "desc": "holvin reunamuotti h=300mm, sis. purku ja puhdistus,",
+              "unit": "JM"
+            },
+            {
+              "code": "331215",
+              "desc": "holvin raudoitus B500B",
+              "unit": "KG"
+            }
+          ]
+        },
+        "332xxx": {
+          "count": 9,
+          "units": [
+            "JM",
+            "KPL",
+            "M3"
+          ],
+          "sampleCodes": [
+            {
+              "code": "332105",
+              "desc": "delta-palkki DR32-285",
+              "unit": "JM"
+            },
+            {
+              "code": "332110",
+              "desc": "delta-palkki D32-300",
+              "unit": "JM"
+            },
+            {
+              "code": "332115",
+              "desc": "delta-palkin asennus",
+              "unit": "KPL"
+            }
+          ]
+        },
+        "334xxx": {
+          "count": 3,
+          "units": [
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "334010",
+              "desc": "puurakenteinen välipohja VP xx mukaan: kattokannattajat k xx + levytys xx mm",
+              "unit": "M2"
+            },
+            {
+              "code": "334020",
+              "desc": "puurakenteinen välipohja VP xx mukaan: kattokannattajat k xx + levytys xx mm",
+              "unit": "M2"
+            },
+            {
+              "code": "334030",
+              "desc": "puurakenteinen välipohja VP xx mukaan: kattokannattajat k xx + levytys xx mm",
+              "unit": "M2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nimikkeistoCode": "1241",
+      "nimikkeistoName": "Ulkosein�t",
+      "ifcType": "IfcWall",
+      "totalCodes": 92,
+      "coreActivities": [],
+      "optionalActivities": [],
+      "contextualCodes": [],
+      "excludePatterns": [],
+      "codeRanges": {
+        "287xxx": {
+          "count": 35,
+          "units": [
+            "***",
+            "M2",
+            "KG",
+            "JM",
+            "M3"
+          ],
+          "sampleCodes": [
+            {
+              "code": "287270",
+              "desc": "paikallavaletut maanpaineseinät, d=200mm/300mm RAK3672",
+              "unit": "***"
+            },
+            {
+              "code": "287275",
+              "desc": "pv seinän muottityöt + muottien purku ja puhd.",
+              "unit": "M2"
+            },
+            {
+              "code": "287280",
+              "desc": "pv seinän raudoitus B500B",
+              "unit": "KG"
+            }
+          ]
+        },
+        "315xxx": {
+          "count": 21,
+          "units": [
+            "M2",
+            "***",
+            "ERÄ",
+            "KPL",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "3152220",
+              "desc": "sandwich ulkoseinäelementti (ei kantava) R, d=xxx mm, xx kpl, xx brm2",
+              "unit": "M2"
+            },
+            {
+              "code": "3152240",
+              "desc": "sandwich ulkoseinäelementti (kantava) S, d=xxx mm, xx kpl, xx brm2",
+              "unit": "M2"
+            },
+            {
+              "code": "3152260",
+              "desc": "sisäkuorielementti (kantava) SK, d=xxx mm, xx kpl, xx brm2",
+              "unit": "M2"
+            }
+          ]
+        },
+        "331xxx": {
+          "count": 5,
+          "units": [
+            "M2",
+            "KG",
+            "M3"
+          ],
+          "sampleCodes": [
+            {
+              "code": "331405",
+              "desc": "kuorilaatan tuenta",
+              "unit": "M2"
+            },
+            {
+              "code": "331415",
+              "desc": "raudoitus B500B, arvio 8,5kg/m2",
+              "unit": "KG"
+            },
+            {
+              "code": "331416",
+              "desc": "ed. työ- ja jatkosteräkset +20%",
+              "unit": "KG"
+            }
+          ]
+        },
+        "350xxx": {
+          "count": 9,
+          "units": [
+            "",
+            "***"
+          ],
+          "sampleCodes": [
+            {
+              "code": "350002",
+              "desc": "paikallavalettavat ulkoseinät mukana 32..",
+              "unit": ""
+            },
+            {
+              "code": "350010",
+              "desc": "US1 netto xx m2 / brutto xx m2",
+              "unit": "***"
+            },
+            {
+              "code": "350012",
+              "desc": "US2 netto xx m2 / brutto xx m2",
+              "unit": "***"
+            }
+          ]
+        },
+        "355xxx": {
+          "count": 17,
+          "units": [
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "355305",
+              "desc": "peltivillapelti-elementti d=150 mm, xx nm2",
+              "unit": "M2"
+            },
+            {
+              "code": "355310",
+              "desc": "peltivillapelti-elementti d=240 mm, xx nm2",
+              "unit": "M2"
+            },
+            {
+              "code": "355315",
+              "desc": "paroc-polyuretaanielementti, d=100 mm, xx nm2",
+              "unit": "M2"
+            }
+          ]
+        },
+        "356xxx": {
+          "count": 5,
+          "units": [
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "356010",
+              "desc": "",
+              "unit": "M2"
+            },
+            {
+              "code": "356020",
+              "desc": "",
+              "unit": "M2"
+            },
+            {
+              "code": "356030",
+              "desc": "",
+              "unit": "M2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nimikkeistoCode": "1311",
+      "nimikkeistoName": "V�lisein�t",
+      "ifcType": "IfcWall",
+      "totalCodes": 30,
+      "coreActivities": [],
+      "optionalActivities": [],
+      "contextualCodes": [],
+      "excludePatterns": [],
+      "codeRanges": {
+        "287xxx": {
+          "count": 3,
+          "units": [
+            "M2",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "287710",
+              "desc": "UVV väliseinät parkkihallissa EI60, ei rakennetyyppiä, 68 brm2",
+              "unit": "M2"
+            },
+            {
+              "code": "287715",
+              "desc": "verkkoseinä esim. Troax UX450",
+              "unit": "M2"
+            },
+            {
+              "code": "287720",
+              "desc": "lukittava pariliukuovi 28+28x24 samaa järjestelmää kuin verkkoseinä",
+              "unit": "KPL"
+            }
+          ]
+        },
+        "454xxx": {
+          "count": 12,
+          "units": [
+            "ERÄ",
+            "M2",
+            "JM",
+            "KG"
+          ],
+          "sampleCodes": [
+            {
+              "code": "454001",
+              "desc": "olemassa olevin seinäpintojen kunnostus/paikkaus/tasoitus",
+              "unit": "ERÄ"
+            },
+            {
+              "code": "454105",
+              "desc": "väliseinämuuraus kahi 85 mm, xxx brm2",
+              "unit": "M2"
+            },
+            {
+              "code": "454110",
+              "desc": "väliseinämuuraus kahi 130 mm, xxx brm2",
+              "unit": "M2"
+            }
+          ]
+        },
+        "456xxx": {
+          "count": 6,
+          "units": [
+            "ERÄ",
+            "JM",
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "456001",
+              "desc": "olemassa olevin seinäpintojen kunnostus/paikkaus/tasoitus",
+              "unit": "ERÄ"
+            },
+            {
+              "code": "456400",
+              "desc": "liittymät holviin",
+              "unit": "JM"
+            },
+            {
+              "code": "456405",
+              "desc": "liittymät viereisiin seiniin",
+              "unit": "JM"
+            }
+          ]
+        },
+        "457xxx": {
+          "count": 3,
+          "units": [
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "457110",
+              "desc": "peltivillapelti-elementti d=150 mm, xx nm2",
+              "unit": "M2"
+            },
+            {
+              "code": "457120",
+              "desc": "peltivillapelti-elementti d=240 mm, xx nm2",
+              "unit": "M2"
+            },
+            {
+              "code": "457130",
+              "desc": "paroc-polyuretaanielementti, d=100 mm, xx nm2",
+              "unit": "M2"
+            }
+          ]
+        },
+        "485xxx": {
+          "count": 6,
+          "units": [
+            "M2",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "485155",
+              "desc": "hormiseinä: 2x GN13 + ranka 44x66mm k600 + min.villa",
+              "unit": "M2"
+            },
+            {
+              "code": "485160",
+              "desc": "muurattavat hormit: kahi-tiili 130mm",
+              "unit": "M2"
+            },
+            {
+              "code": "485170",
+              "desc": "liittymät holviin",
+              "unit": "JM"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nimikkeistoCode": "1315",
+      "nimikkeistoName": "V�liovet",
+      "ifcType": "IfcDoor",
+      "totalCodes": 92,
+      "coreActivities": [],
+      "optionalActivities": [],
+      "contextualCodes": [],
+      "excludePatterns": [],
+      "codeRanges": {
+        "433xxx": {
+          "count": 43,
+          "units": [
+            "KPL",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "433005",
+              "desc": "metalliulko-ovi TUO 9-11x21-23",
+              "unit": "KPL"
+            },
+            {
+              "code": "433015",
+              "desc": "metalliulko-ovi TUO 10+3x21-23",
+              "unit": "KPL"
+            },
+            {
+              "code": "433025",
+              "desc": "metalliulko-ovi TUO 12+12x24",
+              "unit": "KPL"
+            }
+          ]
+        },
+        "436xxx": {
+          "count": 29,
+          "units": [
+            "KPL",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "436005",
+              "desc": "laakaovi, 9 x 21 m",
+              "unit": "KPL"
+            },
+            {
+              "code": "436015",
+              "desc": "laakaovi, 10 x 21 m",
+              "unit": "KPL"
+            },
+            {
+              "code": "436025",
+              "desc": "laakaovi, 10 x 21 m, 15 dB",
+              "unit": "KPL"
+            }
+          ]
+        },
+        "437xxx": {
+          "count": 20,
+          "units": [
+            "ERÄ",
+            "KPL",
+            "AS"
+          ],
+          "sampleCodes": [
+            {
+              "code": "4370",
+              "desc": "lukitus ja heloitus",
+              "unit": "ERÄ"
+            },
+            {
+              "code": "437705",
+              "desc": "metalliulko-ovi heloitus, Abloy Easy",
+              "unit": "KPL"
+            },
+            {
+              "code": "437710",
+              "desc": "metalliulko-ovi heloitus, iLOQ etäohjelmoitava",
+              "unit": "KPL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nimikkeistoCode": "1242",
+      "nimikkeistoName": "Ikkunat",
+      "ifcType": "IfcWindow",
+      "totalCodes": 27,
+      "coreActivities": [],
+      "optionalActivities": [],
+      "contextualCodes": [],
+      "excludePatterns": [],
+      "codeRanges": {
+        "413xxx": {
+          "count": 9,
+          "units": [
+            "M2",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "413310",
+              "desc": "alumiiniulkolasiseinät",
+              "unit": "M2"
+            },
+            {
+              "code": "413340",
+              "desc": "metalli-ikkunat",
+              "unit": "M2"
+            },
+            {
+              "code": "413345",
+              "desc": "lisähinta: turvalasi sisäpuolelle",
+              "unit": "M2"
+            }
+          ]
+        },
+        "416xxx": {
+          "count": 12,
+          "units": [
+            "M2",
+            "KPL",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "416110",
+              "desc": "puu-alumiini-ikkunat, MSE-ikkuna u=1,0 w/m2k",
+              "unit": "M2"
+            },
+            {
+              "code": "416115",
+              "desc": "puu-alumiini-ikkunat, MSE-ikkuna u=0,8 w/m2k",
+              "unit": "M2"
+            },
+            {
+              "code": "416120",
+              "desc": "puu-alumiini-ikkunat, MSE-ikkuna u=0,65 w/m2k",
+              "unit": "M2"
+            }
+          ]
+        },
+        "421xxx": {
+          "count": 1,
+          "units": [
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "421010",
+              "desc": "parvekkeen liukulasiovet Profin tv.",
+              "unit": "KPL"
+            }
+          ]
+        },
+        "423xxx": {
+          "count": 1,
+          "units": [
+            "M2"
+          ],
+          "sampleCodes": [
+            {
+              "code": "423130",
+              "desc": "lasilankkuseinät",
+              "unit": "M2"
+            }
+          ]
+        },
+        "425xxx": {
+          "count": 3,
+          "units": [
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "425110",
+              "desc": "savunpoistoluukut, sis.ketjuavaajat",
+              "unit": "KPL"
+            },
+            {
+              "code": "425115",
+              "desc": "savunpoistoseinäluukut",
+              "unit": "KPL"
+            },
+            {
+              "code": "425120",
+              "desc": "savunpoistoluukkujen ohjauskeskus+tarv.",
+              "unit": "KPL"
+            }
+          ]
+        },
+        "429xxx": {
+          "count": 1,
+          "units": [
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "429110",
+              "desc": "käyntiluukku vesikatolle",
+              "unit": "KPL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nimikkeistoCode": "1261",
+      "nimikkeistoName": "Vesikattorakenteet",
+      "ifcType": "IfcRoof",
+      "totalCodes": 80,
+      "coreActivities": [],
+      "optionalActivities": [],
+      "contextualCodes": [],
+      "excludePatterns": [],
+      "codeRanges": {
+        "371xxx": {
+          "count": 28,
+          "units": [
+            "M2",
+            "JM",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "371005",
+              "desc": "säänkestävä vaneri xx mm",
+              "unit": "M2"
+            },
+            {
+              "code": "371010",
+              "desc": "raakaponttilaudoitus 23*95mm",
+              "unit": "M2"
+            },
+            {
+              "code": "371020",
+              "desc": "kattoristikot RAK xx mukaan",
+              "unit": "JM"
+            }
+          ]
+        },
+        "372xxx": {
+          "count": 14,
+          "units": [
+            "M2",
+            "KG",
+            "KPL",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "372010",
+              "desc": "kallistukset, kevytsora, d=0…200 mm",
+              "unit": "M2"
+            },
+            {
+              "code": "372020",
+              "desc": "pintabetoni, hl= xx mm",
+              "unit": "M2"
+            },
+            {
+              "code": "372060",
+              "desc": "pintabetonin raudoitus, B500B",
+              "unit": "KG"
+            }
+          ]
+        },
+        "373xxx": {
+          "count": 14,
+          "units": [
+            "M2",
+            "JM",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "373010",
+              "desc": "kallistukset, kevytsora, d=xx..xx mm",
+              "unit": "M2"
+            },
+            {
+              "code": "373200",
+              "desc": "höyrynsulku, xx",
+              "unit": "M2"
+            },
+            {
+              "code": "373210",
+              "desc": "höyrynsulun nostot seinää vasten 300 mm, yht. xx jm",
+              "unit": "M2"
+            }
+          ]
+        },
+        "375xxx": {
+          "count": 18,
+          "units": [
+            "M2",
+            "KG",
+            "JM"
+          ],
+          "sampleCodes": [
+            {
+              "code": "375110",
+              "desc": "kallistubetoni, hl=xx..xx mm",
+              "unit": "M2"
+            },
+            {
+              "code": "375120",
+              "desc": "pintabetonointi, hl= xx mm",
+              "unit": "M2"
+            },
+            {
+              "code": "375150",
+              "desc": "pintabetonin raudoitus, B500B",
+              "unit": "KG"
+            }
+          ]
+        },
+        "376xxx": {
+          "count": 6,
+          "units": [
+            "JM",
+            "KPL"
+          ],
+          "sampleCodes": [
+            {
+              "code": "376010",
+              "desc": "ullakon kulkusillat 5x50*100mm",
+              "unit": "JM"
+            },
+            {
+              "code": "376020",
+              "desc": "iv-piippujen puutyöt, isot ¤>500mm",
+              "unit": "KPL"
+            },
+            {
+              "code": "376030",
+              "desc": "iv-piippujen puutyöt, pienet ¤<500mm",
+              "unit": "KPL"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

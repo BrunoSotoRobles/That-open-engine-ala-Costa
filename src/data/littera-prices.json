@@ -1,0 +1,6747 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-02-24",
+  "metadata": {
+    "source": "excel",
+    "excelFile": "Työkirja1.xlsx",
+    "description": "Precios por Littera (labor, material, subcontract). Incluye todos los Littera del catálogo; los sin precio tienen costes ausentes (0)."
+  },
+  "prices": {
+    "001000|M2": {},
+    "002000|BRM2": {},
+    "003000|RM3": {},
+    "004000|KPL": {},
+    "005000|M2": {},
+    "006000|M2": {},
+    "007000|M2": {},
+    "008000|KPL": {},
+    "02001|ERÄ": {},
+    "02002|ERÄ": {},
+    "02003|ERÄ": {},
+    "02004|ERÄ": {},
+    "02005|ERÄ": {},
+    "02006|ERÄ": {},
+    "02007|ERÄ": {},
+    "02008|ERÄ": {},
+    "02009|BRM2": {},
+    "0310|BRM2": {},
+    "0315|BRM2": {},
+    "0320|BRM2": {},
+    "0321|BRM2": {},
+    "0325|BRM2": {},
+    "0330|BRM2": {},
+    "0335|BRM2": {},
+    "0340|BRM2": {},
+    "0345|BRM2": {},
+    "0350|BRM2": {},
+    "0380|BRM2": {},
+    "0390|BRM2": {},
+    "0410|ERÄ": {},
+    "0510|BRM2": {},
+    "0520|BRM2": {},
+    "0530|BRM2": {},
+    "0540|BRM2": {},
+    "0610|BRM2": {},
+    "0620|BRM2": {},
+    "0630|BRM2": {},
+    "0640|BRM2": {},
+    "0650|BRM2": {},
+    "0660|BRM2": {},
+    "0710|ERÄ": {},
+    "0720|ERÄ": {},
+    "111005|M2": {
+      "labor": 0.75,
+      "subcontract": 0.5,
+      "total": 1.25
+    },
+    "111010|KPL": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "113100|KPL": {
+      "labor": 45,
+      "total": 45
+    },
+    "117010|M3": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "117020|M2": {},
+    "117105|M3": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "117110|KPL": {},
+    "117115|ERÄ": {},
+    "117120|ERÄ": {},
+    "117200|KPL": {
+      "labor": 30,
+      "total": 30
+    },
+    "117205|KPL": {
+      "labor": 60,
+      "total": 60
+    },
+    "117210|M2": {
+      "labor": 39,
+      "subcontract": 5,
+      "total": 44
+    },
+    "117215|M2": {
+      "labor": 15,
+      "total": 15
+    },
+    "117220|M2": {
+      "labor": 24,
+      "total": 24
+    },
+    "117225|M2": {
+      "labor": 15,
+      "total": 15
+    },
+    "117230|M2": {
+      "labor": 15,
+      "total": 15
+    },
+    "117235|M2": {
+      "labor": 15,
+      "total": 15
+    },
+    "117240|M2": {
+      "labor": 30,
+      "total": 30
+    },
+    "117245|M2": {
+      "labor": 21,
+      "total": 21
+    },
+    "117250|M2": {
+      "labor": 24,
+      "total": 24
+    },
+    "117255|M2": {
+      "labor": 15,
+      "total": 15
+    },
+    "117260|M2": {
+      "labor": 15,
+      "total": 15
+    },
+    "117265|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "117270|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "117275|JM": {
+      "labor": 30,
+      "total": 30
+    },
+    "117280|KPL": {
+      "labor": 45,
+      "total": 45
+    },
+    "117285|KPL": {
+      "labor": 9,
+      "total": 9
+    },
+    "117290|KPL": {
+      "labor": 240,
+      "total": 240
+    },
+    "117310|M2": {
+      "labor": 9,
+      "subcontract": 75,
+      "total": 84
+    },
+    "117315|M2": {
+      "labor": 9,
+      "subcontract": 80,
+      "total": 89
+    },
+    "117320|M2": {
+      "labor": 12,
+      "subcontract": 100,
+      "total": 112
+    },
+    "117325|M2": {
+      "labor": 24,
+      "total": 24
+    },
+    "117330|M2": {
+      "labor": 45,
+      "subcontract": 5,
+      "total": 50
+    },
+    "117335|JM": {
+      "labor": 15,
+      "subcontract": 150,
+      "total": 165
+    },
+    "117340|M2": {
+      "labor": 15,
+      "subcontract": 100,
+      "total": 115
+    },
+    "117405|M2": {
+      "labor": 12.9,
+      "subcontract": 30,
+      "total": 42.9
+    },
+    "117410|M2": {
+      "labor": 15,
+      "subcontract": 100,
+      "total": 115
+    },
+    "117415|JM": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "117420|KPL": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "117425|KPL": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "117430|M2": {
+      "labor": 7.5,
+      "total": 7.5
+    },
+    "117435|M2": {
+      "labor": 10.5,
+      "total": 10.5
+    },
+    "117440|M2": {
+      "labor": 2.4,
+      "total": 2.4
+    },
+    "117445|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "117450|KPL": {
+      "labor": 15,
+      "total": 15
+    },
+    "117455|KPL": {
+      "labor": 30,
+      "total": 30
+    },
+    "117460|JM": {
+      "labor": 4.5,
+      "total": 4.5
+    },
+    "117465|JM": {
+      "labor": 6,
+      "total": 6
+    },
+    "117500|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "117505|M2": {
+      "labor": 15,
+      "total": 15
+    },
+    "117510|JM": {
+      "labor": 0.9,
+      "total": 0.9
+    },
+    "117515|M2": {
+      "labor": 45,
+      "total": 45
+    },
+    "117520|JM": {
+      "labor": 4.5,
+      "total": 4.5
+    },
+    "117525|KPL": {
+      "labor": 15,
+      "total": 15
+    },
+    "117530|KPL": {
+      "labor": 30,
+      "total": 30
+    },
+    "117535|M2": {
+      "labor": 30,
+      "total": 30
+    },
+    "117540|M2": {
+      "labor": 45,
+      "total": 45
+    },
+    "117545|M2": {
+      "labor": 60,
+      "total": 60
+    },
+    "117550|KPL": {
+      "labor": 45,
+      "total": 45
+    },
+    "117615|JM": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "117705|CM": {},
+    "117710|CM": {},
+    "117715|CM": {},
+    "117725|CM": {},
+    "117730|CM": {},
+    "117735|CM": {},
+    "117740|CM": {},
+    "117745|CM": {},
+    "117750|CM": {},
+    "117755|M2": {},
+    "117765|JM": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "117770|JM": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "117785|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "117790|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "117795|M2": {},
+    "117812|M2": {},
+    "117910|ERÄ": {},
+    "117921|ERÄ": {},
+    "117923|ERÄ": {},
+    "117931|M2": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "117933|M2": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "117935|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "117937|ERÄ": {},
+    "118005|ERÄ": {},
+    "119010|M2": {},
+    "120005|ERÄ": {
+      "subcontract": 1500,
+      "total": 1500
+    },
+    "121010|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "121020|M2": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "121030|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "121040|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "122040|M3": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "126020|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "126030|JM": {
+      "labor": 1.5,
+      "subcontract": 15,
+      "total": 16.5
+    },
+    "126040|JM": {
+      "labor": 3,
+      "subcontract": 10,
+      "total": 13
+    },
+    "126060|JM": {
+      "labor": 6,
+      "subcontract": 15,
+      "total": 21
+    },
+    "126100|M3": {
+      "labor": 1.5,
+      "subcontract": 8.5,
+      "total": 10
+    },
+    "126115|ERÄ": {
+      "subcontract": 2500,
+      "total": 2500
+    },
+    "126120|ERÄ": {
+      "subcontract": 500,
+      "total": 500
+    },
+    "126130|ERÄ": {},
+    "127000|M3": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "127050|M2": {
+      "subcontract": 1.5,
+      "total": 1.5
+    },
+    "128000|M3": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "128115|M3": {},
+    "133000|ERÄ": {
+      "subcontract": 3000,
+      "total": 3000
+    },
+    "133010|ERÄ": {
+      "subcontract": 5000,
+      "total": 5000
+    },
+    "133015|ERÄ": {},
+    "133020|M2": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "133025|M3": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "133030|M3": {
+      "subcontract": 1000,
+      "total": 1000
+    },
+    "133040|M3": {
+      "subcontract": 65,
+      "total": 65
+    },
+    "133050|M3": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "133060|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "133070|TN": {},
+    "137010|ERÄ": {},
+    "141620|M2": {
+      "subcontract": 280,
+      "total": 280
+    },
+    "141630|JM": {},
+    "141640|M2": {},
+    "141650|KG": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "142710|ERÄ": {},
+    "143010|JM": {
+      "subcontract": 27,
+      "total": 27
+    },
+    "143050|JM": {
+      "subcontract": 32,
+      "total": 32
+    },
+    "143090|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "143100|KPL": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "143110|KPL": {
+      "subcontract": 77,
+      "total": 77
+    },
+    "143120|KPL": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "143130|KPL": {
+      "subcontract": 120,
+      "total": 120
+    },
+    "143140|KPL": {
+      "subcontract": 16.5,
+      "total": 16.5
+    },
+    "143150|KPL": {
+      "subcontract": 2800,
+      "total": 2800
+    },
+    "143160|ERÄ": {
+      "subcontract": 5000,
+      "total": 5000
+    },
+    "143170|KPL": {
+      "subcontract": 21,
+      "total": 21
+    },
+    "143200|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "143210|KPL": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "143220|JM": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "143230|KPL": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "143240|JM": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "143250|KPL": {
+      "subcontract": 125,
+      "total": 125
+    },
+    "143260|KPL": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "143265|KPL": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "143270|ERÄ": {
+      "subcontract": 3000,
+      "total": 3000
+    },
+    "143280|ERÄ": {
+      "subcontract": 5000,
+      "total": 5000
+    },
+    "143290|M3": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "144400|JM": {
+      "subcontract": 122,
+      "total": 122
+    },
+    "144410|KPL": {
+      "subcontract": 140,
+      "total": 140
+    },
+    "144420|JM": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "144430|KPL": {
+      "subcontract": 160,
+      "total": 160
+    },
+    "144440|JM": {},
+    "144450|KPL": {},
+    "144460|JM": {
+      "subcontract": 92,
+      "total": 92
+    },
+    "144470|KPL": {
+      "subcontract": 180,
+      "total": 180
+    },
+    "144480|JM": {
+      "subcontract": 103,
+      "total": 103
+    },
+    "144490|KPL": {},
+    "144500|JM": {
+      "subcontract": 160,
+      "total": 160
+    },
+    "144510|KPL": {
+      "subcontract": 279,
+      "total": 279
+    },
+    "144520|KPL": {},
+    "144530|ERÄ": {},
+    "144540|ERÄ": {
+      "subcontract": 5000,
+      "total": 5000
+    },
+    "144550|JM": {},
+    "144590|M3": {},
+    "146305|ERÄ": {},
+    "146310|M3": {
+      "material": 14.175,
+      "subcontract": 5,
+      "total": 19.175
+    },
+    "146320|M2": {
+      "subcontract": 1.5,
+      "total": 1.5
+    },
+    "146680|KPL": {
+      "subcontract": 68,
+      "total": 68
+    },
+    "146740|JM": {},
+    "146750|M2": {},
+    "146760|KPL": {},
+    "146770|KG": {},
+    "146780|M3": {},
+    "147010|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "147050|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "147090|JM": {
+      "subcontract": 11.5,
+      "total": 11.5
+    },
+    "147130|M2": {},
+    "147170|JM": {},
+    "147210|M2": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "151010|JM": {
+      "labor": 7.5,
+      "material": 6.5,
+      "subcontract": 7.5,
+      "total": 21.5
+    },
+    "151020|JM": {
+      "labor": 7.5,
+      "material": 6.5,
+      "subcontract": 7.5,
+      "total": 21.5
+    },
+    "151030|KPL": {
+      "labor": 36,
+      "material": 135,
+      "subcontract": 37.5,
+      "total": 208.5
+    },
+    "151040|KPL": {
+      "labor": 36,
+      "material": 175,
+      "subcontract": 37.5,
+      "total": 248.5
+    },
+    "151050|KPL": {
+      "labor": 36,
+      "material": 175,
+      "subcontract": 37.5,
+      "total": 248.5
+    },
+    "151060|KPL": {
+      "labor": 36,
+      "material": 235,
+      "subcontract": 75,
+      "total": 346
+    },
+    "151070|KPL": {},
+    "151080|KPL": {
+      "labor": 7.5,
+      "material": 6,
+      "total": 13.5
+    },
+    "151090|M2": {},
+    "151100|KPL": {},
+    "151110|JM": {
+      "labor": 4.5,
+      "material": 2,
+      "total": 6.5
+    },
+    "151120|JM": {},
+    "151130|JM": {},
+    "152010|JM": {},
+    "152030|JM": {
+      "subcontract": 12.5,
+      "total": 12.5
+    },
+    "152050|JM": {
+      "subcontract": 17.5,
+      "total": 17.5
+    },
+    "152070|JM": {
+      "subcontract": 21.5,
+      "total": 21.5
+    },
+    "152090|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "152110|JM": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "152130|JM": {
+      "subcontract": 12.5,
+      "total": 12.5
+    },
+    "152150|JM": {
+      "subcontract": 17.5,
+      "total": 17.5
+    },
+    "152170|JM": {
+      "subcontract": 21.5,
+      "total": 21.5
+    },
+    "152190|JM": {
+      "labor": 2.4,
+      "material": 12,
+      "subcontract": 7.5,
+      "total": 21.9
+    },
+    "152210|JM": {},
+    "152230|JM": {},
+    "152235|KPL": {
+      "labor": 120,
+      "material": 80,
+      "total": 200
+    },
+    "152250|M2": {
+      "labor": 3.6,
+      "material": 6.5,
+      "total": 10.1
+    },
+    "152270|JM": {
+      "labor": 3,
+      "material": 2.5,
+      "subcontract": 7.5,
+      "total": 13
+    },
+    "152330|JM": {},
+    "153010|KPL": {
+      "subcontract": 600,
+      "total": 600
+    },
+    "153030|KPL": {
+      "subcontract": 600,
+      "total": 600
+    },
+    "153050|KPL": {
+      "subcontract": 600,
+      "total": 600
+    },
+    "153070|KPL": {
+      "labor": 60,
+      "material": 250,
+      "subcontract": 75,
+      "total": 385
+    },
+    "153090|KPL": {
+      "subcontract": 600,
+      "total": 600
+    },
+    "153110|KPL": {
+      "subcontract": 600,
+      "total": 600
+    },
+    "153130|KPL": {},
+    "153150|KPL": {},
+    "153170|KPL": {},
+    "153190|KPL": {},
+    "153210|KPL": {},
+    "153230|KPL": {},
+    "153250|KPL": {
+      "subcontract": 7500,
+      "total": 7500
+    },
+    "153270|KPL": {},
+    "153290|KPL": {
+      "labor": 320,
+      "material": 350,
+      "subcontract": 150,
+      "total": 820
+    },
+    "153320|KPL": {},
+    "153330|ERÄ": {},
+    "153350|KPL": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "153370|KPL": {
+      "labor": 15,
+      "subcontract": 18.75,
+      "total": 33.75
+    },
+    "153390|KPL": {},
+    "153410|KPL": {
+      "labor": 30,
+      "subcontract": 18.75,
+      "total": 48.75
+    },
+    "153415|KPL": {
+      "labor": 30,
+      "material": 18.5,
+      "total": 48.5
+    },
+    "153430|JM": {},
+    "153450|KPL": {},
+    "153470|KPL": {},
+    "153490|KPL": {
+      "labor": 240,
+      "material": 120,
+      "total": 360
+    },
+    "154010|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "154050|JM": {
+      "labor": 3,
+      "subcontract": 7.5,
+      "total": 10.5
+    },
+    "154060|M2": {
+      "labor": 3.6,
+      "material": 6.5,
+      "total": 10.1
+    },
+    "157010|JM": {
+      "labor": 1.5,
+      "total": 1.5
+    },
+    "157090|JM": {},
+    "157130|JM": {
+      "labor": 2.1,
+      "material": 3,
+      "total": 5.1
+    },
+    "157170|JM": {
+      "labor": 2.1,
+      "material": 2.5,
+      "total": 4.6
+    },
+    "157200|KPL": {
+      "labor": 60,
+      "material": 150,
+      "subcontract": 75,
+      "total": 285
+    },
+    "160020|M3": {},
+    "161040|M3": {
+      "labor": 1.5,
+      "material": 18.9,
+      "subcontract": 4.5,
+      "total": 24.9
+    },
+    "161080|M3": {
+      "labor": 1.5,
+      "material": 18.9,
+      "subcontract": 4.5,
+      "total": 24.9
+    },
+    "161200|M2": {
+      "labor": 0.42,
+      "material": 0.8,
+      "total": 1.22
+    },
+    "162000|M3": {
+      "labor": 0.45,
+      "material": 23.625,
+      "subcontract": 4.727,
+      "total": 28.802
+    },
+    "162050|M3": {
+      "labor": 0.66,
+      "material": 42,
+      "subcontract": 5,
+      "total": 47.66
+    },
+    "162100|M3": {
+      "subcontract": 4,
+      "total": 4
+    },
+    "162150|M3": {
+      "labor": 0.45,
+      "material": 23.625,
+      "subcontract": 4.727,
+      "total": 28.802
+    },
+    "162200|M2": {
+      "labor": 3.6,
+      "material": 3.5,
+      "total": 7.1
+    },
+    "162250|M2": {
+      "labor": 2.25,
+      "material": 3.5,
+      "total": 5.75
+    },
+    "163005|M3": {
+      "labor": 0.66,
+      "material": 42,
+      "subcontract": 5,
+      "total": 47.66
+    },
+    "163035|M3": {
+      "labor": 0.42,
+      "material": 23.625,
+      "subcontract": 4.5,
+      "total": 28.545
+    },
+    "163080|M2": {
+      "labor": 0.42,
+      "material": 0.8,
+      "total": 1.22
+    },
+    "163125|M2": {},
+    "164010|M3": {
+      "labor": 0.45,
+      "material": 23.625,
+      "subcontract": 5.5,
+      "total": 29.575
+    },
+    "164030|M3": {
+      "labor": 3,
+      "material": 15.4,
+      "subcontract": 7.5,
+      "total": 25.9
+    },
+    "164050|M3": {
+      "subcontract": 5.5,
+      "total": 5.5
+    },
+    "164150|M2": {
+      "labor": 0.6,
+      "material": 0.8,
+      "total": 1.4
+    },
+    "165050|M3": {
+      "subcontract": 75,
+      "total": 75
+    },
+    "165100|M3": {
+      "labor": 0.3,
+      "material": 23.625,
+      "subcontract": 4.5,
+      "total": 28.425
+    },
+    "165110|M3": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "165150|M2": {},
+    "165300|M2": {
+      "labor": 3.6,
+      "material": 4.5,
+      "total": 8.1
+    },
+    "165350|M2": {
+      "labor": 2.25,
+      "material": 4.5,
+      "total": 6.75
+    },
+    "165400|M2": {
+      "labor": 3.6,
+      "material": 3.25,
+      "total": 6.85
+    },
+    "165450|M2": {
+      "labor": 2.1,
+      "material": 3.25,
+      "total": 5.35
+    },
+    "171010|M2": {
+      "subcontract": 12.5,
+      "total": 12.5
+    },
+    "171030|M2": {
+      "subcontract": 5.5,
+      "total": 5.5
+    },
+    "171050|M2": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "171070|M2": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "171090|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "171110|KPL": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "171130|KPL": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "171150|KPL": {
+      "subcontract": 175,
+      "total": 175
+    },
+    "171170|KPL": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "171190|KPL": {
+      "subcontract": 3,
+      "total": 3
+    },
+    "171210|ERÄ": {},
+    "171230|M3": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "171250|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "171330|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "171350|KPL": {},
+    "171370|KPL": {},
+    "171390|JM": {},
+    "171600|M2": {},
+    "171700|M2": {},
+    "171900|KPL": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "172005|M2": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "172010|M2": {
+      "material": 3.64,
+      "subcontract": 2,
+      "total": 5.64
+    },
+    "172020|M2": {
+      "material": 10.64,
+      "subcontract": 2.5,
+      "total": 13.14
+    },
+    "172060|M2": {
+      "material": 1.54,
+      "subcontract": 1,
+      "total": 2.54
+    },
+    "172070|M2": {
+      "labor": 3,
+      "material": 5.5,
+      "total": 8.5
+    },
+    "172080|M2": {
+      "material": 6.16,
+      "subcontract": 2.5,
+      "total": 8.66
+    },
+    "172090|M2": {
+      "subcontract": 1.5,
+      "total": 1.5
+    },
+    "172110|M2": {
+      "material": 3.64,
+      "subcontract": 2,
+      "total": 5.64
+    },
+    "172120|M2": {
+      "material": 10.64,
+      "subcontract": 2.5,
+      "total": 13.14
+    },
+    "172160|M2": {
+      "material": 1.54,
+      "subcontract": 1,
+      "total": 2.54
+    },
+    "172170|M2": {
+      "labor": 3,
+      "material": 5.5,
+      "total": 8.5
+    },
+    "172180|M2": {
+      "material": 6.16,
+      "subcontract": 2.5,
+      "total": 8.66
+    },
+    "172190|M2": {
+      "subcontract": 1.5,
+      "total": 1.5
+    },
+    "172910|M2": {},
+    "172920|M2": {},
+    "172930|M2": {},
+    "173010|M2": {},
+    "173040|M2": {
+      "subcontract": 17.5,
+      "total": 17.5
+    },
+    "173070|M2": {},
+    "173100|M2": {},
+    "173130|M2": {},
+    "173160|M2": {},
+    "173190|M2": {},
+    "173220|M2": {},
+    "173250|M2": {},
+    "174010|M2": {
+      "subcontract": 48,
+      "total": 48
+    },
+    "174030|M2": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "174050|M2": {
+      "subcontract": 95,
+      "total": 95
+    },
+    "174070|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "174090|M2": {
+      "subcontract": 75,
+      "total": 75
+    },
+    "174110|M2": {
+      "subcontract": 55,
+      "total": 55
+    },
+    "174130|M2": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "174150|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "174170|M2": {
+      "subcontract": 120,
+      "total": 120
+    },
+    "174190|M2": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "174210|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "174230|KPL": {
+      "labor": 60,
+      "material": 70,
+      "total": 130
+    },
+    "174250|JM": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "174270|JM": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "174280|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "174290|M2": {
+      "subcontract": 5.5,
+      "total": 5.5
+    },
+    "174310|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "174330|M2": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "174350|M2": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "174370|M2": {
+      "subcontract": 75,
+      "total": 75
+    },
+    "174390|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "174500|KPL": {},
+    "174600|M2": {},
+    "174700|M2": {},
+    "174800|M2": {},
+    "174900|JM": {},
+    "174950|JM": {},
+    "178050|M2": {},
+    "181010|M2": {},
+    "181020|JM": {
+      "subcontract": 125,
+      "total": 125
+    },
+    "181030|JM": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "181040|JM": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "181045|KPL": {
+      "subcontract": 4000,
+      "total": 4000
+    },
+    "181050|KPL": {
+      "subcontract": 1200,
+      "total": 1200
+    },
+    "181055|KPL": {
+      "subcontract": 7500,
+      "total": 7500
+    },
+    "181060|JM": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "182020|KPL": {
+      "labor": 640,
+      "material": 250,
+      "subcontract": 8500,
+      "total": 9390
+    },
+    "182030|KPL": {},
+    "182040|KPL": {},
+    "182050|KPL": {
+      "labor": 240,
+      "material": 975,
+      "subcontract": 150,
+      "total": 1365
+    },
+    "182060|KPL": {
+      "labor": 160,
+      "material": 596,
+      "total": 756
+    },
+    "182070|ERÄ": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "182080|KPL": {
+      "labor": 11.577,
+      "material": 255,
+      "subcontract": 35,
+      "total": 301.577
+    },
+    "182090|KPL": {},
+    "182100|ERÄ": {},
+    "182120|KPL": {
+      "labor": 120,
+      "material": 790,
+      "total": 910
+    },
+    "182130|KPL": {
+      "labor": 160,
+      "material": 596,
+      "total": 756
+    },
+    "182140|KPL": {
+      "labor": 80,
+      "material": 325,
+      "total": 405
+    },
+    "182200|KPL": {
+      "labor": 60,
+      "material": 110,
+      "total": 170
+    },
+    "182210|KPL": {},
+    "183010|KPL": {
+      "labor": 30,
+      "material": 675,
+      "total": 705
+    },
+    "183030|KPL": {
+      "labor": 30,
+      "material": 675,
+      "total": 705
+    },
+    "183050|KPL": {
+      "labor": 120,
+      "material": 1800,
+      "subcontract": 150,
+      "total": 2070
+    },
+    "183105|KPL": {},
+    "183120|KPL": {
+      "labor": 160,
+      "material": 660,
+      "subcontract": 150,
+      "total": 970
+    },
+    "183135|KPL": {
+      "labor": 240,
+      "material": 1200,
+      "total": 1440
+    },
+    "183150|KPL": {},
+    "183165|KPL": {},
+    "183180|KPL": {},
+    "183195|KPL": {},
+    "183500|KPL": {},
+    "183900|ERÄ": {},
+    "184010|KPL": {},
+    "184030|KPL": {
+      "labor": 60,
+      "material": 375,
+      "total": 435
+    },
+    "184130|KPL": {},
+    "184150|ERÄ": {},
+    "184310|KPL": {
+      "labor": 120,
+      "material": 2600,
+      "subcontract": 150,
+      "total": 2870
+    },
+    "184330|KPL": {
+      "labor": 120,
+      "material": 1600,
+      "subcontract": 150,
+      "total": 1870
+    },
+    "184350|KPL": {
+      "labor": 120,
+      "material": 1600,
+      "subcontract": 150,
+      "total": 1870
+    },
+    "184370|KPL": {
+      "labor": 120,
+      "material": 1250,
+      "subcontract": 150,
+      "total": 1520
+    },
+    "184390|KPL": {
+      "labor": 120,
+      "material": 1100,
+      "subcontract": 150,
+      "total": 1370
+    },
+    "185010|KPL": {
+      "labor": 80,
+      "material": 350,
+      "subcontract": 40,
+      "total": 470
+    },
+    "185060|KPL": {
+      "labor": 40,
+      "subcontract": 25,
+      "total": 65
+    },
+    "185110|KPL": {
+      "labor": 80,
+      "subcontract": 50,
+      "total": 130
+    },
+    "185200|KPL": {
+      "labor": 240,
+      "material": 1650,
+      "subcontract": 150,
+      "total": 2040
+    },
+    "186010|KPL": {
+      "labor": 52,
+      "subcontract": 25,
+      "total": 77
+    },
+    "186060|KPL": {
+      "labor": 80,
+      "material": 50,
+      "subcontract": 25,
+      "total": 155
+    },
+    "211010|M2": {
+      "labor": 1.2,
+      "subcontract": 38,
+      "total": 39.2
+    },
+    "211020|M2": {
+      "labor": 1.2,
+      "subcontract": 42,
+      "total": 43.2
+    },
+    "211030|M2": {
+      "labor": 1.2,
+      "subcontract": 50,
+      "total": 51.2
+    },
+    "211040|M2": {
+      "labor": 1.5,
+      "subcontract": 45,
+      "total": 46.5
+    },
+    "212110|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "212115|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "212150|SRJ": {
+      "material": 24,
+      "subcontract": 40,
+      "total": 64
+    },
+    "212210|M3": {
+      "material": 108.35,
+      "subcontract": 15,
+      "total": 123.35
+    },
+    "212230|M2": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "212240|M2": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "212250|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "212400|KPL": {
+      "labor": 30,
+      "material": 25,
+      "total": 55
+    },
+    "217410|M2": {
+      "labor": 3.6,
+      "material": 6.5,
+      "total": 10.1
+    },
+    "219010|M2": {},
+    "220105|M2": {
+      "labor": 1.2,
+      "subcontract": 45,
+      "total": 46.2
+    },
+    "220115|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220120|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220125|M3": {
+      "material": 108.35,
+      "subcontract": 20,
+      "total": 128.35
+    },
+    "220135|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "220205|M2": {
+      "labor": 1.2,
+      "subcontract": 50,
+      "total": 51.2
+    },
+    "220215|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220220|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220225|M3": {
+      "material": 108.35,
+      "subcontract": 20,
+      "total": 128.35
+    },
+    "220305|M2": {
+      "labor": 1.2,
+      "subcontract": 65,
+      "total": 66.2
+    },
+    "220315|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220320|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220325|M3": {
+      "material": 108.35,
+      "subcontract": 25,
+      "total": 133.35
+    },
+    "220405|M2": {
+      "labor": 1.2,
+      "subcontract": 50,
+      "total": 51.2
+    },
+    "220415|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220420|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "220425|M3": {
+      "material": 108.35,
+      "subcontract": 20,
+      "total": 128.35
+    },
+    "220500|M2": {},
+    "222010|M2": {
+      "labor": 0.6,
+      "material": 6.5,
+      "subcontract": 6,
+      "total": 13.1
+    },
+    "222030|M2": {
+      "labor": 0.6,
+      "material": 6.5,
+      "subcontract": 6,
+      "total": 13.1
+    },
+    "222050|M2": {
+      "labor": 0.6,
+      "material": 9,
+      "subcontract": 6,
+      "total": 15.6
+    },
+    "223010|M2": {},
+    "228010|M2": {
+      "subcontract": 18.5,
+      "total": 18.5
+    },
+    "228030|M2": {
+      "subcontract": 18.5,
+      "total": 18.5
+    },
+    "228040|SRJ": {},
+    "231100|JM": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "231110|M2": {},
+    "232150|KG": {
+      "material": 0.82,
+      "subcontract": 0.6,
+      "total": 1.42
+    },
+    "232155|KG": {
+      "material": 0.82,
+      "subcontract": 0.6,
+      "total": 1.42
+    },
+    "232250|M3": {
+      "labor": 1.5,
+      "material": 111.3,
+      "subcontract": 15,
+      "total": 127.8
+    },
+    "232350|M2": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "233550|KPL": {
+      "labor": 40,
+      "material": 50,
+      "total": 90
+    },
+    "237450|M2": {
+      "labor": 7.5,
+      "material": 11,
+      "total": 18.5
+    },
+    "251205|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "251215|M2": {
+      "subcontract": 55,
+      "total": 55
+    },
+    "251225|M2": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "251235|M2": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "252105|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "252110|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "252115|M2": {
+      "subcontract": 6,
+      "total": 6
+    },
+    "252205|M3": {
+      "material": 108.35,
+      "subcontract": 15,
+      "total": 123.35
+    },
+    "252215|M3": {
+      "material": 108.35,
+      "subcontract": 15,
+      "total": 123.35
+    },
+    "252225|M3": {
+      "material": 108.35,
+      "subcontract": 15,
+      "total": 123.35
+    },
+    "252235|M3": {
+      "material": 108.35,
+      "subcontract": 25,
+      "total": 133.35
+    },
+    "252245|M3": {
+      "material": 108.35,
+      "subcontract": 25,
+      "total": 133.35
+    },
+    "252605|M2": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "252610|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "253805|M2": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "253815|KPL": {
+      "material": 12.5,
+      "subcontract": 10,
+      "total": 22.5
+    },
+    "257405|M2": {
+      "labor": 3.6,
+      "material": 6.5,
+      "total": 10.1
+    },
+    "257415|M2": {
+      "labor": 0.6,
+      "material": 10,
+      "subcontract": 6,
+      "total": 16.6
+    },
+    "257805|M2": {
+      "material": 0.5,
+      "subcontract": 1,
+      "total": 1.5
+    },
+    "257905|M2": {},
+    "258205|M2": {
+      "subcontract": 18.5,
+      "total": 18.5
+    },
+    "258515|M2": {
+      "subcontract": 18.5,
+      "total": 18.5
+    },
+    "260105|M2": {
+      "labor": 11.1,
+      "material": 18.204,
+      "total": 29.304
+    },
+    "260110|M2": {},
+    "260115|M2": {
+      "labor": 15,
+      "material": 18.204,
+      "total": 33.204
+    },
+    "260120|M2": {},
+    "260125|M2": {},
+    "260130|M2": {
+      "subcontract": 5.5,
+      "total": 5.5
+    },
+    "260140|KG": {},
+    "260190|KG": {},
+    "260195|KG": {},
+    "260210|M2": {},
+    "260220|M2": {},
+    "260310|JM": {},
+    "260400|JM": {},
+    "260500|M2": {},
+    "260510|M2": {},
+    "260530|M2": {},
+    "260600|M2": {},
+    "260700|JM": {},
+    "260750|JM": {},
+    "260800|KPL": {},
+    "260810|JM": {},
+    "270100|M2": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "270105|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "270110|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "270115|M3": {
+      "material": 121,
+      "subcontract": 25,
+      "total": 146
+    },
+    "270120|M2": {
+      "labor": 6,
+      "material": 6.5,
+      "total": 12.5
+    },
+    "270125|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "270130|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "270135|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "270140|M3": {
+      "material": 121,
+      "subcontract": 25,
+      "total": 146
+    },
+    "270145|M2": {
+      "labor": 1.5,
+      "material": 6,
+      "subcontract": 6,
+      "total": 13.5
+    },
+    "271200|M2": {},
+    "271205|KG": {},
+    "271210|KG": {},
+    "271215|M3": {},
+    "271220|M2": {},
+    "271225|KG": {},
+    "271230|M3": {},
+    "271235|M2": {},
+    "271240|M2": {},
+    "271245|M2": {},
+    "271250|KPL": {},
+    "280100|M3": {},
+    "280110|M2": {},
+    "280120|JM": {},
+    "280130|KG": {},
+    "280140|KG": {},
+    "280150|KG": {},
+    "281|M2": {},
+    "281005|M2": {
+      "labor": 3.3,
+      "material": 6.773,
+      "total": 10.073
+    },
+    "281010|M2": {
+      "labor": 40,
+      "material": 10,
+      "total": 50
+    },
+    "281015|KG": {
+      "labor": 1.28,
+      "material": 0.7,
+      "total": 1.98
+    },
+    "281020|KG": {
+      "labor": 1.28,
+      "material": 0.7,
+      "total": 1.98
+    },
+    "281025|M3": {
+      "labor": 15,
+      "material": 121,
+      "total": 136
+    },
+    "281030|M2": {
+      "labor": 48,
+      "material": 10,
+      "total": 58
+    },
+    "281035|M3": {
+      "labor": 15,
+      "material": 132,
+      "total": 147
+    },
+    "281040|JM": {
+      "labor": 10.5,
+      "material": 4.5,
+      "subcontract": 6.5,
+      "total": 21.5
+    },
+    "281045|JM": {
+      "labor": 4.5,
+      "material": 1.5,
+      "total": 6
+    },
+    "281050|M2": {
+      "labor": 12.2,
+      "material": 14.13,
+      "total": 26.33
+    },
+    "281055|M2": {
+      "labor": 16,
+      "material": 4.347,
+      "total": 20.347
+    },
+    "281060|M2": {
+      "labor": 28,
+      "material": 11.72,
+      "total": 39.72
+    },
+    "281065|JM": {
+      "labor": 4.1,
+      "material": 2.27,
+      "total": 6.37
+    },
+    "281070|JM": {
+      "labor": 4.8,
+      "material": 3.7,
+      "total": 8.5
+    },
+    "281075|JM": {
+      "labor": 8,
+      "material": 7.4,
+      "total": 15.4
+    },
+    "281080|JM": {
+      "labor": 2.25,
+      "material": 1.5,
+      "total": 3.75
+    },
+    "281085|M2": {
+      "labor": 12,
+      "material": 9.775,
+      "total": 21.775
+    },
+    "281090|M2": {
+      "labor": 48,
+      "material": 103.4,
+      "total": 151.4
+    },
+    "281095|M2": {
+      "labor": 7.2,
+      "material": 1.035,
+      "total": 8.235
+    },
+    "281100|M2": {
+      "labor": 11.2,
+      "material": 5.175,
+      "total": 16.375
+    },
+    "281105|M2": {
+      "labor": 8,
+      "material": 6.5,
+      "total": 14.5
+    },
+    "281110|M2": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "281115|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "281120|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "281125|JM": {
+      "subcontract": 17.5,
+      "total": 17.5
+    },
+    "281130|JM": {
+      "labor": 7.5,
+      "material": 2.5,
+      "total": 10
+    },
+    "281135|KPL": {
+      "labor": 30,
+      "material": 135,
+      "subcontract": 25,
+      "total": 190
+    },
+    "282|M2": {},
+    "282005|M2": {
+      "labor": 3.3,
+      "material": 6.773,
+      "total": 10.073
+    },
+    "282010|M2": {
+      "labor": 40,
+      "material": 10,
+      "total": 50
+    },
+    "282015|KG": {
+      "labor": 1.28,
+      "material": 0.7,
+      "total": 1.98
+    },
+    "282020|KG": {
+      "labor": 1.28,
+      "material": 0.7,
+      "total": 1.98
+    },
+    "282025|M3": {
+      "labor": 15,
+      "material": 121,
+      "total": 136
+    },
+    "282030|M2": {
+      "labor": 48,
+      "material": 10,
+      "total": 58
+    },
+    "282035|M3": {
+      "labor": 15,
+      "material": 132,
+      "total": 147
+    },
+    "282040|JM": {
+      "labor": 10.5,
+      "material": 4.5,
+      "subcontract": 6.5,
+      "total": 21.5
+    },
+    "282045|KPL": {
+      "labor": 10,
+      "material": 65,
+      "total": 75
+    },
+    "282050|KG": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "282055|KG": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "282060|JM": {
+      "labor": 8,
+      "material": 5.5,
+      "total": 13.5
+    },
+    "282065|M2": {
+      "labor": 12,
+      "material": 8.278,
+      "total": 20.278
+    },
+    "282070|M2": {
+      "labor": 0.9,
+      "subcontract": 30,
+      "total": 30.9
+    },
+    "282075|JM": {
+      "labor": 4.8,
+      "material": 0.863,
+      "total": 5.663
+    },
+    "282080|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "282085|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "282090|JM": {
+      "subcontract": 18.5,
+      "total": 18.5
+    },
+    "282095|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "282100|M2": {
+      "material": 4.945,
+      "total": 4.945
+    },
+    "282105|M2": {
+      "labor": 7.2,
+      "material": 1.035,
+      "total": 8.235
+    },
+    "282110|M2": {
+      "labor": 32.64,
+      "material": 10.256,
+      "total": 42.896
+    },
+    "282115|JM": {
+      "labor": 10,
+      "material": 5.605,
+      "total": 15.605
+    },
+    "282120|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "282125|JM": {
+      "labor": 7.5,
+      "material": 2.5,
+      "total": 10
+    },
+    "282130|KPL": {
+      "labor": 30,
+      "material": 135,
+      "subcontract": 25,
+      "total": 190
+    },
+    "283005|M2": {
+      "material": 150,
+      "subcontract": 30,
+      "total": 180
+    },
+    "283010|JM": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "283015|JM": {
+      "subcontract": 75,
+      "total": 75
+    },
+    "283020|JM": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "283025|M2": {
+      "subcontract": 120,
+      "total": 120
+    },
+    "283030|M2": {
+      "labor": 40,
+      "material": 10,
+      "total": 50
+    },
+    "283035|KG": {
+      "labor": 1.34,
+      "material": 0.7,
+      "total": 2.04
+    },
+    "283040|KG": {
+      "labor": 1.34,
+      "material": 0.7,
+      "total": 2.04
+    },
+    "283045|M3": {
+      "labor": 15,
+      "material": 121,
+      "total": 136
+    },
+    "283050|M2": {
+      "labor": 48,
+      "material": 10,
+      "total": 58
+    },
+    "283055|KG": {
+      "labor": 1.28,
+      "material": 0.7,
+      "total": 1.98
+    },
+    "283060|KG": {
+      "labor": 1.28,
+      "material": 0.7,
+      "total": 1.98
+    },
+    "283065|M3": {
+      "labor": 15,
+      "material": 132,
+      "total": 147
+    },
+    "283070|M2": {
+      "labor": 0.6,
+      "material": 6.5,
+      "subcontract": 6,
+      "total": 13.1
+    },
+    "284005|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "284010|M2": {
+      "labor": 8,
+      "material": 3.5,
+      "total": 11.5
+    },
+    "284015|M2": {
+      "labor": 8,
+      "material": 6.5,
+      "total": 14.5
+    },
+    "284020|JM": {
+      "labor": 4,
+      "material": 1.5,
+      "total": 5.5
+    },
+    "284025|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "284030|JM": {
+      "labor": 16,
+      "material": 7.5,
+      "total": 23.5
+    },
+    "284035|JM": {
+      "subcontract": 17.5,
+      "total": 17.5
+    },
+    "284040|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "284045|M2": {
+      "labor": 32,
+      "material": 55,
+      "total": 87
+    },
+    "284050|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "284055|JM": {
+      "subcontract": 18.5,
+      "total": 18.5
+    },
+    "284060|KPL": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "284065|KG": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "284070|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "284075|M2": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "284080|JM": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "284085|KPL": {
+      "labor": 15,
+      "material": 350,
+      "total": 365
+    },
+    "284090|JM": {
+      "labor": 32,
+      "material": 15,
+      "total": 47
+    },
+    "285005|M2": {
+      "labor": 24,
+      "material": 25,
+      "total": 49
+    },
+    "285010|JM": {
+      "labor": 60,
+      "material": 30,
+      "total": 90
+    },
+    "285015|M2": {
+      "labor": 48,
+      "material": 30,
+      "total": 78
+    },
+    "285020|M2": {
+      "labor": 40,
+      "material": 25,
+      "total": 65
+    },
+    "286005|M2": {
+      "labor": 1.2,
+      "subcontract": 42,
+      "total": 43.2
+    },
+    "286010|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "286015|M3": {
+      "material": 108.35,
+      "subcontract": 15,
+      "total": 123.35
+    },
+    "287|M2": {},
+    "287010|M3": {
+      "labor": 9,
+      "material": 164.3,
+      "total": 173.3
+    },
+    "287015|M2": {
+      "subcontract": 5.5,
+      "total": 5.5
+    },
+    "287020|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287025|KG": {
+      "material": 0.943,
+      "subcontract": 0.7,
+      "total": 1.643
+    },
+    "287030|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "287040|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287045|KG": {},
+    "287050|JM": {
+      "material": 25,
+      "subcontract": 5,
+      "total": 30
+    },
+    "287055|M3": {
+      "labor": 9,
+      "material": 164.3,
+      "total": 173.3
+    },
+    "287060|JM": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "287070|JM": {},
+    "287075|JM": {
+      "material": 20,
+      "subcontract": 5,
+      "total": 25
+    },
+    "287080|JM": {
+      "material": 15,
+      "subcontract": 5,
+      "total": 20
+    },
+    "287085|JM": {},
+    "287095|JM": {},
+    "287100|JM": {},
+    "287105|JM": {},
+    "287115|KG": {},
+    "287120|KPL": {},
+    "287125|M3": {},
+    "287130|KG": {},
+    "287145|M2": {
+      "labor": 9,
+      "material": 13.356,
+      "total": 22.356
+    },
+    "287150|M2": {
+      "material": 0.6,
+      "subcontract": 0.5,
+      "total": 1.1
+    },
+    "287155|M2": {
+      "labor": 3,
+      "material": 6,
+      "total": 9
+    },
+    "287160|KG": {
+      "labor": 0.8,
+      "material": 0.82,
+      "total": 1.62
+    },
+    "287165|KG": {
+      "labor": 0.8,
+      "material": 0.82,
+      "total": 1.62
+    },
+    "287170|KG": {
+      "labor": 0.8,
+      "material": 0.82,
+      "total": 1.62
+    },
+    "287175|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "287180|M2": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "287190|JM": {},
+    "287195|JM": {},
+    "287200|JM": {},
+    "287205|JM": {},
+    "287210|JM": {},
+    "287220|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "287225|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "287230|JM": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "287235|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287240|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287245|M3": {
+      "labor": 15,
+      "material": 132,
+      "total": 147
+    },
+    "287250|M2": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "287255|KPL": {
+      "labor": 60,
+      "total": 60
+    },
+    "287260|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "287275|M2": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "287280|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287285|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287290|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "287295|M3": {
+      "labor": 9,
+      "material": 152.64,
+      "total": 161.64
+    },
+    "287305|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "287315|M2": {
+      "subcontract": 75,
+      "total": 75
+    },
+    "287320|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287325|M3": {
+      "labor": 9,
+      "material": 152.64,
+      "total": 161.64
+    },
+    "287335|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "287340|JM": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "287350|JM": {},
+    "287355|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "287365|JM": {},
+    "287370|JM": {},
+    "287375|JM": {},
+    "287380|JM": {},
+    "287385|JM": {},
+    "287395|M2": {
+      "material": 5.25,
+      "subcontract": 6.5,
+      "total": 11.75
+    },
+    "287400|M2": {
+      "material": 25,
+      "subcontract": 7,
+      "total": 32
+    },
+    "287405|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "287410|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "287420|M2": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "287425|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287430|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287435|M3": {
+      "labor": 9,
+      "material": 152.64,
+      "total": 161.64
+    },
+    "287440|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "287455|M2": {
+      "subcontract": 65,
+      "total": 65
+    },
+    "287460|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287465|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287470|M3": {
+      "labor": 30,
+      "material": 152.64,
+      "total": 182.64
+    },
+    "287475|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "287480|KPL": {
+      "labor": 15,
+      "material": 10,
+      "total": 25
+    },
+    "287495|M2": {
+      "subcontract": 65,
+      "total": 65
+    },
+    "287500|ERÄ": {},
+    "287505|M3": {
+      "material": 137.8,
+      "subcontract": 20,
+      "total": 157.8
+    },
+    "287510|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "287520|M2": {
+      "subcontract": 65,
+      "total": 65
+    },
+    "287525|KG": {},
+    "287530|M3": {
+      "material": 137.8,
+      "subcontract": 20,
+      "total": 157.8
+    },
+    "287535|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "287550|M2": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "287555|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "287560|JM": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "287565|KG": {
+      "material": 0.82,
+      "subcontract": 0.7,
+      "total": 1.52
+    },
+    "287570|KG": {
+      "labor": 3.6,
+      "material": 7.54,
+      "subcontract": 0.7,
+      "total": 11.84
+    },
+    "287575|JM": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "287580|M3": {
+      "labor": 1.5,
+      "material": 111.3,
+      "subcontract": 15,
+      "total": 127.8
+    },
+    "287585|M2": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "287590|M2": {
+      "subcontract": 5.5,
+      "total": 5.5
+    },
+    "287595|JM": {},
+    "287605|JM": {},
+    "287610|JM": {},
+    "287615|JM": {},
+    "287625|JM": {
+      "material": 0.85,
+      "subcontract": 1.2,
+      "total": 2.05
+    },
+    "287630|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "287635|M2": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "287640|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "287645|M2": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "287650|KPL": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "287655|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "287660|M2": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "287675|M2": {
+      "labor": 49.9,
+      "material": 30,
+      "total": 79.9
+    },
+    "287680|JM": {
+      "labor": 4.8,
+      "material": 2.5,
+      "total": 7.3
+    },
+    "287685|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "287690|KPL": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "287700|KPL": {
+      "material": 1850,
+      "subcontract": 300,
+      "total": 2150
+    },
+    "287710|M2": {},
+    "287715|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "287720|KPL": {
+      "subcontract": 1200,
+      "total": 1200
+    },
+    "287730|JM": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "287735|JM": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "287745|KPL": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "287750|JM": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "287760|M3": {
+      "subcontract": 1.5,
+      "total": 1.5
+    },
+    "287765|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "287770|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "287780|ERÄ": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "287785|KPL": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "288110|KPL": {
+      "material": 3500,
+      "subcontract": 250,
+      "total": 3750
+    },
+    "288120|M2": {
+      "labor": 100,
+      "material": 10,
+      "total": 110
+    },
+    "288130|M3": {
+      "labor": 15,
+      "material": 132,
+      "total": 147
+    },
+    "288140|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "288150|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "288160|M2": {
+      "subcontract": 5.5,
+      "total": 5.5
+    },
+    "288170|M2": {
+      "labor": 0.6,
+      "material": 6.5,
+      "subcontract": 6,
+      "total": 13.1
+    },
+    "288210|M2": {
+      "labor": 32,
+      "material": 30,
+      "total": 62
+    },
+    "288220|JM": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "288310|M2": {
+      "labor": 24,
+      "material": 20,
+      "total": 44
+    },
+    "300100|ERÄ": {},
+    "300110|KG": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "300130|KG": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "300150|KG": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "300170|KG": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "300190|KG": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "300210|KG": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "301010|M2": {},
+    "301050|M2": {},
+    "301060|ERÄ": {},
+    "315010|ERÄ": {},
+    "3152020|M2": {
+      "material": 175,
+      "total": 175
+    },
+    "3152040|M2": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "3152060|M2": {
+      "material": 185,
+      "total": 185
+    },
+    "3152080|M2": {},
+    "3152100|M2": {},
+    "3152120|JM": {},
+    "3152140|JM": {},
+    "3152150|M2": {
+      "material": 50,
+      "total": 50
+    },
+    "3152160|M2": {
+      "material": 60,
+      "total": 60
+    },
+    "3152190|M2": {
+      "material": 100,
+      "total": 100
+    },
+    "3152200|M2": {
+      "material": 180,
+      "total": 180
+    },
+    "3152220|M2": {},
+    "3152240|M2": {},
+    "3152260|M2": {},
+    "3152290|M2": {},
+    "3152330|M2": {},
+    "3152350|M2": {},
+    "3152370|M2": {},
+    "3152390|JM": {},
+    "3152420|JM": {},
+    "3152440|M2": {},
+    "3152445|M2": {},
+    "3152490|M2": {},
+    "3152500|M2": {},
+    "3152510|M2": {},
+    "3152520|M2": {},
+    "3152530|M2": {},
+    "3152540|M2": {},
+    "3152550|M2": {},
+    "3152560|KPL": {},
+    "3152570|M2": {},
+    "3152580|JM": {},
+    "3152600|KPL": {},
+    "3152620|M2": {},
+    "3152640|M2": {},
+    "3152680|M2": {},
+    "3152700|M2": {},
+    "3152720|M2": {},
+    "3152740|M2": {},
+    "3152760|M2": {},
+    "3152780|M2": {},
+    "3152900|KPL": {},
+    "3152910|KPL": {},
+    "3152920|M2": {},
+    "3152930|M2": {},
+    "3152950|M2": {},
+    "3152952|M2": {},
+    "3152954|M2": {},
+    "3152956|M2": {},
+    "3152999|ERÄ": {},
+    "3155005|KPL": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "3155010|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "3155015|KPL": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "3155020|KPL": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "3155025|KPL": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "3155030|KPL": {
+      "subcontract": 125,
+      "total": 125
+    },
+    "3155035|KPL": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "3155040|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "3155045|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "3155050|KPL": {
+      "subcontract": 125,
+      "total": 125
+    },
+    "3155055|KPL": {
+      "subcontract": 125,
+      "total": 125
+    },
+    "3155060|KPL": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "3155065|KPL": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "3155070|KPL": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "3155075|KPL": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "3155080|KPL": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "3155085|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "3155090|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "3155095|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "3155100|KPL": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "3155105|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "3155200|KPL": {},
+    "3156005|KPL": {},
+    "3156015|JM": {
+      "material": 2,
+      "subcontract": 10,
+      "total": 12
+    },
+    "3156020|JM": {
+      "material": 2,
+      "subcontract": 10,
+      "total": 12
+    },
+    "3156025|JM": {
+      "material": 2,
+      "subcontract": 10,
+      "total": 12
+    },
+    "3156030|JM": {
+      "material": 2,
+      "subcontract": 13,
+      "total": 15
+    },
+    "3156035|JM": {
+      "material": 2,
+      "subcontract": 10,
+      "total": 12
+    },
+    "3156040|JM": {
+      "material": 2,
+      "subcontract": 10,
+      "total": 12
+    },
+    "3156045|JM": {
+      "material": 2,
+      "subcontract": 10,
+      "total": 12
+    },
+    "3156050|JM": {
+      "material": 2,
+      "subcontract": 10,
+      "total": 12
+    },
+    "3156055|JM": {
+      "material": 2,
+      "subcontract": 13,
+      "total": 15
+    },
+    "3156060|JM": {
+      "material": 2,
+      "subcontract": 13,
+      "total": 15
+    },
+    "3156065|JM": {
+      "material": 2,
+      "subcontract": 13,
+      "total": 15
+    },
+    "3156070|JM": {
+      "material": 3,
+      "subcontract": 17,
+      "total": 20
+    },
+    "3156075|JM": {
+      "material": 2,
+      "subcontract": 15,
+      "total": 17
+    },
+    "3156080|JM": {
+      "material": 2,
+      "subcontract": 13,
+      "total": 15
+    },
+    "3156085|JM": {
+      "material": 2,
+      "subcontract": 13,
+      "total": 15
+    },
+    "3156090|KPL": {
+      "labor": 30,
+      "material": 25,
+      "total": 55
+    },
+    "3156095|KPL": {
+      "labor": 15,
+      "material": 10,
+      "total": 25
+    },
+    "3156100|KPL": {
+      "labor": 23,
+      "material": 20,
+      "total": 43
+    },
+    "3156102|KG": {},
+    "3156105|M2": {
+      "labor": 5,
+      "material": 8,
+      "total": 13
+    },
+    "3156107|M2": {},
+    "3156109|M2": {},
+    "3156111|M2": {},
+    "3156113|M2": {},
+    "3156115|M2": {},
+    "3156117|M2": {},
+    "3156119|ERÄ": {},
+    "3156120|KPL": {
+      "labor": 15,
+      "material": 10,
+      "total": 25
+    },
+    "3156125|KPL": {
+      "labor": 45,
+      "material": 15,
+      "total": 60
+    },
+    "315705|M2": {
+      "labor": 0.6,
+      "material": 0.1,
+      "total": 0.7
+    },
+    "315710|M2": {
+      "labor": 0.75,
+      "material": 0.2,
+      "subcontract": 3.5,
+      "total": 4.45
+    },
+    "315715|M2": {
+      "labor": 0.6,
+      "material": 0.1,
+      "total": 0.7
+    },
+    "315720|M2": {
+      "labor": 0.6,
+      "material": 0.1,
+      "total": 0.7
+    },
+    "315725|M2": {
+      "labor": 0.75,
+      "material": 0.2,
+      "subcontract": 3.5,
+      "total": 4.45
+    },
+    "315730|M2": {
+      "labor": 0.6,
+      "material": 0.1,
+      "total": 0.7
+    },
+    "315735|M2": {},
+    "315740|KPL": {
+      "labor": 15,
+      "material": 5,
+      "total": 20
+    },
+    "315750|M2": {
+      "labor": 1.5,
+      "material": 0.1,
+      "total": 1.6
+    },
+    "315755|M2": {},
+    "315760|M2": {
+      "labor": 0.75,
+      "material": 0.2,
+      "subcontract": 3.5,
+      "total": 4.45
+    },
+    "315765|KPL": {
+      "labor": 30,
+      "material": 15,
+      "total": 45
+    },
+    "315770|M2": {
+      "labor": 0.6,
+      "material": 0.1,
+      "total": 0.7
+    },
+    "315775|JM": {
+      "labor": 3,
+      "material": 2,
+      "total": 5
+    },
+    "320100|M2": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "320105|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "320110|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "320115|M3": {
+      "labor": 1.5,
+      "material": 111.3,
+      "subcontract": 15,
+      "total": 127.8
+    },
+    "320120|M2": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "320125|M2": {
+      "subcontract": 55,
+      "total": 55
+    },
+    "320130|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "320135|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "320140|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "320145|M3": {
+      "labor": 1.5,
+      "material": 111.3,
+      "subcontract": 25,
+      "total": 137.8
+    },
+    "320150|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "320155|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "320160|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "321010|M2": {},
+    "321020|M3": {},
+    "321030|KG": {},
+    "321040|KG": {},
+    "321050|KPL": {},
+    "321060|M2": {},
+    "322010|M2": {},
+    "322020|M3": {},
+    "322030|KG": {},
+    "322040|KG": {},
+    "322050|KPL": {},
+    "322060|M2": {},
+    "325010|M3": {},
+    "325020|M3": {},
+    "325030|KPL": {},
+    "325040|M3": {},
+    "325050|M3": {},
+    "325060|KPL": {},
+    "331205|M2": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "331210|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "331215|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331220|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331225|JM": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "331230|M3": {
+      "labor": 1.5,
+      "material": 121.9,
+      "subcontract": 15,
+      "total": 138.4
+    },
+    "331235|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "331240|M2": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "331242|M2": {},
+    "331245|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331250|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331255|M3": {
+      "labor": 1.5,
+      "material": 121.9,
+      "subcontract": 15,
+      "total": 138.4
+    },
+    "331260|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "331265|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331270|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331275|JM": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "331280|M3": {
+      "labor": 9,
+      "material": 127.2,
+      "total": 136.2
+    },
+    "331285|M2": {
+      "subcontract": 2.5,
+      "total": 2.5
+    },
+    "331290|M2": {},
+    "331405|M2": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "331415|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331416|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "331430|M3": {
+      "labor": 1.5,
+      "material": 111.3,
+      "subcontract": 15,
+      "total": 127.8
+    },
+    "331440|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "331510|M2": {},
+    "331520|M3": {},
+    "331530|KG": {},
+    "331540|KG": {},
+    "331560|KPL": {},
+    "331570|M2": {},
+    "331610|M2": {},
+    "331620|M3": {},
+    "331630|KG": {},
+    "331640|KG": {},
+    "331660|KPL": {},
+    "331670|M2": {},
+    "332105|JM": {
+      "material": 350,
+      "total": 350
+    },
+    "332110|JM": {
+      "subcontract": 375,
+      "total": 375
+    },
+    "332115|KPL": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "332120|M3": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "332125|KPL": {
+      "material": 240,
+      "total": 240
+    },
+    "332130|KPL": {
+      "material": 375,
+      "total": 375
+    },
+    "332135|KPL": {
+      "material": 215,
+      "total": 215
+    },
+    "332140|KPL": {
+      "material": 420,
+      "total": 420
+    },
+    "332145|KPL": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "333005|M3": {
+      "material": 650,
+      "total": 650
+    },
+    "333010|KPL": {
+      "labor": 120,
+      "total": 120
+    },
+    "333015|M3": {
+      "subcontract": 800,
+      "total": 800
+    },
+    "333020|KPL": {
+      "labor": 80,
+      "total": 80
+    },
+    "334010|M2": {},
+    "334020|M2": {},
+    "334030|M2": {},
+    "341010|KPL": {},
+    "341020|KPL": {
+      "material": 1450,
+      "total": 1450
+    },
+    "341030|KPL": {
+      "material": 2600,
+      "total": 2600
+    },
+    "341040|KPL": {
+      "material": 2600,
+      "total": 2600
+    },
+    "341050|KPL": {},
+    "341060|KPL": {
+      "material": 4000,
+      "total": 4000
+    },
+    "341070|KPL": {},
+    "341080|KPL": {},
+    "341090|KPL": {
+      "material": 3750,
+      "total": 3750
+    },
+    "341100|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "342330|KPL": {
+      "subcontract": 2500,
+      "total": 2500
+    },
+    "342335|KPL": {
+      "subcontract": 21500,
+      "total": 21500
+    },
+    "343335|KPL": {
+      "labor": 120,
+      "material": 1150,
+      "total": 1270
+    },
+    "343340|KPL": {
+      "labor": 120,
+      "material": 2350,
+      "total": 2470
+    },
+    "344010|M2": {},
+    "344020|M2": {},
+    "344030|M3": {},
+    "344040|KG": {},
+    "344050|KG": {},
+    "344060|M2": {},
+    "344070|M2": {},
+    "355305|M2": {
+      "labor": 0.66,
+      "material": 41,
+      "subcontract": 17,
+      "total": 58.66
+    },
+    "355310|M2": {
+      "labor": 0.66,
+      "material": 58,
+      "subcontract": 17,
+      "total": 75.66
+    },
+    "355315|M2": {
+      "labor": 0.66,
+      "material": 40,
+      "subcontract": 17,
+      "total": 57.66
+    },
+    "355500|M2": {},
+    "355505|M2": {},
+    "355520|M2": {},
+    "355525|M2": {},
+    "355550|M2": {},
+    "355555|M2": {},
+    "355610|M2": {},
+    "355620|M2": {},
+    "355630|M2": {},
+    "355640|M2": {},
+    "355710|M2": {},
+    "355720|M2": {},
+    "355810|M2": {},
+    "355910|M2": {},
+    "355940|M2": {},
+    "355950|M2": {},
+    "355960|M2": {},
+    "356010|M2": {},
+    "356020|M2": {},
+    "356030|M2": {},
+    "356040|M2": {},
+    "356050|M2": {},
+    "361105|M2": {
+      "subcontract": 160,
+      "total": 160
+    },
+    "361110|M2": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "361115|JM": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "361120|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "361125|JM": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "361130|M2": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "361135|JM": {
+      "subcontract": 350,
+      "total": 350
+    },
+    "361140|KPL": {
+      "subcontract": 400,
+      "total": 400
+    },
+    "361145|KPL": {
+      "subcontract": 75,
+      "total": 75
+    },
+    "361150|M2": {
+      "labor": 26,
+      "material": 40,
+      "total": 66
+    },
+    "361155|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "361160|M2": {
+      "labor": 55,
+      "material": 85,
+      "total": 140
+    },
+    "361165|KPL": {
+      "subcontract": 650,
+      "total": 650
+    },
+    "361170|KPL": {},
+    "361175|JM": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "361180|JM": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "362100|M2": {},
+    "371005|M2": {},
+    "371010|M2": {
+      "labor": 10,
+      "material": 7.918,
+      "total": 17.918
+    },
+    "371020|JM": {},
+    "371025|KPL": {},
+    "371030|JM": {},
+    "371040|M2": {},
+    "371110|JM": {
+      "labor": 4.8,
+      "material": 2.473,
+      "total": 7.273
+    },
+    "371150|JM": {},
+    "371160|JM": {},
+    "371170|JM": {},
+    "371180|JM": {},
+    "371190|KPL": {},
+    "371195|KPL": {},
+    "371210|M2": {},
+    "371220|M2": {},
+    "371230|M2": {},
+    "371310|M2": {},
+    "371315|M2": {},
+    "371320|M2": {},
+    "371350|KPL": {},
+    "371360|JM": {},
+    "371370|JM": {},
+    "371410|JM": {},
+    "371420|JM": {},
+    "371430|JM": {},
+    "371460|JM": {},
+    "371470|JM": {},
+    "371480|JM": {},
+    "371510|JM": {},
+    "371520|JM": {},
+    "371550|JM": {},
+    "371560|JM": {},
+    "371610|M2": {},
+    "371620|M2": {},
+    "371660|M2": {},
+    "371670|M2": {},
+    "372010|M2": {
+      "subcontract": 14,
+      "total": 14
+    },
+    "372020|M2": {},
+    "372060|KG": {},
+    "372065|KG": {},
+    "372110|M2": {},
+    "372120|M2": {},
+    "372130|M2": {},
+    "372210|M2": {},
+    "372220|M2": {},
+    "372230|KPL": {},
+    "372310|JM": {},
+    "372410|JM": {},
+    "372420|JM": {},
+    "372430|JM": {},
+    "372460|JM": {},
+    "372470|JM": {},
+    "372480|JM": {},
+    "373010|M2": {},
+    "373100|M2": {},
+    "373110|JM": {},
+    "373200|M2": {},
+    "373210|M2": {},
+    "373220|JM": {},
+    "373230|JM": {},
+    "373300|KPL": {},
+    "373410|JM": {},
+    "373420|JM": {},
+    "373430|JM": {},
+    "373460|JM": {},
+    "373470|JM": {},
+    "373480|JM": {},
+    "373510|JM": {},
+    "373520|JM": {},
+    "373550|JM": {},
+    "373560|JM": {},
+    "373610|M2": {},
+    "373620|M2": {},
+    "373660|M2": {},
+    "373670|M2": {},
+    "375110|M2": {},
+    "375120|M2": {},
+    "375150|KG": {},
+    "375155|KG": {},
+    "375180|M2": {},
+    "375210|M2": {},
+    "375220|M2": {},
+    "375250|M2": {},
+    "375310|M2": {},
+    "375320|M2": {},
+    "375360|M2": {},
+    "375410|JM": {},
+    "375420|JM": {},
+    "375430|JM": {},
+    "375460|JM": {},
+    "375470|JM": {},
+    "375480|JM": {},
+    "375510|JM": {},
+    "375520|JM": {},
+    "375550|JM": {},
+    "375560|JM": {},
+    "375610|M2": {},
+    "375620|M2": {},
+    "375660|M2": {},
+    "375670|M2": {},
+    "376010|JM": {},
+    "376020|KPL": {},
+    "376030|KPL": {},
+    "376040|JM": {},
+    "376050|KPL": {},
+    "376060|KPL": {},
+    "378035|M2": {
+      "labor": 7.5,
+      "subcontract": 70,
+      "total": 77.5
+    },
+    "378040|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "378045|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "378050|M2": {
+      "labor": 1.35,
+      "subcontract": 35,
+      "total": 36.35
+    },
+    "378055|M3": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "383805|KPL": {},
+    "385305|KPL": {},
+    "385310|KPL": {
+      "labor": 60,
+      "material": 9000,
+      "subcontract": 150,
+      "total": 9210
+    },
+    "385315|KPL": {},
+    "385350|M2": {
+      "labor": 22,
+      "material": 5,
+      "total": 27
+    },
+    "386205|JM": {
+      "labor": 16,
+      "material": 2.5,
+      "total": 18.5
+    },
+    "386210|KPL": {},
+    "413310|M2": {
+      "subcontract": 450,
+      "total": 450
+    },
+    "413340|M2": {
+      "material": 300,
+      "total": 300
+    },
+    "413345|M2": {
+      "material": 40,
+      "total": 40
+    },
+    "413350|M2": {},
+    "413360|M2": {},
+    "413370|M2": {},
+    "413380|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "413385|JM": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "413390|JM": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "416110|M2": {
+      "material": 240,
+      "total": 240
+    },
+    "416115|M2": {
+      "material": 275,
+      "total": 275
+    },
+    "416120|M2": {},
+    "416150|KPL": {},
+    "416155|M2": {},
+    "416160|M2": {},
+    "416165|M2": {},
+    "416210|KPL": {},
+    "416310|KPL": {},
+    "416315|KPL": {},
+    "416320|JM": {},
+    "416325|JM": {},
+    "416330|JM": {},
+    "421010|KPL": {
+      "labor": 120,
+      "material": 2600,
+      "total": 2720
+    },
+    "423130|M2": {},
+    "425110|KPL": {
+      "material": 1500,
+      "total": 1500
+    },
+    "425115|KPL": {
+      "subcontract": 1500,
+      "total": 1500
+    },
+    "425120|KPL": {
+      "material": 1600,
+      "total": 1600
+    },
+    "429110|KPL": {
+      "labor": 160,
+      "material": 2500,
+      "total": 2660
+    },
+    "433005|KPL": {
+      "labor": 120,
+      "material": 650,
+      "total": 770
+    },
+    "433015|KPL": {
+      "labor": 120,
+      "material": 900,
+      "total": 1020
+    },
+    "433025|KPL": {
+      "labor": 120,
+      "material": 1500,
+      "total": 1620
+    },
+    "433035|KPL": {
+      "labor": 120,
+      "material": 750,
+      "total": 870
+    },
+    "433045|KPL": {
+      "labor": 120,
+      "material": 1300,
+      "total": 1420
+    },
+    "433055|KPL": {},
+    "433065|KPL": {
+      "labor": 120,
+      "material": 1300,
+      "total": 1420
+    },
+    "433075|KPL": {},
+    "433085|KPL": {
+      "labor": 120,
+      "material": 1400,
+      "total": 1520
+    },
+    "433095|KPL": {
+      "labor": 120,
+      "material": 2200,
+      "total": 2320
+    },
+    "433105|KPL": {},
+    "433115|KPL": {},
+    "433125|KPL": {},
+    "433135|KPL": {},
+    "433145|KPL": {},
+    "433155|KPL": {},
+    "433165|KPL": {},
+    "433175|KPL": {},
+    "433185|KPL": {
+      "labor": 120,
+      "material": 500,
+      "total": 620
+    },
+    "433195|KPL": {
+      "labor": 120,
+      "material": 900,
+      "total": 1020
+    },
+    "433205|KPL": {
+      "labor": 120,
+      "material": 1400,
+      "total": 1520
+    },
+    "433215|KPL": {},
+    "433225|KPL": {},
+    "433235|KPL": {},
+    "433245|KPL": {
+      "labor": 120,
+      "material": 550,
+      "total": 670
+    },
+    "433255|KPL": {
+      "labor": 120,
+      "material": 1000,
+      "total": 1120
+    },
+    "433265|KPL": {
+      "labor": 120,
+      "material": 2200,
+      "total": 2320
+    },
+    "433275|KPL": {
+      "labor": 120,
+      "material": 1000,
+      "total": 1120
+    },
+    "433285|KPL": {},
+    "433295|KPL": {},
+    "433305|KPL": {
+      "labor": 120,
+      "material": 1850,
+      "total": 1970
+    },
+    "433315|KPL": {
+      "labor": 120,
+      "material": 2900,
+      "total": 3020
+    },
+    "433325|KPL": {},
+    "433335|KPL": {
+      "labor": 120,
+      "material": 2900,
+      "total": 3020
+    },
+    "433345|KPL": {
+      "labor": 120,
+      "material": 4300,
+      "total": 4420
+    },
+    "433355|KPL": {},
+    "433365|KPL": {},
+    "433375|KPL": {},
+    "433525|KPL": {
+      "material": 150,
+      "total": 150
+    },
+    "433530|JM": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "433535|JM": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "433540|JM": {
+      "subcontract": 11.8,
+      "total": 11.8
+    },
+    "433600|KPL": {},
+    "436005|KPL": {
+      "material": 95,
+      "total": 95
+    },
+    "436015|KPL": {
+      "material": 95,
+      "total": 95
+    },
+    "436025|KPL": {
+      "material": 230,
+      "total": 230
+    },
+    "436035|KPL": {
+      "material": 95,
+      "total": 95
+    },
+    "436045|KPL": {
+      "material": 115,
+      "total": 115
+    },
+    "436055|KPL": {
+      "material": 130,
+      "total": 130
+    },
+    "436065|KPL": {
+      "material": 130,
+      "total": 130
+    },
+    "436075|KPL": {
+      "material": 700,
+      "total": 700
+    },
+    "436085|KPL": {
+      "material": 720,
+      "total": 720
+    },
+    "436095|KPL": {
+      "material": 250,
+      "total": 250
+    },
+    "436105|KPL": {
+      "material": 700,
+      "total": 700
+    },
+    "436115|KPL": {
+      "material": 350,
+      "total": 350
+    },
+    "436125|KPL": {
+      "material": 450,
+      "total": 450
+    },
+    "436135|KPL": {
+      "material": 300,
+      "total": 300
+    },
+    "436145|KPL": {
+      "material": 300,
+      "total": 300
+    },
+    "436150|KPL": {},
+    "436160|KPL": {},
+    "436170|KPL": {},
+    "436180|KPL": {},
+    "436190|KPL": {},
+    "436200|KPL": {},
+    "436210|KPL": {},
+    "436220|KPL": {},
+    "436230|KPL": {},
+    "436240|KPL": {},
+    "436250|KPL": {},
+    "436260|KPL": {},
+    "436405|KPL": {
+      "labor": 7.5,
+      "subcontract": 45,
+      "total": 52.5
+    },
+    "436410|KPL": {
+      "labor": 7.5,
+      "subcontract": 45,
+      "total": 52.5
+    },
+    "436415|KPL": {
+      "labor": 12,
+      "subcontract": 60,
+      "total": 72
+    },
+    "436420|KPL": {
+      "labor": 12,
+      "subcontract": 60,
+      "total": 72
+    },
+    "436425|KPL": {
+      "labor": 7.5,
+      "subcontract": 80,
+      "total": 87.5
+    },
+    "436610|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "436615|JM": {},
+    "436620|JM": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "436625|JM": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "436650|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "436660|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "436665|KPL": {
+      "material": 150,
+      "total": 150
+    },
+    "436670|KPL": {
+      "material": 100,
+      "total": 100
+    },
+    "436675|KPL": {
+      "material": 50,
+      "total": 50
+    },
+    "4370|ERÄ": {},
+    "437705|KPL": {},
+    "437710|KPL": {},
+    "437715|KPL": {},
+    "437720|KPL": {},
+    "437725|KPL": {},
+    "437730|KPL": {},
+    "437735|KPL": {},
+    "437740|KPL": {},
+    "437745|KPL": {},
+    "437750|KPL": {},
+    "437755|KPL": {},
+    "437760|KPL": {},
+    "437765|KPL": {},
+    "437770|KPL": {},
+    "437775|KPL": {},
+    "437780|KPL": {},
+    "437785|KPL": {},
+    "437790|AS": {},
+    "437795|KPL": {},
+    "437800|KPL": {},
+    "443005|M2": {
+      "subcontract": 342.857,
+      "total": 342.857
+    },
+    "443015|M2": {
+      "subcontract": 670,
+      "total": 670
+    },
+    "443025|JM": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "443030|M2": {
+      "subcontract": 1025,
+      "total": 1025
+    },
+    "443040|JM": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "443045|M2": {
+      "subcontract": 240,
+      "total": 240
+    },
+    "443055|KPL": {},
+    "443060|KPL": {
+      "subcontract": 1050,
+      "total": 1050
+    },
+    "443065|KPL": {
+      "subcontract": 11900,
+      "total": 11900
+    },
+    "443070|KPL": {},
+    "443075|KPL": {},
+    "443085|M2": {},
+    "443090|KPL": {},
+    "443100|KPL": {
+      "labor": 12,
+      "subcontract": 60,
+      "total": 72
+    },
+    "443105|KPL": {},
+    "443110|KPL": {
+      "subcontract": 950,
+      "total": 950
+    },
+    "443210|KPL": {},
+    "454001|ERÄ": {},
+    "454105|M2": {
+      "labor": 9,
+      "material": 31.913,
+      "subcontract": 38,
+      "total": 78.913
+    },
+    "454110|M2": {
+      "labor": 9,
+      "material": 44.707,
+      "subcontract": 38,
+      "total": 91.707
+    },
+    "454115|JM": {
+      "labor": 30,
+      "material": 38,
+      "total": 68
+    },
+    "454120|KG": {
+      "material": 0.75,
+      "subcontract": 0.8,
+      "total": 1.55
+    },
+    "454125|M2": {},
+    "454130|M2": {
+      "labor": 3,
+      "material": 26,
+      "subcontract": 21.8,
+      "total": 50.8
+    },
+    "454135|M2": {
+      "labor": 3,
+      "material": 34,
+      "subcontract": 27.2,
+      "total": 64.2
+    },
+    "454140|M2": {},
+    "454200|JM": {},
+    "454210|JM": {},
+    "454250|JM": {},
+    "456001|ERÄ": {},
+    "456205|M2": {
+      "labor": 3,
+      "material": 9.268,
+      "subcontract": 25,
+      "total": 37.268
+    },
+    "456210|M2": {
+      "labor": 3,
+      "material": 11.77,
+      "subcontract": 25,
+      "total": 39.77
+    },
+    "456215|M2": {
+      "labor": 3,
+      "material": 30.608,
+      "subcontract": 30,
+      "total": 63.608
+    },
+    "456220|M2": {
+      "labor": 3,
+      "material": 11.248,
+      "subcontract": 30,
+      "total": 44.248
+    },
+    "456225|M2": {
+      "labor": 3,
+      "material": 16.528,
+      "subcontract": 45,
+      "total": 64.528
+    },
+    "456230|M2": {},
+    "456235|M2": {},
+    "456240|M2": {},
+    "456245|M2": {},
+    "456290|M2": {},
+    "456300|M2": {},
+    "456305|M2": {},
+    "456310|M2": {},
+    "456400|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "456405|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "456500|JM": {},
+    "456505|M2": {
+      "labor": 9,
+      "material": 8.25,
+      "total": 17.25
+    },
+    "456510|JM": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "457110|M2": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "457120|M2": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "457130|M2": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "460105|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "460110|KPL": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "460115|M2": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "460120|M2": {
+      "subcontract": 800,
+      "total": 800
+    },
+    "460125|JM": {},
+    "461110|M2": {
+      "subcontract": 280,
+      "total": 280
+    },
+    "461130|M2": {
+      "subcontract": 350,
+      "total": 350
+    },
+    "461150|M2": {},
+    "461200|JM": {},
+    "461210|JM": {},
+    "461220|JM": {},
+    "461250|JM": {},
+    "461410|M2": {
+      "labor": 80,
+      "subcontract": 300,
+      "total": 380
+    },
+    "461420|M2": {
+      "labor": 80,
+      "subcontract": 300,
+      "total": 380
+    },
+    "461430|M2": {
+      "labor": 80,
+      "subcontract": 500,
+      "total": 580
+    },
+    "461510|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "461520|JM": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "461530|JM": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "461540|JM": {},
+    "473405|JM": {
+      "subcontract": 130,
+      "total": 130
+    },
+    "473425|KPL": {
+      "subcontract": 480,
+      "total": 480
+    },
+    "473430|JM": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "473440|JM": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "473450|JM": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "473505|JM": {
+      "subcontract": 190,
+      "total": 190
+    },
+    "473510|JM": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "473540|JM": {
+      "subcontract": 400,
+      "total": 400
+    },
+    "473810|JM": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "473815|JM": {
+      "subcontract": 87,
+      "total": 87
+    },
+    "473820|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "483910|M2": {
+      "subcontract": 500,
+      "total": 500
+    },
+    "485105|KPL": {
+      "material": 1400,
+      "total": 1400
+    },
+    "485130|M3": {},
+    "485155|M2": {
+      "labor": 3,
+      "material": 11.248,
+      "subcontract": 40,
+      "total": 54.248
+    },
+    "485160|M2": {
+      "labor": 9,
+      "material": 44.707,
+      "subcontract": 48,
+      "total": 101.707
+    },
+    "485170|JM": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "485175|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "485177|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "485180|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "485205|KPL": {
+      "labor": 40,
+      "material": 90,
+      "total": 130
+    },
+    "485230|KPL": {
+      "subcontract": 55,
+      "total": 55
+    },
+    "511010|M2": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "511015|M2": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "511017|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "511020|JM": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "511025|JM": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "511045|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "511050|KPL": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "511070|M2": {},
+    "511075|M2": {},
+    "511080|KPL": {
+      "subcontract": 117,
+      "total": 117
+    },
+    "512010|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "512015|M2": {},
+    "512020|JM": {},
+    "512025|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "512035|KPL": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "512040|ERÄ": {},
+    "512045|JM": {
+      "subcontract": 24,
+      "total": 24
+    },
+    "513010|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "513012|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "513020|M2": {},
+    "513022|M2": {},
+    "513025|JM": {
+      "subcontract": 17,
+      "total": 17
+    },
+    "513030|JM": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "513035|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "513040|JM": {
+      "subcontract": 7,
+      "total": 7
+    },
+    "513045|KPL": {
+      "subcontract": 450,
+      "total": 450
+    },
+    "513050|KPL": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "513060|KPL": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "517110|KPL": {
+      "subcontract": 500,
+      "total": 500
+    },
+    "517120|KPL": {
+      "subcontract": 85,
+      "total": 85
+    },
+    "517130|JM": {},
+    "517210|JM": {
+      "subcontract": 13,
+      "total": 13
+    },
+    "517220|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "517230|KPL": {
+      "subcontract": 132,
+      "total": 132
+    },
+    "517310|JM": {},
+    "517410|KPL": {
+      "subcontract": 117,
+      "total": 117
+    },
+    "517910|ERÄ": {},
+    "520105|M2": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "520110|M2": {
+      "subcontract": 17,
+      "total": 17
+    },
+    "520115|M2": {},
+    "520290|JM": {
+      "material": 8,
+      "subcontract": 6,
+      "total": 14
+    },
+    "520300|M2": {
+      "labor": 3,
+      "material": 20,
+      "subcontract": 37,
+      "total": 60
+    },
+    "520310|M2": {
+      "labor": 3,
+      "material": 20,
+      "subcontract": 37,
+      "total": 60
+    },
+    "520320|M2": {},
+    "520330|M2": {
+      "labor": 3,
+      "material": 10,
+      "subcontract": 27,
+      "total": 40
+    },
+    "520340|M2": {
+      "labor": 3,
+      "material": 10,
+      "subcontract": 27,
+      "total": 40
+    },
+    "520350|M2": {
+      "labor": 3,
+      "material": 20,
+      "subcontract": 27,
+      "total": 50
+    },
+    "520355|M2": {},
+    "520360|KPL": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "520370|KPL": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "520380|M2": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "520390|M2": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "520400|JM": {},
+    "520410|M2": {},
+    "520420|M2": {},
+    "520430|M2": {},
+    "529010|ERÄ": {},
+    "530000|ERÄ": {},
+    "530001|ERÄ": {},
+    "530005|M2": {},
+    "536205|M2": {
+      "labor": 3,
+      "subcontract": 46,
+      "total": 49
+    },
+    "536210|M2": {
+      "labor": 3,
+      "subcontract": 42,
+      "total": 45
+    },
+    "536215|M2": {
+      "labor": 3,
+      "subcontract": 43,
+      "total": 46
+    },
+    "536220|M2": {
+      "labor": 3,
+      "subcontract": 52,
+      "total": 55
+    },
+    "536225|M2": {
+      "labor": 3,
+      "subcontract": 31,
+      "total": 34
+    },
+    "536230|M2": {
+      "labor": 3,
+      "subcontract": 31,
+      "total": 34
+    },
+    "536235|M2": {
+      "labor": 3,
+      "subcontract": 72,
+      "total": 75
+    },
+    "536240|M2": {
+      "labor": 48,
+      "material": 25,
+      "total": 73
+    },
+    "536245|M2": {
+      "labor": 48,
+      "material": 37,
+      "total": 85
+    },
+    "536250|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "536255|M2": {
+      "labor": 40,
+      "material": 7,
+      "total": 47
+    },
+    "536260|M2": {},
+    "536265|M2": {},
+    "536270|M2": {},
+    "536310|JM": {},
+    "536315|KPL": {},
+    "536320|ERÄ": {},
+    "536325|JM": {},
+    "538010|M2": {},
+    "538020|M2": {},
+    "552005|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "552010|M2": {
+      "subcontract": 85,
+      "total": 85
+    },
+    "552015|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "552020|M2": {},
+    "552025|JM": {},
+    "553105|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "553110|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "553115|JM": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "553120|JM": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "553125|JM": {
+      "subcontract": 7,
+      "total": 7
+    },
+    "553130|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "553135|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "553140|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "553145|KPL": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "553150|KPL": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "553155|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "553160|M2": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "553165|KPL": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "553170|M2": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "554102|M2": {},
+    "554105|JM": {},
+    "554110|M2": {
+      "subcontract": 4,
+      "total": 4
+    },
+    "554115|JM": {
+      "subcontract": 80,
+      "total": 80
+    },
+    "554120|KPL": {},
+    "554125|KPL": {},
+    "554130|KPL": {},
+    "554135|KPL": {},
+    "554140|KPL": {},
+    "554145|KPL": {},
+    "554150|KPL": {},
+    "554155|KPL": {},
+    "554160|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "554165|KG": {
+      "material": 1,
+      "subcontract": 1,
+      "total": 2
+    },
+    "554170|JM": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "555105|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "555110|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "555115|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "556105|M2": {},
+    "556110|M2": {
+      "labor": 28,
+      "material": 20,
+      "total": 48
+    },
+    "556115|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "556150|M2": {},
+    "556155|M2": {},
+    "562005|M2": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "562010|M2": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "562015|M2": {},
+    "562050|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "562110|M2": {
+      "subcontract": 4,
+      "total": 4
+    },
+    "562115|M2": {
+      "subcontract": 8,
+      "total": 8
+    },
+    "562120|M2": {
+      "subcontract": 16,
+      "total": 16
+    },
+    "562125|M2": {
+      "subcontract": 33,
+      "total": 33
+    },
+    "562130|M2": {},
+    "562135|M2": {},
+    "562210|M2": {
+      "labor": 2,
+      "material": 18,
+      "subcontract": 8,
+      "total": 28
+    },
+    "562215|M2": {
+      "labor": 2,
+      "material": 12,
+      "subcontract": 7,
+      "total": 21
+    },
+    "562220|M2": {
+      "labor": 2,
+      "material": 14,
+      "subcontract": 7,
+      "total": 23
+    },
+    "562225|M2": {},
+    "562230|M2": {},
+    "562235|M2": {},
+    "562240|M2": {},
+    "562280|KG": {},
+    "562285|KG": {},
+    "562290|KG": {},
+    "562310|M2": {},
+    "562315|M2": {},
+    "562320|M2": {
+      "material": 8,
+      "subcontract": 5,
+      "total": 13
+    },
+    "562325|M2": {
+      "material": 17,
+      "subcontract": 10,
+      "total": 27
+    },
+    "562330|M2": {
+      "material": 11,
+      "subcontract": 10,
+      "total": 21
+    },
+    "562400|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "562500|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "562600|JM": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "562700|JM": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "562710|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "564005|M2": {
+      "subcontract": 3,
+      "total": 3
+    },
+    "564010|M2": {
+      "subcontract": 6,
+      "total": 6
+    },
+    "564015|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "564020|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "564025|M2": {
+      "labor": 3,
+      "material": 35,
+      "subcontract": 29,
+      "total": 67
+    },
+    "564030|M2": {
+      "labor": 3,
+      "material": 14,
+      "subcontract": 29,
+      "total": 46
+    },
+    "564035|JM": {
+      "material": 3,
+      "subcontract": 9,
+      "total": 12
+    },
+    "564040|M2": {
+      "labor": 3,
+      "material": 14,
+      "subcontract": 29,
+      "total": 46
+    },
+    "564045|JM": {
+      "material": 3,
+      "subcontract": 9,
+      "total": 12
+    },
+    "564050|M2": {
+      "labor": 3,
+      "material": 14,
+      "subcontract": 29,
+      "total": 46
+    },
+    "564055|JM": {
+      "material": 15,
+      "subcontract": 13,
+      "total": 28
+    },
+    "564060|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "566005|M2": {
+      "subcontract": 8,
+      "total": 8
+    },
+    "566010|M2": {
+      "subcontract": 3,
+      "total": 3
+    },
+    "566015|M2": {
+      "labor": 2,
+      "subcontract": 22,
+      "total": 24
+    },
+    "566020|M2": {
+      "labor": 2,
+      "subcontract": 45,
+      "total": 47
+    },
+    "566025|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "568005|M2": {
+      "subcontract": 8,
+      "total": 8
+    },
+    "568010|M2": {
+      "subcontract": 3,
+      "total": 3
+    },
+    "568015|M2": {
+      "subcontract": 82,
+      "total": 82
+    },
+    "568020|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "568025|M2": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "568030|JM": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "568035|M2": {
+      "subcontract": 47,
+      "total": 47
+    },
+    "568040|M2": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "568045|JM": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "568050|M2": {},
+    "568055|ERÄ": {},
+    "568060|JM": {},
+    "568065|M2": {},
+    "568070|JM": {},
+    "569005|M2": {
+      "subcontract": 8,
+      "total": 8
+    },
+    "569010|M2": {
+      "labor": 2,
+      "material": 20,
+      "subcontract": 15,
+      "total": 37
+    },
+    "569015|M2": {
+      "labor": 2,
+      "material": 40,
+      "subcontract": 15,
+      "total": 57
+    },
+    "569020|M2": {
+      "labor": 2,
+      "material": 40,
+      "subcontract": 15,
+      "total": 57
+    },
+    "569025|M2": {
+      "labor": 2,
+      "material": 15,
+      "subcontract": 15,
+      "total": 32
+    },
+    "569030|M2": {
+      "labor": 2,
+      "material": 20,
+      "subcontract": 15,
+      "total": 37
+    },
+    "569035|M2": {
+      "labor": 2,
+      "material": 17,
+      "subcontract": 15,
+      "total": 34
+    },
+    "569040|M2": {
+      "labor": 2,
+      "material": 15,
+      "subcontract": 15,
+      "total": 32
+    },
+    "569045|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "569050|M2": {
+      "labor": 2,
+      "material": 30,
+      "subcontract": 15,
+      "total": 47
+    },
+    "569055|M2": {
+      "labor": 2,
+      "material": 30,
+      "subcontract": 15,
+      "total": 47
+    },
+    "569060|M2": {},
+    "569110|JM": {},
+    "569115|JM": {},
+    "569120|JM": {},
+    "569125|JM": {},
+    "569130|JM": {},
+    "569135|JM": {},
+    "570100|M2": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "571010|M2": {
+      "labor": 48,
+      "material": 11,
+      "total": 59
+    },
+    "571015|M2": {
+      "labor": 24,
+      "material": 13,
+      "total": 37
+    },
+    "571020|M2": {
+      "labor": 48,
+      "material": 11,
+      "total": 59
+    },
+    "571025|M2": {
+      "labor": 28,
+      "material": 18,
+      "total": 46
+    },
+    "571030|KPL": {
+      "subcontract": 1000,
+      "total": 1000
+    },
+    "571035|KPL": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "571040|JM": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "572010|M2": {
+      "labor": 48,
+      "material": 11,
+      "total": 59
+    },
+    "572015|M2": {
+      "labor": 24,
+      "material": 13,
+      "total": 37
+    },
+    "572020|M2": {
+      "labor": 48,
+      "material": 11,
+      "total": 59
+    },
+    "572025|M2": {
+      "labor": 28,
+      "material": 18,
+      "total": 46
+    },
+    "572030|KPL": {
+      "subcontract": 4000,
+      "total": 4000
+    },
+    "572035|KPL": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "573005|JM": {},
+    "573010|JM": {},
+    "573015|KPL": {},
+    "573020|KPL": {},
+    "581010|M3": {
+      "subcontract": 9,
+      "total": 9
+    },
+    "581020|M2": {
+      "subcontract": 7,
+      "total": 7
+    },
+    "581030|M2": {
+      "subcontract": 4,
+      "total": 4
+    },
+    "581040|M2": {},
+    "581050|M2": {},
+    "581060|M2": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "581070|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "581080|M2": {},
+    "581090|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "581100|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "581110|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "582010|M2": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "582020|JM": {
+      "subcontract": 8,
+      "total": 8
+    },
+    "582030|M2": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "582040|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "584010|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "584015|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "584020|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "584025|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "584030|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "584035|M2": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "584040|M2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "584045|M2": {
+      "subcontract": 4,
+      "total": 4
+    },
+    "584050|M2": {},
+    "584055|M2": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "585010|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "585020|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "585025|ERÄ": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "585030|ERÄ": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "589090|KPL": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "611010|AS": {
+      "subcontract": 3500,
+      "total": 3500
+    },
+    "611015|KPL": {
+      "labor": 80,
+      "material": 550,
+      "total": 630
+    },
+    "611020|KPL": {
+      "labor": 80,
+      "material": 550,
+      "total": 630
+    },
+    "611025|KPL": {
+      "labor": 40,
+      "material": 250,
+      "total": 290
+    },
+    "611050|JM": {},
+    "611110|ERÄ": {},
+    "611210|JM": {},
+    "611215|KPL": {},
+    "611250|JM": {},
+    "611310|KPL": {},
+    "611320|ERÄ": {},
+    "611330|JM": {},
+    "611340|KPL": {},
+    "611350|KPL": {},
+    "611360|KPL": {},
+    "611400|KPL": {},
+    "611500|ERÄ": {},
+    "612010|JM": {
+      "subcontract": 400,
+      "total": 400
+    },
+    "612015|KPL": {
+      "subcontract": 800,
+      "total": 800
+    },
+    "612020|ERÄ": {},
+    "612050|ERÄ": {},
+    "621010|KPL": {
+      "labor": 10,
+      "material": 15,
+      "total": 25
+    },
+    "621015|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "621020|KPL": {
+      "material": 10,
+      "total": 10
+    },
+    "621025|KPL": {
+      "labor": 10,
+      "subcontract": 7,
+      "total": 17
+    },
+    "621105|KPL": {
+      "labor": 10,
+      "material": 3,
+      "total": 13
+    },
+    "621110|KPL": {
+      "labor": 10,
+      "material": 38,
+      "total": 48
+    },
+    "621115|KPL": {
+      "labor": 10,
+      "material": 17,
+      "total": 27
+    },
+    "621120|KPL": {
+      "labor": 40,
+      "material": 364,
+      "total": 404
+    },
+    "621125|KPL": {
+      "labor": 20,
+      "material": 40,
+      "total": 60
+    },
+    "621130|KPL": {
+      "labor": 20,
+      "material": 125,
+      "total": 145
+    },
+    "621135|KPL": {
+      "labor": 40,
+      "material": 462,
+      "total": 502
+    },
+    "621140|KPL": {
+      "labor": 10,
+      "material": 12,
+      "total": 22
+    },
+    "621145|KPL": {
+      "labor": 10,
+      "material": 25,
+      "total": 35
+    },
+    "621150|ERÄ": {},
+    "621155|KPL": {},
+    "621160|KPL": {},
+    "622010|KPL": {
+      "labor": 10,
+      "material": 3,
+      "total": 13
+    },
+    "622015|KPL": {
+      "labor": 10,
+      "material": 38,
+      "total": 48
+    },
+    "622020|KPL": {
+      "labor": 10,
+      "material": 17,
+      "total": 27
+    },
+    "622025|KPL": {
+      "labor": 40,
+      "material": 364,
+      "total": 404
+    },
+    "622030|KPL": {
+      "labor": 20,
+      "material": 40,
+      "total": 60
+    },
+    "622035|KPL": {
+      "labor": 20,
+      "material": 125,
+      "total": 145
+    },
+    "622040|KPL": {
+      "labor": 40,
+      "material": 462,
+      "total": 502
+    },
+    "622045|KPL": {
+      "labor": 10,
+      "material": 90,
+      "total": 100
+    },
+    "622050|KPL": {
+      "labor": 10,
+      "material": 21,
+      "total": 31
+    },
+    "622055|KPL": {
+      "labor": 10,
+      "material": 100,
+      "total": 110
+    },
+    "622060|KPL": {
+      "labor": 10,
+      "material": 220,
+      "total": 230
+    },
+    "622065|KPL": {
+      "labor": 60,
+      "material": 314,
+      "total": 374
+    },
+    "622070|KPL": {
+      "labor": 40,
+      "material": 350,
+      "total": 390
+    },
+    "622075|ERÄ": {
+      "subcontract": 1200,
+      "total": 1200
+    },
+    "622080|ERÄ": {},
+    "622085|KPL": {},
+    "622090|KPL": {},
+    "622095|KPL": {},
+    "622100|JM": {},
+    "622105|JM": {},
+    "622110|JM": {},
+    "622115|M2": {},
+    "622120|M2": {},
+    "622125|M2": {},
+    "622130|KPL": {},
+    "622135|KPL": {},
+    "626010|M2": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "626015|M2": {
+      "labor": 40,
+      "material": 200,
+      "total": 240
+    },
+    "626020|KPL": {
+      "labor": 20,
+      "material": 150,
+      "total": 170
+    },
+    "626025|KPL": {},
+    "626030|KPL": {
+      "labor": 10,
+      "material": 60,
+      "total": 70
+    },
+    "626035|KPL": {
+      "subcontract": 650,
+      "total": 650
+    },
+    "626110|KPL": {},
+    "626115|KPL": {},
+    "626120|KPL": {},
+    "626125|KPL": {},
+    "626210|ERÄ": {},
+    "626215|M2": {},
+    "626220|KPL": {},
+    "626225|KPL": {},
+    "626310|KPL": {},
+    "626315|KPL": {},
+    "626320|JM": {},
+    "626325|KPL": {},
+    "626330|KPL": {},
+    "626335|KPL": {},
+    "626340|KPL": {},
+    "626410|ERÄ": {},
+    "629010|ERÄ": {},
+    "629015|KPL": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "629020|ERÄ": {},
+    "631015|KPL": {
+      "material": 250,
+      "total": 250
+    },
+    "631020|KPL": {
+      "material": 250,
+      "total": 250
+    },
+    "631025|KPL": {
+      "material": 440,
+      "total": 440
+    },
+    "631030|KPL": {
+      "material": 430,
+      "total": 430
+    },
+    "631040|KPL": {
+      "material": 470,
+      "total": 470
+    },
+    "631050|KPL": {
+      "material": 350,
+      "total": 350
+    },
+    "631060|KPL": {
+      "material": 300,
+      "total": 300
+    },
+    "631065|KPL": {
+      "material": 150,
+      "total": 150
+    },
+    "631070|KPL": {
+      "material": 250,
+      "total": 250
+    },
+    "631075|KPL": {
+      "material": 300,
+      "total": 300
+    },
+    "631080|KPL": {
+      "material": 11,
+      "total": 11
+    },
+    "631085|KPL": {
+      "labor": 30,
+      "total": 30
+    },
+    "632010|KPL": {
+      "material": 4200,
+      "total": 4200
+    },
+    "632015|KPL": {
+      "material": 3700,
+      "total": 3700
+    },
+    "632020|KPL": {
+      "material": 3000,
+      "total": 3000
+    },
+    "632025|KPL": {
+      "labor": 120,
+      "total": 120
+    },
+    "632030|KPL": {},
+    "632035|KPL": {},
+    "632040|KPL": {},
+    "632045|KPL": {},
+    "632100|KPL": {},
+    "634010|KPL": {
+      "material": 250,
+      "total": 250
+    },
+    "634020|KPL": {
+      "material": 500,
+      "total": 500
+    },
+    "634040|KPL": {},
+    "634090|KPL": {},
+    "641110|KPL": {
+      "labor": 60,
+      "material": 2100,
+      "total": 2160
+    },
+    "641115|KPL": {
+      "labor": 90,
+      "material": 350,
+      "total": 440
+    },
+    "641120|KPL": {
+      "labor": 120,
+      "material": 4200,
+      "total": 4320
+    },
+    "641125|KPL": {
+      "labor": 120,
+      "material": 3700,
+      "total": 3820
+    },
+    "641130|KPL": {
+      "labor": 30,
+      "material": 700,
+      "total": 730
+    },
+    "641135|KPL": {
+      "labor": 60,
+      "material": 870,
+      "total": 930
+    },
+    "641140|KPL": {
+      "labor": 8,
+      "material": 290,
+      "total": 298
+    },
+    "641145|KPL": {
+      "labor": 8,
+      "material": 180,
+      "total": 188
+    },
+    "641150|KPL": {
+      "labor": 15,
+      "material": 200,
+      "total": 215
+    },
+    "641155|KPL": {
+      "labor": 30,
+      "material": 1930,
+      "total": 1960
+    },
+    "641160|KPL": {
+      "labor": 30,
+      "material": 1715,
+      "total": 1745
+    },
+    "641165|ERÄ": {},
+    "641170|ERÄ": {},
+    "641175|M2": {},
+    "641180|M2": {},
+    "641200|ERÄ": {},
+    "671005|KPL": {
+      "labor": 160,
+      "material": 2500,
+      "total": 2660
+    },
+    "671010|KPL": {
+      "labor": 80,
+      "material": 1200,
+      "total": 1280
+    },
+    "671015|KPL": {
+      "labor": 320,
+      "material": 300,
+      "total": 620
+    },
+    "671020|KPL": {
+      "labor": 640,
+      "material": 2900,
+      "total": 3540
+    },
+    "671025|ERÄ": {
+      "subcontract": 7000,
+      "total": 7000
+    },
+    "671030|M2": {
+      "labor": 3,
+      "subcontract": 70,
+      "total": 73
+    },
+    "7110|HM2": {
+      "subcontract": 190,
+      "total": 190
+    },
+    "7112|BRM2": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "7114|BRM2": {
+      "subcontract": 190,
+      "total": 190
+    },
+    "7116|BRM2": {
+      "subcontract": 130,
+      "total": 130
+    },
+    "7118|BRM2": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "7120|BRM2": {},
+    "7130|HM2": {},
+    "7132|BRM2": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "7134|BRM2": {},
+    "7136|BRM2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "7138|BRM2": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "7210|HM2": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "7212|BRM2": {
+      "subcontract": 160,
+      "total": 160
+    },
+    "7214|BRM2": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "7216|BRM2": {
+      "subcontract": 175,
+      "total": 175
+    },
+    "7218|BRM2": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "7310|HM2": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "7312|BRM2": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "7314|BRM2": {
+      "subcontract": 130,
+      "total": 130
+    },
+    "7316|BRM2": {
+      "subcontract": 135,
+      "total": 135
+    },
+    "7318|BRM2": {
+      "subcontract": 90,
+      "total": 90
+    },
+    "7320|M2": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "7330|HM2": {
+      "subcontract": 8,
+      "total": 8
+    },
+    "7332|BRM2": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "7334|BRM2": {
+      "subcontract": 18,
+      "total": 18
+    },
+    "7336|BRM2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "7338|BRM2": {
+      "subcontract": 6,
+      "total": 6
+    },
+    "7340|KPL": {
+      "subcontract": 5000,
+      "total": 5000
+    },
+    "7342|KPL": {
+      "subcontract": 3000,
+      "total": 3000
+    },
+    "7410|KPL": {
+      "subcontract": 60000,
+      "total": 60000
+    },
+    "7420|KPL": {
+      "labor": 480,
+      "total": 480
+    },
+    "7430|KPL": {
+      "subcontract": 1000,
+      "total": 1000
+    },
+    "7440|KPL": {},
+    "7810|ERÄ": {},
+    "7910|M3": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "7915|M3": {},
+    "7920|ERÄ": {
+      "subcontract": 5000,
+      "total": 5000
+    },
+    "7925|ERÄ": {
+      "subcontract": 3000,
+      "total": 3000
+    },
+    "117210A|M2": {
+      "labor": 6.667,
+      "subcontract": 30,
+      "total": 36.667
+    },
+    "117295|JM": {
+      "labor": 4.5,
+      "total": 4.5
+    },
+    "117705|KPL": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "117710|KPL": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "117715|KPL": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "117725|KPL": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "117730|KPL": {
+      "subcontract": 40,
+      "total": 40
+    },
+    "117735|KPL": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "117740|KPL": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "117745|KPL": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "117750|KPL": {
+      "subcontract": 45,
+      "total": 45
+    },
+    "126110|M3": {
+      "labor": 1.5,
+      "subcontract": 8.5,
+      "total": 10
+    },
+    "144530|KPL": {
+      "subcontract": 2800,
+      "total": 2800
+    },
+    "151070|M2": {
+      "labor": 0.6,
+      "material": 0.65,
+      "total": 1.25
+    },
+    "151090|JM": {
+      "labor": 4.5,
+      "material": 2,
+      "total": 6.5
+    },
+    "151100|JM": {
+      "labor": 4.5,
+      "material": 5,
+      "total": 9.5
+    },
+    "151120|KPL": {
+      "labor": 30,
+      "material": 100,
+      "total": 130
+    },
+    "151130|KPL": {
+      "labor": 6,
+      "material": 10,
+      "total": 16
+    },
+    "223010|JM": {
+      "labor": 10.5,
+      "material": 4.5,
+      "subcontract": 6.5,
+      "total": 21.5
+    },
+    "260110|KG": {
+      "material": 0.82,
+      "subcontract": 0.6,
+      "total": 1.42
+    },
+    "260120|KG": {
+      "material": 0.82,
+      "subcontract": 0.6,
+      "total": 1.42
+    },
+    "260125|KG": {
+      "labor": 0.06,
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.46
+    },
+    "260135|M2": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "260140|JM": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "260145|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "260150|JM": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "260155|M2": {
+      "labor": 4.5,
+      "material": 6.3,
+      "total": 10.8
+    },
+    "260160|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "260175|M2": {
+      "subcontract": 1.2,
+      "total": 1.2
+    },
+    "270200|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "270205|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "270210|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "270215|M3": {
+      "material": 121,
+      "subcontract": 15,
+      "total": 136
+    },
+    "270220|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "270225|KG": {
+      "material": 0.7,
+      "subcontract": 0.7,
+      "total": 1.4
+    },
+    "270230|M3": {
+      "material": 121,
+      "subcontract": 25,
+      "total": 146
+    },
+    "270235|M2": {
+      "labor": 1.5,
+      "material": 6,
+      "subcontract": 6,
+      "total": 13.5
+    },
+    "270240|M2": {
+      "labor": 6,
+      "material": 6.5,
+      "total": 12.5
+    },
+    "270245|M2": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "270250|KPL": {
+      "labor": 80,
+      "material": 2500,
+      "total": 2580
+    },
+    "3152005|M2": {
+      "material": 145,
+      "total": 145
+    },
+    "3152010|M2": {
+      "material": 165,
+      "total": 165
+    },
+    "3152015|M2": {
+      "material": 125,
+      "total": 125
+    },
+    "3152025|M2": {
+      "material": 185,
+      "total": 185
+    },
+    "3152030|JM": {
+      "material": 70,
+      "total": 70
+    },
+    "3152035|JM": {
+      "material": 180,
+      "total": 180
+    },
+    "3152045|M2": {
+      "material": 90,
+      "total": 90
+    },
+    "3152050|M2": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "3152055|M2": {
+      "material": 170,
+      "total": 170
+    },
+    "3152065|M2": {
+      "material": 135,
+      "total": 135
+    },
+    "3152070|M2": {
+      "material": 125,
+      "total": 125
+    },
+    "3152105|M2": {
+      "material": 135,
+      "total": 135
+    },
+    "3152110|JM": {
+      "material": 220,
+      "total": 220
+    },
+    "3152115|JM": {
+      "material": 270,
+      "total": 270
+    },
+    "3152120|M2": {
+      "material": 250,
+      "total": 250
+    },
+    "3152125|M2": {
+      "material": 175,
+      "total": 175
+    },
+    "3152135|M2": {
+      "material": 30,
+      "total": 30
+    },
+    "3152140|M2": {
+      "material": 35,
+      "total": 35
+    },
+    "3152145|M2": {
+      "material": 40,
+      "total": 40
+    },
+    "3152155|M2": {
+      "material": 55,
+      "total": 55
+    },
+    "3152165|M2": {
+      "material": 65,
+      "total": 65
+    },
+    "3152170|KPL": {
+      "material": 120,
+      "total": 120
+    },
+    "3152175|M2": {
+      "material": 17,
+      "total": 17
+    },
+    "3152180|M2": {
+      "material": 55,
+      "total": 55
+    },
+    "3152185|M2": {
+      "material": 75,
+      "total": 75
+    },
+    "3152195|M2": {
+      "material": 180,
+      "total": 180
+    },
+    "3152205|M2": {
+      "material": 230,
+      "total": 230
+    },
+    "3152210|M2": {
+      "material": 145,
+      "total": 145
+    },
+    "3152215|M2": {
+      "material": 145,
+      "total": 145
+    },
+    "3152220|KPL": {
+      "material": 2400,
+      "total": 2400
+    },
+    "3152305|M2": {
+      "material": 50,
+      "total": 50
+    },
+    "3152310|M2": {
+      "material": 75,
+      "total": 75
+    },
+    "3152315|M2": {
+      "material": 100,
+      "total": 100
+    },
+    "3156110|KG": {
+      "labor": 1,
+      "material": 1,
+      "total": 2
+    },
+    "315735|KPL": {
+      "labor": 30,
+      "material": 5,
+      "total": 35
+    },
+    "315755|KPL": {
+      "labor": 30,
+      "material": 5,
+      "total": 35
+    },
+    "371015|JM": {
+      "material": 12.5,
+      "total": 12.5
+    },
+    "371020|KPL": {
+      "labor": 40,
+      "material": 2.5,
+      "total": 42.5
+    },
+    "371025|JM": {
+      "labor": 4,
+      "material": 2.27,
+      "total": 6.27
+    },
+    "371030|M2": {
+      "subcontract": 12.5,
+      "total": 12.5
+    },
+    "371035|M2": {
+      "subcontract": 9.5,
+      "total": 9.5
+    },
+    "371040|JM": {
+      "labor": 16,
+      "material": 8.654,
+      "total": 24.654
+    },
+    "371045|JM": {
+      "labor": 4.8,
+      "material": 2.473,
+      "total": 7.273
+    },
+    "371050|JM": {
+      "labor": 10,
+      "material": 45,
+      "total": 55
+    },
+    "371060|JM": {
+      "labor": 10,
+      "material": 85,
+      "total": 95
+    },
+    "371065|KPL": {
+      "labor": 80,
+      "material": 25,
+      "total": 105
+    },
+    "371070|JM": {
+      "labor": 3,
+      "material": 0.518,
+      "total": 3.518
+    },
+    "371075|KPL": {
+      "labor": 160,
+      "material": 50,
+      "total": 210
+    },
+    "371080|KPL": {
+      "labor": 100,
+      "material": 30,
+      "total": 130
+    },
+    "371090|JM": {
+      "labor": 4.8,
+      "material": 1.61,
+      "total": 6.41
+    },
+    "371095|M2": {
+      "labor": 6,
+      "material": 2.967,
+      "total": 8.967
+    },
+    "371100|JM": {
+      "labor": 4.8,
+      "material": 1.61,
+      "total": 6.41
+    },
+    "371105|M2": {
+      "labor": 6,
+      "material": 2.967,
+      "total": 8.967
+    },
+    "371115|JM": {
+      "labor": 12,
+      "material": 2.473,
+      "total": 14.473
+    },
+    "371120|JM": {
+      "labor": 48,
+      "material": 20,
+      "total": 68
+    },
+    "371125|JM": {
+      "labor": 6,
+      "material": 0.863,
+      "total": 6.863
+    },
+    "371130|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "371135|KPL": {
+      "labor": 60,
+      "material": 90,
+      "total": 150
+    },
+    "371140|JM": {
+      "labor": 10,
+      "material": 3.5,
+      "total": 13.5
+    },
+    "371145|JM": {
+      "labor": 24,
+      "material": 9.66,
+      "total": 33.66
+    },
+    "371150|M2": {
+      "labor": 60,
+      "material": 55,
+      "total": 115
+    },
+    "372015|M2": {
+      "subcontract": 60,
+      "total": 60
+    },
+    "372025|M2": {
+      "subcontract": 9.5,
+      "total": 9.5
+    },
+    "372030|M2": {
+      "subcontract": 30,
+      "total": 30
+    },
+    "372035|JM": {
+      "subcontract": 7.5,
+      "total": 7.5
+    },
+    "372040|JM": {
+      "subcontract": 20,
+      "total": 20
+    },
+    "372045|KG": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "372050|KPL": {
+      "labor": 40,
+      "material": 25,
+      "total": 65
+    },
+    "372055|JM": {
+      "subcontract": 3.5,
+      "total": 3.5
+    },
+    "372060|JM": {
+      "subcontract": 15,
+      "total": 15
+    },
+    "372065|KPL": {
+      "labor": 160,
+      "material": 50,
+      "total": 210
+    },
+    "372070|KPL": {
+      "labor": 100,
+      "material": 30,
+      "total": 130
+    },
+    "372075|JM": {
+      "labor": 6,
+      "material": 1.5,
+      "total": 7.5
+    },
+    "372080|JM": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "413355|KPL": {
+      "labor": 80,
+      "total": 80
+    },
+    "416125|KPL": {
+      "material": 55,
+      "total": 55
+    },
+    "416135|M2": {
+      "material": 25,
+      "total": 25
+    },
+    "416140|KPL": {
+      "material": 700,
+      "total": 700
+    },
+    "416160|KPL": {
+      "labor": 80,
+      "total": 80
+    },
+    "416165|KPL": {
+      "labor": 80,
+      "total": 80
+    },
+    "416175|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "416185|JM": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "416190|JM": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "443055|M2": {
+      "subcontract": 2245,
+      "total": 2245
+    },
+    "443067|KPL": {
+      "subcontract": 5900,
+      "total": 5900
+    },
+    "443069|KPL": {
+      "subcontract": 1990,
+      "total": 1990
+    },
+    "443070|M2": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "443080|KPL": {
+      "material": 900,
+      "total": 900
+    },
+    "454145|JM": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "454150|JM": {
+      "subcontract": 12,
+      "total": 12
+    },
+    "454155|JM": {
+      "subcontract": 10,
+      "total": 10
+    },
+    "456500|KPL": {
+      "subcontract": 450,
+      "total": 450
+    },
+    "461120|M2": {
+      "subcontract": 280,
+      "total": 280
+    },
+    "461140|JM": {
+      "subcontract": 4.5,
+      "total": 4.5
+    },
+    "461150|JM": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "461160|JM": {
+      "subcontract": 6.5,
+      "total": 6.5
+    },
+    "461210|KPL": {
+      "subcontract": 1100,
+      "total": 1100
+    },
+    "461212|KPL": {
+      "subcontract": 920,
+      "total": 920
+    },
+    "461214|KPL": {
+      "subcontract": 1080,
+      "total": 1080
+    },
+    "486250|M2": {
+      "labor": 4,
+      "material": 9.268,
+      "subcontract": 40,
+      "total": 53.268
+    },
+    "512015|JM": {
+      "subcontract": 25,
+      "total": 25
+    },
+    "512040|KPL": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "512095|KPL": {
+      "labor": 80,
+      "material": 400,
+      "subcontract": 85,
+      "total": 565
+    },
+    "517130|KPL": {
+      "subcontract": 85,
+      "total": 85
+    },
+    "517222|JM": {
+      "subcontract": 32,
+      "total": 32
+    },
+    "517232|KPL": {
+      "subcontract": 158,
+      "total": 158
+    },
+    "520320|JM": {
+      "material": 12,
+      "subcontract": 15,
+      "total": 27
+    },
+    "536260|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "536265|KPL": {
+      "labor": 20,
+      "material": 23,
+      "total": 43
+    },
+    "536275|JM": {
+      "subcontract": 50,
+      "total": 50
+    },
+    "537010|M2": {
+      "subcontract": 100,
+      "total": 100
+    },
+    "537020|M2": {
+      "subcontract": 110,
+      "total": 110
+    },
+    "554105|M2": {
+      "labor": 3,
+      "material": 67,
+      "subcontract": 60,
+      "total": 130
+    },
+    "562380|KG": {
+      "material": 1,
+      "subcontract": 1,
+      "total": 2
+    },
+    "562385|KG": {
+      "material": 1,
+      "subcontract": 1,
+      "total": 2
+    },
+    "562390|KG": {
+      "material": 1,
+      "subcontract": 1,
+      "total": 2
+    },
+    "569060|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "569065|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "569070|JM": {
+      "subcontract": 5,
+      "total": 5
+    },
+    "569075|JM": {
+      "subcontract": 6,
+      "total": 6
+    },
+    "569080|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "569085|JM": {
+      "subcontract": 35,
+      "total": 35
+    },
+    "611030|JM": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "611035|ERÄ": {
+      "subcontract": 2000,
+      "total": 2000
+    },
+    "611040|JM": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "611045|KPL": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "611055|JM": {
+      "subcontract": 300,
+      "total": 300
+    },
+    "611500|AS": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "626040|KPL": {
+      "labor": 20,
+      "material": 33,
+      "total": 53
+    },
+    "626045|KPL": {
+      "labor": 10,
+      "material": 17,
+      "total": 27
+    },
+    "626055|M2": {
+      "labor": 20,
+      "material": 40,
+      "total": 60
+    },
+    "626060|KPL": {
+      "labor": 40,
+      "material": 350,
+      "total": 390
+    },
+    "626065|KPL": {
+      "labor": 20,
+      "material": 165,
+      "total": 185
+    },
+    "626070|KPL": {
+      "labor": 80,
+      "material": 350,
+      "total": 430
+    },
+    "626075|KPL": {
+      "labor": 10,
+      "material": 10,
+      "total": 20
+    },
+    "626080|JM": {
+      "subcontract": 250,
+      "total": 250
+    },
+    "626090|KPL": {
+      "labor": 40,
+      "material": 250,
+      "total": 290
+    },
+    "626095|KPL": {
+      "labor": 20,
+      "material": 60,
+      "total": 80
+    },
+    "626105|ERÄ": {
+      "subcontract": 1200,
+      "total": 1200
+    },
+    "635010|KPL": {
+      "labor": 30,
+      "total": 30
+    },
+    "8110|KK": {
+      "subcontract": 1200,
+      "total": 1200
+    },
+    "8115|KPL": {
+      "labor": 80,
+      "material": 25,
+      "subcontract": 1087.5,
+      "total": 1192.5
+    },
+    "8140|KK": {
+      "subcontract": 200,
+      "total": 200
+    },
+    "8150|JM": {
+      "labor": 20,
+      "material": 39.596,
+      "subcontract": 20,
+      "total": 79.596
+    },
+    "8155|KPL": {
+      "labor": 640,
+      "material": 40,
+      "subcontract": 1120,
+      "total": 1800
+    },
+    "8160|M3": {
+      "subcontract": 0.18,
+      "total": 0.18
+    },
+    "8165|M2": {
+      "material": 2500,
+      "subcontract": 86050,
+      "total": 88550
+    },
+    "8170|KK": {
+      "labor": 2,
+      "material": 1,
+      "subcontract": 0.509,
+      "total": 3.509
+    },
+    "8175|JM": {
+      "labor": 8,
+      "material": 0.9,
+      "subcontract": 4.5,
+      "total": 13.4
+    },
+    "8180|M3": {
+      "labor": 0.343,
+      "material": 0.15,
+      "subcontract": 0.671,
+      "total": 1.164
+    },
+    "8210|M3": {
+      "labor": 0.149,
+      "material": 0.3,
+      "subcontract": 1.007,
+      "total": 1.456
+    },
+    "8320|H": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "8330|KK": {
+      "subcontract": 11850,
+      "total": 11850
+    },
+    "8335|ERÄ": {
+      "subcontract": 18000,
+      "total": 18000
+    },
+    "8337|ERÄ": {
+      "subcontract": 3000,
+      "total": 3000
+    },
+    "8340|KK": {
+      "labor": 320,
+      "material": 71.429,
+      "subcontract": 1350,
+      "total": 1741.429
+    },
+    "8350|M3": {
+      "subcontract": 24.5,
+      "total": 24.5
+    },
+    "8360|H": {
+      "subcontract": 75,
+      "total": 75
+    },
+    "8420|TTH": {
+      "subcontract": 2,
+      "total": 2
+    },
+    "8430|KK": {
+      "subcontract": 450,
+      "total": 450
+    },
+    "8500|TTH": {
+      "material": 1.32,
+      "total": 1.32
+    },
+    "8610|M3": {
+      "material": 1.8,
+      "total": 1.8
+    },
+    "8620|M3": {
+      "material": 0.2,
+      "total": 0.2
+    },
+    "8630|M3": {
+      "material": 0.559,
+      "total": 0.559
+    },
+    "8640|M3": {
+      "material": 0.25,
+      "total": 0.25
+    },
+    "8650|M3": {
+      "material": 1.8,
+      "total": 1.8
+    },
+    "8700|KK": {
+      "material": 450,
+      "subcontract": 300,
+      "total": 750
+    },
+    "8730|M3": {
+      "material": 1.5,
+      "total": 1.5
+    },
+    "8740|M3": {
+      "labor": 0.4,
+      "material": 0.5,
+      "subcontract": 0.5,
+      "total": 1.4
+    },
+    "91110|KK": {
+      "subcontract": 10500,
+      "total": 10500
+    },
+    "91120|KK": {
+      "subcontract": 9500,
+      "total": 9500
+    },
+    "91130|KK": {
+      "subcontract": 8500,
+      "total": 8500
+    },
+    "91150|KM": {
+      "subcontract": 0.53,
+      "total": 0.53
+    },
+    "91160|KK": {
+      "subcontract": 150,
+      "total": 150
+    },
+    "91210|VKO": {
+      "material": 15,
+      "subcontract": 80,
+      "total": 95
+    },
+    "91220|ERÄ": {
+      "material": 1500,
+      "total": 1500
+    },
+    "91230|ERÄ": {
+      "subcontract": 500,
+      "total": 500
+    },
+    "91410|M3": {
+      "subcontract": 0.305,
+      "total": 0.305
+    },
+    "91420|ERÄ": {
+      "subcontract": 4500,
+      "total": 4500
+    },
+    "91430|ERÄ": {
+      "subcontract": 2500,
+      "total": 2500
+    },
+    "91440|ERÄ": {
+      "subcontract": 1000,
+      "total": 1000
+    },
+    "91510|KK": {
+      "subcontract": 800,
+      "total": 800
+    },
+    "91610|M3": {
+      "labor": 0.066,
+      "material": 0.089,
+      "total": 0.155
+    },
+    "91710|ERÄ": {
+      "labor": 960,
+      "total": 960
+    },
+    "91810|ERÄ": {
+      "labor": 800,
+      "total": 800
+    },
+    "91820|ERÄ": {
+      "labor": 320,
+      "total": 320
+    },
+    "91830|ERÄ": {
+      "material": 500,
+      "total": 500
+    },
+    "9210|H": {
+      "subcontract": 70,
+      "total": 70
+    },
+    "9230|KK": {
+      "labor": 240,
+      "material": 15,
+      "total": 255
+    },
+    "9240|TTH": {
+      "labor": 4.218,
+      "subcontract": 1,
+      "total": 5.218
+    },
+    "9250|M3": {
+      "subcontract": 1.922,
+      "total": 1.922
+    },
+    "9260|M3": {
+      "labor": 0.191,
+      "subcontract": 0.364,
+      "total": 0.555
+    },
+    "9400|M3": {
+      "labor": 0.127,
+      "material": 0.04,
+      "subcontract": 0.497,
+      "total": 0.664
+    },
+    "9610|ERÄ": {
+      "material": 10000,
+      "total": 10000
+    },
+    "9650|ERÄ": {
+      "material": 5000,
+      "total": 5000
+    },
+    "9671|ERÄ": {
+      "material": 40000,
+      "total": 40000
+    },
+    "9710|PV": {
+      "material": 12.5,
+      "total": 12.5
+    },
+    "9730|PV": {
+      "material": 3.5,
+      "total": 3.5
+    }
+  }
+}
