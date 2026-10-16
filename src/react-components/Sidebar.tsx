@@ -60,17 +60,13 @@ export function Sidebar() {
             <span className="nav-item-label">{getAppNavLabel("about", language)}</span>
           </li>
         </Router.Link>
+        <li className="nav-sign-out">
+          <button type="button" onClick={onTeamSignOut}>
+            <span className="material-icons-round nav-item-icon">logout</span>
+            <span className="nav-item-label">{getAppNavLabel("teamSignOut", language)}</span>
+          </button>
+        </li>
       </ul>
-      <div className="sidebar-footer">
-        <button
-          type="button"
-          className="sidebar-logout-btn"
-          onClick={onTeamSignOut}
-        >
-          <span className="material-icons-round nav-item-icon">logout</span>
-          <span className="nav-item-label">{getAppNavLabel("teamSignOut", language)}</span>
-        </button>
-      </div>
     </aside>
   );
 }
