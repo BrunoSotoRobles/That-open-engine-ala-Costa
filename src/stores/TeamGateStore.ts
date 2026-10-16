@@ -15,7 +15,7 @@ export const useTeamGateStore = create<TeamGateState>()(
       revokeAccess: () => set({ accessGranted: false }),
     }),
     {
-      name: "costa-team-gate",
+      name: "costa-team-gate-v2",
       storage: createJSONStorage(() => sessionStorage),
       partialize: (state) => ({ accessGranted: state.accessGranted }),
     }

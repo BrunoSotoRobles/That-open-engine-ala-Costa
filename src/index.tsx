@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
 import * as Router from "react-router-dom"
-import { Sidebar } from "./react-components/Sidebar"
+import { AppChrome } from "./react-components/AppChrome"
 import { ProjectsPage } from "./react-components/ProjectsPage"
 import { ProjectDetailsPage } from "./react-components/ProjectDetailsPage"
 import { ProjectsManager } from "./class/ProjectsManager"
@@ -12,7 +12,6 @@ import { HomePage } from "./react-components/HomePage"
 import { RequireTeamAccess } from "./react-components/RequireTeamAccess"
 import { StandaloneViewerPage } from "./react-components/StandaloneViewerPage"
 import { AboutPage } from "./react-components/AboutPage"
-import { Footer } from "./react-components/Footer"
 import { COSTA_FIREBASE_OFF_V1 } from "./utils/costaFirebaseFlags"
 import * as BUI from "@thatopen/ui"
 import * as OBC from "@thatopen/components"
@@ -47,16 +46,7 @@ const appRoot = ReactDOM.createRoot(rootElement)
 appRoot.render(
   <>
     <Router.BrowserRouter>
-      <div className="app-layout">
-        <Sidebar />
-        <div style={{ 
-          gridArea: 'content',
-          display: 'flex', 
-          flexDirection: 'column',
-          minHeight: '100vh',
-          minWidth: 0,
-          paddingBottom: '30px' /* Space for fixed footer (30px) */
-        }}>
+      <AppChrome>
           <Router.Routes>
             <Router.Route path="/" element={<HomePage />}></Router.Route>
             <Router.Route path="/home" element={<HomePage />}></Router.Route>
@@ -122,9 +112,7 @@ appRoot.render(
               }
             ></Router.Route>
           </Router.Routes>
-        </div>
-      </div>
-      <Footer />
+      </AppChrome>
     </Router.BrowserRouter>
   </>
 )

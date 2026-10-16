@@ -5,7 +5,11 @@ import { useCostStore } from "../stores/CostStore";
 import { useTeamGateStore } from "../stores/TeamGateStore";
 import { getAppNavLabel } from "../locales/appNav";
 import { getHomePageText } from "../locales/homePage";
-import { isTeamGateEnabled, verifyTeamGatePassword } from "../utils/costaTeamGate";
+import {
+  isTeamGateEnabled,
+  isTeamPasswordConfigured,
+  verifyTeamGatePassword,
+} from "../utils/costaTeamGate";
 
 /** Landing for the standalone pilot; team password unlocks app routes when configured. */
 export function HomePage() {
@@ -30,7 +34,17 @@ export function HomePage() {
 
   const onAuthSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    if (!isTeamGateEnabled() || verifyTeamGatePassword(password)) {
+    if (!isTeamGateEnabled()) {
+      grantAccess();
+      closeAuth();
+      navigate("/viewer", { replace: true });
+      return;
+    }
+    if (!isTeamPasswordConfigured()) {
+      setAuthError(true);
+      return;
+    }
+    if (verifyTeamGatePassword(password)) {
       grantAccess();
       closeAuth();
       navigate("/viewer", { replace: true });
@@ -38,6 +52,8 @@ export function HomePage() {
     }
     setAuthError(true);
   };
+
+  const gateMisconfigured = isTeamGateEnabled() && !isTeamPasswordConfigured();
 
   return (
     <div className="page">
@@ -317,7 +333,9 @@ export function HomePage() {
                     fontSize: "0.85rem",
                   }}
                 >
-                  {getHomePageText("authError", language)}
+                  {gateMisconfigured
+                    ? getHomePageText("authMisconfig", language)
+                    : getHomePageText("authError", language)}
                 </p>
               )}
               <div

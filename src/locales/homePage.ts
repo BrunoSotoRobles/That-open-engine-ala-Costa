@@ -11,6 +11,8 @@ const HOME: Record<Language, Record<string, string>> = {
     passwordLabel: "Password",
     passwordPlaceholder: "Team password",
     authError: "Incorrect password. Try again.",
+    authMisconfig:
+      "Preview password is not set on the server (VITE_TEAM_GATE_PASSWORD). Contact the team admin.",
     cancel: "Cancel",
     continue: "Continue",
   },
@@ -23,6 +25,8 @@ const HOME: Record<Language, Record<string, string>> = {
     passwordLabel: "Salasana",
     passwordPlaceholder: "Tiimin salasana",
     authError: "Väärä salasana. Yritä uudelleen.",
+    authMisconfig:
+      "Esikatselun salasanaa ei ole asetettu palvelimella (VITE_TEAM_GATE_PASSWORD). Ota yhteys ylläpitoon.",
     cancel: "Peruuta",
     continue: "Jatka",
   },
