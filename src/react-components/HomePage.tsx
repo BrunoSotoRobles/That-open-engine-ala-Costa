@@ -1,30 +1,42 @@
 import React from "react";
+import * as Router from "react-router-dom";
 import { LanguageSelector } from "./LanguageSelector";
 import { useCostStore } from "../stores/CostStore";
+import { useTeamGateStore } from "../stores/TeamGateStore";
 import { getAppNavLabel } from "../locales/appNav";
 import { getHomePageText } from "../locales/homePage";
+import { isTeamGateEnabled, verifyTeamGatePassword } from "../utils/costaTeamGate";
 
-/**
- * Landing for the standalone pilot. Password gate UI is present but not wired yet.
- */
+/** Landing for the standalone pilot; team password unlocks app routes when configured. */
 export function HomePage() {
+  const navigate = Router.useNavigate();
+  const grantAccess = useTeamGateStore((s) => s.grantAccess);
   const [authOpen, setAuthOpen] = React.useState(false);
   const [password, setPassword] = React.useState("");
+  const [authError, setAuthError] = React.useState(false);
   const language = useCostStore((s) => s.language);
 
   const openAuth = () => {
     setPassword("");
+    setAuthError(false);
     setAuthOpen(true);
   };
 
   const closeAuth = () => {
     setAuthOpen(false);
     setPassword("");
+    setAuthError(false);
   };
 
   const onAuthSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    // Placeholder: team password check + unlock CostaBIM will be wired later.
+    if (!isTeamGateEnabled() || verifyTeamGatePassword(password)) {
+      grantAccess();
+      closeAuth();
+      navigate("/viewer", { replace: true });
+      return;
+    }
+    setAuthError(true);
   };
 
   return (
@@ -276,20 +288,38 @@ export function HomePage() {
                 name="password"
                 autoComplete="current-password"
                 value={password}
-                onChange={(event) => setPassword(event.target.value)}
+                onChange={(event) => {
+                  setPassword(event.target.value);
+                  if (authError) setAuthError(false);
+                }}
                 placeholder={getHomePageText("passwordPlaceholder", language)}
+                aria-invalid={authError}
                 style={{
                   width: "100%",
                   boxSizing: "border-box",
                   padding: "10px 12px",
-                  marginBottom: "1.25rem",
+                  marginBottom: authError ? "0.5rem" : "1.25rem",
                   borderRadius: 6,
-                  border: "1px solid var(--border)",
+                  border: authError
+                    ? "1px solid #e57373"
+                    : "1px solid var(--border)",
                   background: "var(--background2, #2a2c2f)",
                   color: "var(--text-1)",
                   fontSize: "1rem",
                 }}
               />
+              {authError && (
+                <p
+                  role="alert"
+                  style={{
+                    margin: "0 0 1.25rem",
+                    color: "#e57373",
+                    fontSize: "0.85rem",
+                  }}
+                >
+                  {getHomePageText("authError", language)}
+                </p>
+              )}
               <div
                 style={{
                   display: "flex",

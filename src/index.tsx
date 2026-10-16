@@ -9,6 +9,7 @@ import { UsersPage } from "./react-components/UserPage"
 import { MaterialsPage } from "./react-components/MaterialsPage"
 import { CostPage } from "./react-components/CostPage"
 import { HomePage } from "./react-components/HomePage"
+import { RequireTeamAccess } from "./react-components/RequireTeamAccess"
 import { StandaloneViewerPage } from "./react-components/StandaloneViewerPage"
 import { AboutPage } from "./react-components/AboutPage"
 import { Footer } from "./react-components/Footer"
@@ -59,7 +60,14 @@ appRoot.render(
           <Router.Routes>
             <Router.Route path="/" element={<HomePage />}></Router.Route>
             <Router.Route path="/home" element={<HomePage />}></Router.Route>
-            <Router.Route path="/viewer" element={<StandaloneViewerPage />}></Router.Route>
+            <Router.Route
+              path="/viewer"
+              element={
+                <RequireTeamAccess>
+                  <StandaloneViewerPage />
+                </RequireTeamAccess>
+              }
+            ></Router.Route>
             <Router.Route
               path="/projects"
               element={
@@ -80,11 +88,39 @@ appRoot.render(
                 )
               }
             ></Router.Route>
-            <Router.Route path="/materials" element={<MaterialsPage />}></Router.Route>
-            <Router.Route path="/users" element={<UsersPage />}></Router.Route>
-            <Router.Route path="/costs" element={<CostPage />}></Router.Route>
+            <Router.Route
+              path="/materials"
+              element={
+                <RequireTeamAccess>
+                  <MaterialsPage />
+                </RequireTeamAccess>
+              }
+            ></Router.Route>
+            <Router.Route
+              path="/users"
+              element={
+                <RequireTeamAccess>
+                  <UsersPage />
+                </RequireTeamAccess>
+              }
+            ></Router.Route>
+            <Router.Route
+              path="/costs"
+              element={
+                <RequireTeamAccess>
+                  <CostPage />
+                </RequireTeamAccess>
+              }
+            ></Router.Route>
             <Router.Route path="/costs-alt" element={<Router.Navigate to="/costs" replace />}></Router.Route>
-            <Router.Route path="/about" element={<AboutPage />}></Router.Route>
+            <Router.Route
+              path="/about"
+              element={
+                <RequireTeamAccess>
+                  <AboutPage />
+                </RequireTeamAccess>
+              }
+            ></Router.Route>
           </Router.Routes>
         </div>
       </div>
