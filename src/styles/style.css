@@ -158,10 +158,12 @@
   min-height: 0; /* Allow content to determine height */
 }
 
-.app-layout--landing {
-  grid-template-columns: 1fr;
-  grid-template-areas: 'content';
+.app-landing-shell {
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .app-layout__content {

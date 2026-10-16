@@ -15,6 +15,7 @@ import {
 export function HomePage() {
   const navigate = Router.useNavigate();
   const grantAccess = useTeamGateStore((s) => s.grantAccess);
+  const accessGranted = useTeamGateStore((s) => s.accessGranted);
   const [authOpen, setAuthOpen] = React.useState(false);
   const [password, setPassword] = React.useState("");
   const [authError, setAuthError] = React.useState(false);
@@ -54,6 +55,12 @@ export function HomePage() {
   };
 
   const gateMisconfigured = isTeamGateEnabled() && !isTeamPasswordConfigured();
+
+  React.useEffect(() => {
+    if (isTeamGateEnabled() && accessGranted) {
+      navigate("/viewer", { replace: true });
+    }
+  }, [accessGranted, navigate]);
 
   return (
     <div className="page page--landing">
