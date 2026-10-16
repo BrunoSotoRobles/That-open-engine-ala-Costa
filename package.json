@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node scripts/dev.cjs",
-    "prebuild": "mkdir -p public/assets/IFC\\ example/ && cp -r public/assets/IFC\\ example/*.ifc public/assets/IFC\\ example/ 2>/dev/null || true",
+    "prebuild": "node scripts/write-netlify-basic-auth.cjs && mkdir -p public/assets/IFC\\ example/ && cp -r public/assets/IFC\\ example/*.ifc public/assets/IFC\\ example/ 2>/dev/null || true",
     "build": "npm run prebuild && vite build",
     "serve": "vite preview",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --config jest.config.mjs",
