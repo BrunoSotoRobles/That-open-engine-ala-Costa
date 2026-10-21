@@ -23,6 +23,7 @@ import {
   resolveBridgeRole,
   type BridgeRole,
 } from "./mcpInstanceLock.ts";
+import { registerCostaPrompts } from "./costaPrompts.ts";
 import {
   attachBridgeRelayServer,
   isRelaySocket,
@@ -143,6 +144,7 @@ async function createWebSocketServerWithRetry(port: number, retries = 8): Promis
 let ws: WebSocketServer | null = null;
 
 const server = new McpServer({ name: "Costa-MCP-Server", version: "1.0.0" });
+registerCostaPrompts(server);
 
 function sendJsonToBrowserClient(message: Record<string, unknown>): Promise<Record<string, unknown>> {
   return new Promise((resolve, reject) => {
