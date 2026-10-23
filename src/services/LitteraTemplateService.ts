@@ -9,6 +9,7 @@ import { ConstructionMethodDetector } from '../utils/ConstructionMethodDetector'
 import { StructuredLogger } from '../utils/StructuredLogger';
 import { ErrorHandler, ErrorType } from '../utils/ErrorHandler';
 import { CSVValidator } from '../utils/CSVValidator';
+import litteraFilterTemplatesCsv from '../data/littera-filter-templates.csv?raw';
 
 /**
  * Activity rule from template
@@ -80,43 +81,12 @@ export class LitteraTemplateService {
       async () => {
         try {
           StructuredLogger.info('LitteraTemplateService', 'loadTemplates', 'Loading templates from CSV');
-          
-          // Try to load from different paths
-          const possiblePaths = [
-            '/src/data/littera-filter-templates.csv',
-            './src/data/littera-filter-templates.csv',
-            '../data/littera-filter-templates.csv',
-            'src/data/littera-filter-templates.csv'
-          ];
 
-          let csvText: string | null = null;
-          let loadedPath: string | null = null;
-          
-          for (const path of possiblePaths) {
-            try {
-              const response = await fetch(path);
-              if (response.ok) {
-                csvText = await response.text();
-                loadedPath = path;
-                StructuredLogger.debug('LitteraTemplateService', 'loadTemplates', 
-                  'CSV file loaded successfully', { path });
-                break;
-              }
-            } catch (err) {
-              // Continue to next path
-              continue;
-            }
-          }
+          const csvText = litteraFilterTemplatesCsv?.trim() ? litteraFilterTemplatesCsv : null;
 
           if (!csvText) {
-            const error = ErrorHandler.handle(
-              new Error('Could not load templates CSV from any known path'),
-              { paths: possiblePaths }
-            );
-            ErrorHandler.log(error);
-            
             StructuredLogger.warn('LitteraTemplateService', 'loadTemplates', 
-              'Using default templates', { reason: 'CSV file not found' });
+              'Using default templates', { reason: 'Bundled CSV empty' });
             this.createDefaultTemplates();
             this.isLoaded = true;
             return;
@@ -183,7 +153,7 @@ export class LitteraTemplateService {
           
           StructuredLogger.info('LitteraTemplateService', 'loadTemplates', 
             'Templates loaded successfully', {
-              path: loadedPath,
+              source: 'bundle',
               totalTemplates: this.templates.length,
               totalActivities: this.templates.reduce((sum, t) => sum + t.activities.length, 0),
               validationErrors: validation.errors.length,

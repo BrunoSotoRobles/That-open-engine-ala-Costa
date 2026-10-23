@@ -1,3 +1,5 @@
+import taloLitteraMappingJson from '../data/talo_littera_mapping.json';
+
 /**
  * Interface para una entrada de código Littera con su unidad y descripción
  */
@@ -53,6 +55,7 @@ export class TaloLitteraMappingService {
   private static instance: TaloLitteraMappingService;
   private mappingData: MappingRow[] = [];
   private isLoaded = false;
+  private loadPromise: Promise<void> | null = null;
 
   private constructor() {}
 
@@ -67,48 +70,28 @@ export class TaloLitteraMappingService {
   }
 
   /**
-   * Carga los datos del archivo JSON talo_littera_mapping.json
-   * Debe llamarse antes de usar el servicio
-   * 
-   * Intenta cargar desde diferentes ubicaciones según el entorno:
-   * - Navegador: desde /src/data/talo_littera_mapping.json o ruta relativa
-   * - Node.js: desde src/data/talo_littera_mapping.json
+   * Carga los datos de talo_littera_mapping.json (incluido en el bundle Vite; dev y producción).
+   * Debe llamarse antes de usar el servicio.
    */
   async loadMappingData(): Promise<void> {
     if (this.isLoaded) {
       return;
     }
+    if (this.loadPromise) {
+      return this.loadPromise;
+    }
 
+    this.loadPromise = this.loadMappingDataFromBundle();
+    return this.loadPromise;
+  }
+
+  private async loadMappingDataFromBundle(): Promise<void> {
     try {
-      let jsonData: any;
-      
-      // Intentar diferentes rutas según el entorno
-      const possiblePaths = [
-        '/src/data/talo_littera_mapping.json',
-        './src/data/talo_littera_mapping.json',
-        '../data/talo_littera_mapping.json',
-        'src/data/talo_littera_mapping.json'
-      ];
-      
-      let lastError: Error | null = null;
-      
-      for (const path of possiblePaths) {
-        try {
-          const response = await fetch(path);
-          if (response.ok) {
-            jsonData = await response.json();
-            break;
-          }
-        } catch (err) {
-          lastError = err instanceof Error ? err : new Error(String(err));
-          continue;
-        }
-      }
-      
-      if (!jsonData) {
-        throw lastError || new Error('Could not load JSON file from any known path');
-      }
-      
+      const jsonData = taloLitteraMappingJson as {
+        mappingData?: unknown[];
+        metadata?: Record<string, unknown>;
+      };
+
       // Validar estructura JSON
       if (!jsonData.mappingData || !Array.isArray(jsonData.mappingData)) {
         throw new Error('Invalid JSON structure: mappingData array not found');

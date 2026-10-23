@@ -8,6 +8,7 @@
 import type { BaseCostElement } from '../types/cost';
 import { ConstructionMethodDetector } from '../utils/ConstructionMethodDetector';
 import { StructuredLogger } from '../utils/StructuredLogger';
+import litteraSuggestionCasesCsv from '../data/littera-suggestion-cases.csv?raw';
 
 export interface SuggestionCaseRow {
   ifcType: string;
@@ -20,13 +21,6 @@ export interface SuggestionCaseRow {
   litteraDescriptions: string[];
   notes: string;
 }
-
-const CSV_PATH = '/src/data/littera-suggestion-cases.csv';
-const FALLBACK_PATHS = [
-  './src/data/littera-suggestion-cases.csv',
-  '../data/littera-suggestion-cases.csv',
-  'src/data/littera-suggestion-cases.csv',
-];
 
 /**
  * Parse a CSV line respecting quoted fields (e.g. "a,b" stays one cell)
@@ -81,35 +75,21 @@ export class LitteraSuggestionCasesService {
 
     this.loadPromise = (async () => {
       try {
-        const paths = [CSV_PATH, ...FALLBACK_PATHS];
-        let text: string | null = null;
-        for (const path of paths) {
-          try {
-            const res = await fetch(path);
-            if (res.ok) {
-              text = await res.text();
-              StructuredLogger.debug(
-                'LitteraSuggestionCasesService',
-                'loadCases',
-                'CSV loaded',
-                { path }
-              );
-              break;
-            }
-          } catch {
-            continue;
-          }
-        }
+        const text = litteraSuggestionCasesCsv?.trim() ? litteraSuggestionCasesCsv : null;
         if (!text) {
           StructuredLogger.warn(
             'LitteraSuggestionCasesService',
             'loadCases',
-            'Could not load littera-suggestion-cases.csv from any path',
-            { paths }
+            'Bundled littera-suggestion-cases.csv is empty'
           );
           this.isLoaded = true;
           return;
         }
+        StructuredLogger.debug(
+          'LitteraSuggestionCasesService',
+          'loadCases',
+          'CSV loaded from bundle'
+        );
         const lines = text.split(/\r?\n/).filter((l) => l.trim());
         if (lines.length < 2) {
           this.isLoaded = true;
